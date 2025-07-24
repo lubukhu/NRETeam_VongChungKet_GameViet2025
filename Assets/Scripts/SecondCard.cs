@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System;
+using System.Collections;
 
 public class SecondCard : MonoBehaviour
 {
@@ -7,6 +8,11 @@ public class SecondCard : MonoBehaviour
     private GameObject _firstCardGameObject;
 
     public static event Action<SwipeEffect> OnSecondCardBecomesActiveSwipeEffect;
+
+    // LƯU Ý: Ở phiên bản code này, các trường cardFront/cardBack VÀ logic FlipAnimation chưa có.
+    // public float flipDuration = 0.3f;
+    // public GameObject cardFront;
+    // public GameObject cardBack;
 
     public void SetFirstCardToObserve(GameObject firstCardGameObject, SwipeEffect firstCardSwipeEffect)
     {
@@ -16,8 +22,6 @@ public class SecondCard : MonoBehaviour
             return;
         }
 
-        // Đảm bảo hủy đăng ký sự kiện từ thẻ cũ nếu đã có để tránh rò rỉ bộ nhớ
-        // (Đây là logic tốt, giữ lại)
         if (_firstCardSwipeEffect != null)
         {
             _firstCardSwipeEffect.cardDestroyed -= OnFirstCardDestroyed;
@@ -28,18 +32,21 @@ public class SecondCard : MonoBehaviour
 
         _firstCardSwipeEffect.cardDestroyed += OnFirstCardDestroyed;
 
-        // Debug.Log("SecondCard: Successfully set first card to observe: " + _firstCardGameObject.name);
+        // KHI THẺ NÀY LÀ SECOND CARD: Ở phiên bản này, nó không bật/tắt mặt thẻ.
+        // if (cardFront != null) cardFront.SetActive(false);
+        // if (cardBack != null) cardBack.SetActive(true);
+        transform.localEulerAngles = new Vector3(0, 0, 0);
     }
 
     void Start()
     {
-        // Khởi tạo scale ban đầu
         transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
+        // Ở phiên bản này, không có kiểm tra cardFront/cardBack null.
+        // if (cardFront == null || cardBack == null) { ... }
     }
 
     void Update()
     {
-        // Kiểm tra _firstCardGameObject null để tránh lỗi sau khi thẻ đầu tiên bị hủy
         if (_firstCardGameObject != null)
         {
             float distanceMoved = _firstCardGameObject.transform.localPosition.x;
@@ -51,36 +58,29 @@ public class SecondCard : MonoBehaviour
             }
             else if (transform.localScale.x != 0.8f)
             {
-                // Đảm bảo trở về kích thước ban đầu nếu thẻ không di chuyển
                 transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
             }
         }
-        // Nếu _firstCardGameObject là null, không làm gì cả
     }
 
     void OnFirstCardDestroyed()
     {
-        // Debug.Log("SecondCard: OnFirstCardDestroyed called for " + gameObject.name); // Để kiểm tra
-
-        // Hủy đăng ký sự kiện từ thẻ cũ để tránh rò rỉ bộ nhớ
         if (_firstCardSwipeEffect != null)
         {
             _firstCardSwipeEffect.cardDestroyed -= OnFirstCardDestroyed;
-            _firstCardSwipeEffect = null; // Xóa tham chiếu ngay sau khi hủy đăng ký
-            _firstCardGameObject = null; // Xóa tham chiếu
+            _firstCardSwipeEffect = null;
+            _firstCardGameObject = null;
         }
 
-        // Thẻ này (SecondCard) bây giờ sẽ trở thành thẻ chính
-        // Đảm bảo gameObject chưa bị hủy trước khi AddComponent
-        if (this.gameObject != null) // Kiểm tra an toàn trước khi AddComponent
+        if (this.gameObject != null)
         {
             SwipeEffect newSwipeEffect = gameObject.AddComponent<SwipeEffect>();
 
-            // Thông báo cho Instantiator rằng thẻ này đã trở thành SwipeEffect mới
             OnSecondCardBecomesActiveSwipeEffect?.Invoke(newSwipeEffect);
 
-            // Hủy bỏ component SecondCard vì nó không còn cần thiết
-            // Debug.Log("SecondCard: Destroying SecondCard component on " + gameObject.name); // Để kiểm tra
+            // Ở phiên bản code này, không có hiệu ứng xoay lật.
+            // StartCoroutine(FlipAndScaleRoutine());
+
             Destroy(this);
         }
         else
@@ -89,7 +89,9 @@ public class SecondCard : MonoBehaviour
         }
     }
 
-    // Đảm bảo hủy đăng ký khi SecondCard bị hủy
+    // Ở phiên bản code này, không có Coroutine FlipAndScaleRoutine.
+    // private IEnumerator FlipAndScaleRoutine() { ... }
+
     void OnDestroy()
     {
         if (_firstCardSwipeEffect != null)

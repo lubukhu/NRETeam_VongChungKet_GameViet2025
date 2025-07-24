@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: NewCardData 1
+  m_EditorClassIdentifier: 
+  cardID: 2
+  characterName: b
+  characterSprite: {fileID: -3800741889881767643, guid: dec152c379028cb41b2731db9787d821, type: 3}
+  dialogueText: bb
+  leftChoiceText: bb
+  leftChoiceEffects:
+  - statType: 0
+    changeAmount: 10
+    effectDescription: bb
+  rightChoiceText: bb
+  rightChoiceEffects:
+  - statType: 0
+    changeAmount: -10
+    effectDescription: bb
+  nextCardIDAfterLeftChoice: 
+  nextCardIDAfterRightChoice: 
