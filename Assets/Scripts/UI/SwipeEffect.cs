@@ -2,11 +2,13 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using Obvious.Soap;
+using DG.Tweening;
 
 public class SwipeEffect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
     private Vector3 _initialPosition;
     private bool _isSwipingOrMoving;
+    private bool _flipped = false;
 
     [Header("SOAP Events")]
     [SerializeField] private ScriptableEventBool onCardSwiped;
@@ -53,7 +55,8 @@ public class SwipeEffect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
             {
                 onCardSwiped.Raise(isRightSwipe);
             }
-            
+            _flipped = !_flipped;
+            transform.DORotate(new(0, _flipped ? 0f : 180f, 0), 0.25f);
             // Tắt GameObject ngay lập tức để CardViewManager có thể tái sử dụng
             gameObject.SetActive(false);
         }

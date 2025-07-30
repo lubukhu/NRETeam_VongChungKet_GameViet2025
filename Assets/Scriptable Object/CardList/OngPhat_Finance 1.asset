@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardID: 2
   characterName: "\xD4ng Ph\xE1t"
-  characterSprite: {fileID: -3047660525284991916, guid: ddb268f6be556bb4ca7ca96a839a65cd, type: 3}
+  characterSprite: {fileID: -5099292496197868168, guid: 14d6aaeeb26e06443b69d0ca97648c4e, type: 3}
   dialogueText: "Xin ch\xE0o Hikaru! \u0111\u1ED3ng \xFD l\xE0m \u0103n v\u1EDBi
     t\xF4i kh\xF4ng?"
   cardCategory: 0
