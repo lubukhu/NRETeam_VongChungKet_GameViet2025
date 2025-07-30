@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using Obvious.Soap;
 using DG.Tweening;
+using System.Data.SqlTypes;
+using System;
 
 public class SwipeEffect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
@@ -12,6 +14,16 @@ public class SwipeEffect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
     [Header("SOAP Events")]
     [SerializeField] private ScriptableEventBool onCardSwiped;
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space)) Flip();
+    }
+
+    private void Flip()
+    {
+        _flipped = !_flipped;
+        transform.DORotate(new(0, _flipped ? 0f : 180f, 0), 0.25f);
+    }
 
     public void OnDrag(PointerEventData eventData)
     {
@@ -55,8 +67,8 @@ public class SwipeEffect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
             {
                 onCardSwiped.Raise(isRightSwipe);
             }
-            _flipped = !_flipped;
-            transform.DORotate(new(0, _flipped ? 0f : 180f, 0), 0.25f);
+            //_flipped = !_flipped;
+            //transform.DORotate(new(0, _flipped ? 0f : 180f, 0), 0.25f);
             // Tắt GameObject ngay lập tức để CardViewManager có thể tái sử dụng
             gameObject.SetActive(false);
         }
