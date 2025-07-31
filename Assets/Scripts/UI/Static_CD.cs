@@ -1,4 +1,3 @@
-// File: CardDisplay_Static.cs
 // [tooltips] Cập nhật các thành phần UI tĩnh (tên, lời thoại) khi có thẻ mới.
 using UnityEngine;
 using Obvious.Soap;
@@ -13,7 +12,7 @@ public class CardDisplay_Static : MonoBehaviour
     [SerializeField] private TextMeshProUGUI rightChoiceText;
 
     [Header("Game State Input")]
-    [SerializeField] private CardDataVariable currentActiveCard;
+    [SerializeField] private CardDataVariable currentActiveCard; // Lắng nghe sự thay đổi của biến này
 
     public void UpdateStaticTexts()
     {
@@ -29,6 +28,8 @@ public class CardDisplay_Static : MonoBehaviour
         {
             characterNameText.text = "";
             dialogueText.text = "";
+            leftChoiceText.text = ""; // Đảm bảo clear text
+            rightChoiceText.text = ""; // Đảm bảo clear text
         }
     }
 }

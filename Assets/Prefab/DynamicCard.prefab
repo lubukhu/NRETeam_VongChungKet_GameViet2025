@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 231118253617974073}
   - component: {fileID: 7546347241879028563}
   - component: {fileID: 2642102247795801489}
+  - component: {fileID: 4356791870257674930}
   m_Layer: 5
   m_Name: DynamicCard
   m_TagString: Untagged
@@ -64,9 +65,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c95ec982b6d2d41b63a6461dbad35f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  swipeThresholdPercentage: 0.1
   onCardSwiped: {fileID: 11400000, guid: c3994e0f84cc7dc4c870f315e026e46b, type: 2}
   onCardDragProgress: {fileID: 11400000, guid: 14f18642399f8354e98d4d6679a8bfdc, type: 2}
   onCardReturn: {fileID: 11400000, guid: 3d48ebd8462a79e43b5143b7208cc4d2, type: 2}
+  onCardInteractionStart: {fileID: 11400000, guid: 98759bdfda375464c9ea8f5d630bdf5b, type: 2}
+  _rectTransform: {fileID: 0}
+  _swipeAreaContainer: {fileID: 0}
 --- !u!114 &2642102247795801489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,6 +85,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterImage: {fileID: 7649646636925871027}
+  currentActiveCard: {fileID: 11400000, guid: 56df9da57ed17114282a91775f765f0a, type: 2}
+  FlipPrefabCard: {fileID: 11400000, guid: 5d86f0f4e52e71043bd158eb5e3b5101, type: 2}
+--- !u!114 &4356791870257674930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4533912779589926763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d93ba61543949824db31c7cb89b4f009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _binding: 0
+  _disableAfterSubscribing: 0
+  _eventResponses:
+  - Delay: 0
+    ScriptableEvent: {fileID: 11400000, guid: 91ef3191b56d3bc49bca67dc5de1f643, type: 2}
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2642102247795801489}
+          m_TargetAssemblyTypeName: CardDisplay_Dynamic, Assembly-CSharp
+          m_MethodName: OnBeingInstantiate
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Delay: 0
+    ScriptableEvent: {fileID: 11400000, guid: 1b76760d7d11d3c408bf97b40b885f0e, type: 2}
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2642102247795801489}
+          m_TargetAssemblyTypeName: CardDisplay_Dynamic, Assembly-CSharp
+          m_MethodName: OnNewCardDataReady
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &5491336459283898340
 GameObject:
   m_ObjectHideFlags: 0
