@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a49b7e678b3ebb7418adb84806d24646, type: 3}
-  m_Name: OnUnlocksProcessed_Event
+  m_Script: {fileID: 11500000, guid: 968e031fe5a84c64b770b6a8940c8913, type: 3}
+  m_Name: OnCardDragProgress
   m_EditorClassIdentifier: 
   CategoryIndex: 0
   Description: 
-  _debugLogEnabled: 1
+  _debugLogEnabled: 0
+  _debugValue: 0
