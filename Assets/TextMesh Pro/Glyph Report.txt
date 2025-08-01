@@ -1,0 +1,25 @@
+Font: VL Marlen  Style: Regular
+Point Size: 543   Padding: 9   SP/PD Ratio: 1.7%
+
+Characters included: 217/229
+Missing characters: 12
+Excluded characters: 0
+
+Characters missing from font file:
+----------------------------------------
+ID: 9	Hex: 9	Char [	]
+ID: 95	Hex: 5F	Char [_]
+ID: 10	Hex: A	Char [
+]
+ID: 64	Hex: 40	Char [@]
+ID: 35	Hex: 23	Char [#]
+ID: 36	Hex: 24	Char [$]
+ID: 37	Hex: 25	Char [%]
+ID: 43	Hex: 2B	Char [+]
+ID: 61	Hex: 3D	Char [=]
+ID: 124	Hex: 7C	Char [|]
+ID: 60	Hex: 3C	Char []
+ID: 62	Hex: 3E	Char [>]
+
+Characters excluded from packing:
+----------------------------------------

@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: 8eb627de8c7e2594b8b91d3760927d3e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4936625759087737694
+    second: logo fpt chu trang_0
+  - first:
+      213: 2177944051416147891
+    second: logo fpt chu trang_1
+  - first:
+      213: 5585506415110818662
+    second: logo fpt chu trang_2
+  - first:
+      213: -5921981675542835939
+    second: logo fpt chu trang_3
+  - first:
+      213: 4534514894711505450
+    second: logo fpt chu trang_4
+  - first:
+      213: -3997644319429197795
+    second: logo fpt chu trang_5
+  - first:
+      213: -600216061108675812
+    second: logo fpt chu trang_6
+  - first:
+      213: -1274469214134699695
+    second: logo fpt chu trang_7
+  - first:
+      213: -344323485954860755
+    second: logo fpt chu trang_8
+  - first:
+      213: -4758065843966983253
+    second: logo fpt chu trang_9
+  - first:
+      213: 8056134603217056013
+    second: logo fpt chu trang_10
+  - first:
+      213: -4032678074904367428
+    second: logo fpt chu trang_11
+  - first:
+      213: 2857632114043226748
+    second: logo fpt chu trang_12
+  - first:
+      213: 1357171469571140342
+    second: logo fpt chu trang_13
+  - first:
+      213: -5785186178955351005
+    second: logo fpt chu trang_14
+  - first:
+      213: -4612338121112058690
+    second: logo fpt chu trang_15
+  - first:
+      213: 3832005696897099862
+    second: logo fpt chu trang_16
+  - first:
+      213: 7146663536010536140
+    second: logo fpt chu trang_17
+  - first:
+      213: 1230893611980829656
+    second: logo fpt chu trang_18
+  - first:
+      213: 2838737442241080208
+    second: logo fpt chu trang_19
+  - first:
+      213: 3984888845831730454
+    second: logo fpt chu trang_20
+  - first:
+      213: 4971083446756320242
+    second: logo fpt chu trang_21
+  - first:
+      213: -3861146507334122034
+    second: logo fpt chu trang_22
+  - first:
+      213: 9002988925757307623
+    second: logo fpt chu trang_23
+  - first:
+      213: 6844515425988096120
+    second: logo fpt chu trang_24
+  - first:
+      213: -4339215817498614129
+    second: logo fpt chu trang_25
+  - first:
+      213: 636164457614253821
+    second: logo fpt chu trang_26
+  - first:
+      213: -2002519513962449790
+    second: logo fpt chu trang_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: logo fpt chu trang_0
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 932
+        width: 448
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4488807059d7bb0800000000000000
+      internalID: -4936625759087737694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_1
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 819
+        width: 498
+        height: 739
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b7a555539c993e10800000000000000
+      internalID: 2177944051416147891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_2
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 932
+        width: 449
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b8853cd74b38d40800000000000000
+      internalID: 5585506415110818662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_3
+      rect:
+        serializedVersion: 2
+        x: 2202
+        y: 1060
+        width: 108
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d85e6ca05e0dda0800000000000000
+      internalID: -5921981675542835939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_4
+      rect:
+        serializedVersion: 2
+        x: 2315
+        y: 1060
+        width: 130
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a224ff79545ddee30800000000000000
+      internalID: 4534514894711505450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_5
+      rect:
+        serializedVersion: 2
+        x: 2833
+        y: 1060
+        width: 87
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1080120ca38588c0800000000000000
+      internalID: -3997644319429197795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_6
+      rect:
+        serializedVersion: 2
+        x: 2925
+        y: 1230
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b12292caa9ba7f0800000000000000
+      internalID: -600216061108675812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_7
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 1060
+        width: 123
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 159745e800d205ee0800000000000000
+      internalID: -1274469214134699695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_8
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 1060
+        width: 115
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2916d32d97b83bf0800000000000000
+      internalID: -344323485954860755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_9
+      rect:
+        serializedVersion: 2
+        x: 2705
+        y: 1060
+        width: 122
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3cd600354f7fdb0800000000000000
+      internalID: -4758065843966983253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_10
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 1060
+        width: 37
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d013c770db32dcf60800000000000000
+      internalID: 8056134603217056013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_11
+      rect:
+        serializedVersion: 2
+        x: 2981
+        y: 1060
+        width: 137
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbea1db28ac0908c0800000000000000
+      internalID: -4032678074904367428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_12
+      rect:
+        serializedVersion: 2
+        x: 3123
+        y: 1060
+        width: 129
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a8b40744958a720800000000000000
+      internalID: 2857632114043226748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_13
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 932
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa251fc244a5d210800000000000000
+      internalID: 1357171469571140342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_14
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 281
+        width: 250
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32ceddb42d3e6bfa0800000000000000
+      internalID: -5785186178955351005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_15
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 281
+        width: 235
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb48f138aeeadffb0800000000000000
+      internalID: -4612338121112058690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_16
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 281
+        width: 236
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65823d4e0e40e2530800000000000000
+      internalID: 3832005696897099862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_17
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 281
+        width: 235
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc425211f9c0e2360800000000000000
+      internalID: 7146663536010536140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_18
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 273
+        width: 300
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d33a62f733051110800000000000000
+      internalID: 1230893611980829656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_19
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 281
+        width: 236
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b6167d9a8356720800000000000000
+      internalID: 2838737442241080208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_20
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 281
+        width: 278
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615773dda4b2d4730800000000000000
+      internalID: 3984888845831730454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_21
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 281
+        width: 236
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f32cb09e06dcf440800000000000000
+      internalID: 4971083446756320242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_22
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 281
+        width: 250
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec50c9475b37a6ac0800000000000000
+      internalID: -3861146507334122034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_23
+      rect:
+        serializedVersion: 2
+        x: 2634
+        y: 273
+        width: 293
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea3a846aba01fc70800000000000000
+      internalID: 9002988925757307623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_24
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 281
+        width: 285
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870b3b1248a9cfe50800000000000000
+      internalID: 6844515425988096120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_25
+      rect:
+        serializedVersion: 2
+        x: 3222
+        y: 281
+        width: 293
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f862d32443208c3c0800000000000000
+      internalID: -4339215817498614129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_26
+      rect:
+        serializedVersion: 2
+        x: 3520
+        y: 281
+        width: 136
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe93d2243c14d800800000000000000
+      internalID: 636164457614253821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo fpt chu trang_27
+      rect:
+        serializedVersion: 2
+        x: 3661
+        y: 273
+        width: 300
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 284fa72ac1f9534e0800000000000000
+      internalID: -2002519513962449790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      logo fpt chu trang_0: -4936625759087737694
+      logo fpt chu trang_1: 2177944051416147891
+      logo fpt chu trang_10: 8056134603217056013
+      logo fpt chu trang_11: -4032678074904367428
+      logo fpt chu trang_12: 2857632114043226748
+      logo fpt chu trang_13: 1357171469571140342
+      logo fpt chu trang_14: -5785186178955351005
+      logo fpt chu trang_15: -4612338121112058690
+      logo fpt chu trang_16: 3832005696897099862
+      logo fpt chu trang_17: 7146663536010536140
+      logo fpt chu trang_18: 1230893611980829656
+      logo fpt chu trang_19: 2838737442241080208
+      logo fpt chu trang_2: 5585506415110818662
+      logo fpt chu trang_20: 3984888845831730454
+      logo fpt chu trang_21: 4971083446756320242
+      logo fpt chu trang_22: -3861146507334122034
+      logo fpt chu trang_23: 9002988925757307623
+      logo fpt chu trang_24: 6844515425988096120
+      logo fpt chu trang_25: -4339215817498614129
+      logo fpt chu trang_26: 636164457614253821
+      logo fpt chu trang_27: -2002519513962449790
+      logo fpt chu trang_3: -5921981675542835939
+      logo fpt chu trang_4: 4534514894711505450
+      logo fpt chu trang_5: -3997644319429197795
+      logo fpt chu trang_6: -600216061108675812
+      logo fpt chu trang_7: -1274469214134699695
+      logo fpt chu trang_8: -344323485954860755
+      logo fpt chu trang_9: -4758065843966983253
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
