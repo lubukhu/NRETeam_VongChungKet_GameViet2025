@@ -31,7 +31,7 @@ public class CardLogicManager : MonoBehaviour
         {
             ApplyNarrativeEffect(effect);
         }
-
+        
         deckManager.DrawNextCard();
     }
 
