@@ -18,7 +18,7 @@ public class CardLogicManager : MonoBehaviour
     {
         if (currentCard.Value == null) return;
 
-        ChoiceResult choice = isRightSwipe ? currentCard.Value.rightChoice : currentCard.Value.leftChoice;
+        ChoiceResult choice = isRightSwipe ? currentCard.Value.leftChoice : currentCard.Value.rightChoice;
 
         // Apply stat effects
         foreach (var effect in choice.statEffects)

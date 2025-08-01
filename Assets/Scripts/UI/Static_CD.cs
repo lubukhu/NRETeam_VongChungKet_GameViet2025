@@ -1,7 +1,13 @@
-// [tooltips] Cập nhật các thành phần UI tĩnh (tên, lời thoại) khi có thẻ mới.
+// [tooltips] Cập nhật các thành phần UI tĩnh (tên, lời thoại, hình nền) khi có thẻ mới.
 using UnityEngine;
+using UnityEngine.UI;
 using Obvious.Soap;
+using System.Collections.Generic; 
+using System.Linq;
 using TMPro;
+
+// --- THÊM MỚI: Lớp để map giữa CardType và Sprite ---
+[System.Serializable]
 
 public class CardDisplay_Static : MonoBehaviour
 {
@@ -10,13 +16,24 @@ public class CardDisplay_Static : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private TextMeshProUGUI leftChoiceText;
     [SerializeField] private TextMeshProUGUI rightChoiceText;
+    
+    [Header("Background References")]
+    [SerializeField] private Image gameBackground;
+    [SerializeField] private Sprite defaultBackground;
+    [SerializeField] private List<BackgroundMapping> categoryBackgrounds;
 
     [Header("Game State Input")]
-    [SerializeField] private CardDataVariable currentActiveCard; // Lắng nghe sự thay đổi của biến này
-
-    public void UpdateStaticTexts()
+    [SerializeField] private CardDataVariable currentActiveCard;
+    
+    public void UpdateDisplayOnNewCard()
     {
         CardData cardData = currentActiveCard.Value;
+        UpdateTexts(cardData);
+        UpdateBackground(cardData); // Gọi hàm cập nhật hình nền
+    }
+
+    private void UpdateTexts(CardData cardData)
+    {
         if (cardData != null)
         {
             characterNameText.text = cardData.characterName;
@@ -28,8 +45,30 @@ public class CardDisplay_Static : MonoBehaviour
         {
             characterNameText.text = "";
             dialogueText.text = "";
-            leftChoiceText.text = ""; // Đảm bảo clear text
-            rightChoiceText.text = ""; // Đảm bảo clear text
+            leftChoiceText.text = "";
+            rightChoiceText.text = "";
+        }
+    }
+    
+    private void UpdateBackground(CardData cardData)
+    {
+        if (gameBackground == null) return;
+
+        if (cardData == null)
+        {
+            gameBackground.sprite = defaultBackground;
+            return;
+        }
+        
+        var mapping = categoryBackgrounds.FirstOrDefault(m => m.cardCategory == cardData.cardCategory);
+
+        if (mapping != null && mapping.backgroundSprite != null)
+        {
+            gameBackground.sprite = mapping.backgroundSprite;
+        }
+        else
+        {
+            gameBackground.sprite = defaultBackground;
         }
     }
 }

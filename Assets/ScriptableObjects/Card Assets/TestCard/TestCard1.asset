@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: TestCard1
+  m_EditorClassIdentifier: 
+  cardID: 2
+  characterName: "\xD4ng Ph\xE1t"
+  characterSprite: {fileID: -5099292496197868168, guid: 99d907d5a6c26ea44b26f07348860e22, type: 3}
+  dialogueText: "Xin ch\xE0o Hikaru! \u0111\u1ED3ng \xFD l\xE0m \u0103n v\u1EDBi
+    t\xF4i kh\xF4ng?"
+  cardCategory: 0
+  behaviorType: 0
+  frequency: 0
+  leftChoice:
+    choiceText: "T\xF4i kh\xF4ng mu\u1ED1n"
+    statEffects:
+    - statType: 2
+      changeAmount: 10
+    narrativeEffects: []
+  rightChoice:
+    choiceText: "Oke ch\u1ED1t"
+    statEffects:
+    - statType: 1
+      changeAmount: -15
+    narrativeEffects: []

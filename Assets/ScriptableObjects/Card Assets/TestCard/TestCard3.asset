@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: TestCard3
+  m_EditorClassIdentifier: 
+  cardID: 6354
+  characterName: "C\xF4ng An Tu\u1EA5n"
+  characterSprite: {fileID: 6660783624410144326, guid: bcc682c6dcbaccf4fae5244c88a4e9e4, type: 3}
+  dialogueText: "\u0110\xE2y l\xE0 c\xF4ng an tu\u1EA5n"
+  cardCategory: 1
+  behaviorType: 0
+  frequency: 0
+  leftChoice:
+    choiceText: Bye bye
+    statEffects:
+    - statType: 0
+      changeAmount: -10
+    narrativeEffects: []
+  rightChoice:
+    choiceText: "Ch\xE0o b\u1EA1n"
+    statEffects:
+    - statType: 3
+      changeAmount: 5
+    narrativeEffects: []

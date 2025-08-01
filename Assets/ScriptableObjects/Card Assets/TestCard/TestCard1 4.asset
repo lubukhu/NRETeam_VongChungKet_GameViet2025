@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: TestCard1 4
+  m_EditorClassIdentifier: 
+  cardID: 2
+  characterName: NarratveCard
+  characterSprite: {fileID: 8288426215254106694, guid: 950169220e94eb048bb405056c0e5e70, type: 3}
+  dialogueText: "T\xF4i l\xE0 Narrative Card"
+  cardCategory: 4
+  behaviorType: 1
+  frequency: 0
+  leftChoice:
+    choiceText: "HI b\u1EA1n"
+    statEffects: []
+    narrativeEffects:
+    - effectType: 0
+      targetCard: {fileID: 0}
+      targetDeck: {fileID: 0}
+      narrativeFlag: {fileID: 0}
+      flagValue: 0
+  rightChoice:
+    choiceText: "Ch\xE0o"
+    statEffects: []
+    narrativeEffects: []

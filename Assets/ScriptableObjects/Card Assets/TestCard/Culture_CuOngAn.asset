@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: Culture_CuOngAn
+  m_EditorClassIdentifier: 
+  cardID: 9
+  characterName: "C\u1EE5 \xD4ng An"
+  characterSprite: {fileID: -6470460504253458178, guid: 8ae689f42fd7d6d4ba4e28d679da4638, type: 3}
+  dialogueText: "\u0110\xE2y l\xE0 C\u1EE5 \xD4ng An"
+  cardCategory: 3
+  behaviorType: 0
+  frequency: 0
+  leftChoice:
+    choiceText: "Ch\xE0o"
+    statEffects:
+    - statType: 1
+      changeAmount: -15
+    - statType: 3
+      changeAmount: 10
+    narrativeEffects: []
+  rightChoice:
+    choiceText: "Bye b\u1EA1n"
+    statEffects:
+    - statType: 0
+      changeAmount: 5
+    - statType: 2
+      changeAmount: -5
+    narrativeEffects: []
