@@ -15,7 +15,6 @@ MonoBehaviour:
   requiredPlaythroughs: 0
   requiredFlags: []
   cardsToAdd:
-  - {fileID: 11400000, guid: 7060e10bc0789f242be9ed220a1ea4e4, type: 2}
-  - {fileID: 11400000, guid: 7060e10bc0789f242be9ed220a1ea4e4, type: 2}
-  - {fileID: 11400000, guid: 7060e10bc0789f242be9ed220a1ea4e4, type: 2}
-  targetDeck: {fileID: 11400000, guid: 62bbd23d7de4cf14ea57a41a1839a7c8, type: 2}
+  - {fileID: 11400000, guid: c25614328b25ad44c96f27d523a3f756, type: 2}
+  - {fileID: 11400000, guid: 1a189cf7e4f03204194b768d7bd0be28, type: 2}
+  targetDeck: {fileID: 11400000, guid: 5ae3c5f48afcb504ea5cd901e7f02d4a, type: 2}

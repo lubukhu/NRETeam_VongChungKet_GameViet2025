@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CategoryIndex: 0
   Description: 
-  _resetOn: 1
+  _resetOn: 0
   _list: []

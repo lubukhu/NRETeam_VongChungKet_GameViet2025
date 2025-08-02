@@ -40,6 +40,7 @@ public class DeckManager : MonoBehaviour
     
     public void DrawNextCard()
     {
+        Debug.Log("DrawNextCard da dc goi");
         DestroyCurrentCardObject();
 
         // Guard Clause: Dừng lại ngay nếu hết bài để rút

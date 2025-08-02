@@ -76,6 +76,6 @@ public class GameStateManager : MonoBehaviour
     {
         _isGameOver = true;
         onGameEnded.Raise($"Game Over: {endingId}");
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
     }
 }

@@ -17,6 +17,7 @@ public class CardLogicManager : MonoBehaviour
     public void OnCardSwiped(bool isRightSwipe)
     {
         if (currentCard.Value == null) return;
+        Debug.Log("CurrentCard: " + currentCard.Value.name + "");
 
         ChoiceResult choice = isRightSwipe ? currentCard.Value.leftChoice : currentCard.Value.rightChoice;
 
@@ -31,8 +32,17 @@ public class CardLogicManager : MonoBehaviour
         {
             ApplyNarrativeEffect(effect);
         }
-        
+        if (deckManager != null && deckManager.gameObject.activeInHierarchy)
+        {
+            Debug.Log($"[KIỂM TRA] CardLogicManager đang gọi đến DeckManager tên là '{deckManager.gameObject.name}'. Click vào đây để xem nó.", deckManager.gameObject);
+        }
+        else
+        {
+            Debug.LogError("[LỖI] Tham chiếu deckManager bị null hoặc không hoạt động!");
+            return; // Dừng lại nếu có lỗi
+        }
         deckManager.DrawNextCard();
+        Debug.Log("Card mới đc rút!");
     }
 
     private void ApplyStatEffect(CardEffect effect)

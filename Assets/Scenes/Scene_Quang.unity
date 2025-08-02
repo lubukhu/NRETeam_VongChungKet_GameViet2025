@@ -169,7 +169,7 @@ MonoBehaviour:
   leftChoiceText: {fileID: 1379460853}
   rightChoiceText: {fileID: 1239805145}
   gameBackground: {fileID: 399481174}
-  defaultBackground: {fileID: 8364605453507527777, guid: bee12bbdf05c92b4985d0acce0be0692, type: 3}
+  defaultBackground: {fileID: 4349915267927364619, guid: 799c4d315510bb440ad682d7af9a2930, type: 3}
   categoryBackgrounds:
   - cardCategory: 0
     backgroundSprite: {fileID: 3602235653069564327, guid: 7d268844acb3e6647a29bc96cf575e49, type: 3}
@@ -596,9 +596,9 @@ Transform:
   - {fileID: 1498173331}
   - {fileID: 1745481740}
   - {fileID: 1023349001}
-  - {fileID: 1108578213}
   - {fileID: 1462645488}
   - {fileID: 64309602}
+  - {fileID: 1108578213}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &353376445
@@ -1196,10 +1196,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9624c2ca834109345be85acf5dc609d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardCategory: 0
-  selectedCharacter: 10
+  cardCategory: 4
+  selectedCharacter: 3
   frequency: 0
-  behaviorType: 0
+  behaviorType: 1
 --- !u!1 &643362343
 GameObject:
   m_ObjectHideFlags: 0
@@ -2553,7 +2553,7 @@ GameObject:
   - component: {fileID: 1462645490}
   - component: {fileID: 1462645489}
   m_Layer: 0
-  m_Name: GameUnlockManager
+  m_Name: UnlockManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2620,7 +2620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allUnlockRules: {fileID: 11400000, guid: 92f1a9beb3f3d394380e996a82375f4b, type: 2}
   playthroughCount: {fileID: 11400000, guid: 5d125e449b5a45a4086395e39c65eaf7, type: 2}
-  onUnlocksProcessed: {fileID: 11400000, guid: 9e366041f38f92f4683b298db0703e90, type: 2}
+  onUnlocksProcessed: {fileID: 11400000, guid: f204879027545c4498fea198251a9409, type: 2}
 --- !u!1 &1463399446
 GameObject:
   m_ObjectHideFlags: 0
@@ -2812,7 +2812,7 @@ MonoBehaviour:
   _disableAfterSubscribing: 0
   _eventResponses:
   - Delay: 0
-    ScriptableEvent: {fileID: 11400000, guid: 9e366041f38f92f4683b298db0703e90, type: 2}
+    ScriptableEvent: {fileID: 11400000, guid: f204879027545c4498fea198251a9409, type: 2}
     Response:
       m_PersistentCalls:
         m_Calls:
@@ -3296,7 +3296,7 @@ MonoBehaviour:
   decksToLoad:
   - deckName: Finance
     sourceCards:
-    - {fileID: 11400000, guid: 0378b7e8f56273441aebe622d400ddea, type: 2}
+    - {fileID: 11400000, guid: c25614328b25ad44c96f27d523a3f756, type: 2}
     - {fileID: 11400000, guid: 894933af66478a648ac51245a4d1b85d, type: 2}
     targetMasterDeck: {fileID: 11400000, guid: ad7dd81f061baaa4dba5d13887cb1703, type: 2}
   - deckName: Culture
@@ -3314,12 +3314,12 @@ MonoBehaviour:
     targetMasterDeck: {fileID: 11400000, guid: 1f58e9a26e5f70c468191df2f61953f3, type: 2}
   - deckName: General
     sourceCards:
-    - {fileID: 11400000, guid: 37514da0d11eff24ea6f79eefb9a8e97, type: 2}
+    - {fileID: 11400000, guid: 0378b7e8f56273441aebe622d400ddea, type: 2}
     targetMasterDeck: {fileID: 11400000, guid: 5ae3c5f48afcb504ea5cd901e7f02d4a, type: 2}
   - deckName: Tutorial
     sourceCards:
-    - {fileID: 11400000, guid: c4687157b7948d34cb7017a2b0eb8062, type: 2}
-    targetMasterDeck: {fileID: 11400000, guid: 62bbd23d7de4cf14ea57a41a1839a7c8, type: 2}
+    - {fileID: 0}
+    targetMasterDeck: {fileID: 11400000, guid: 5ae3c5f48afcb504ea5cd901e7f02d4a, type: 2}
   onMasterDecksLoaded: {fileID: 11400000, guid: fb41a36dd2c184649985020b7ee47bba, type: 2}
 --- !u!1 &1813070918
 GameObject:

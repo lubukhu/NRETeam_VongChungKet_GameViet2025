@@ -18,7 +18,7 @@ public class MasterDeckLoader : MonoBehaviour
     [Header("Output Events")]
     [SerializeField] private ScriptableEventNoParam onMasterDecksLoaded;
 
-    private void Awake()
+    private void Start()
     {
         LoadAllDecks();
     }
