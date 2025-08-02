@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TinNhiem_BG_0: 8364605453507527777
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TaiChinh_BG_0: 3602235653069564327
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
