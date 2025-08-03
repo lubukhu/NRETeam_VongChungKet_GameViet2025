@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: Environment_Vy
+  m_EditorClassIdentifier: 
+  cardID: 
+  characterName: Vy
+  characterSprite: {fileID: 4349915267927364619, guid: e8aa3b34da5008347b47be3d8e35ef41, type: 3}
+  dialogueText: "\u0110\xE2y l\xE0 Card \u0111\u1EC3 test Game Rule"
+  cardCategory: 2
+  behaviorType: 0
+  frequency: 1
+  leftChoice:
+    choiceText: "L\u1EF1a ch\u1ECDn n\xE0y s\u1EBD set c\u1EDD Anh Khoi th\xE0nh
+      True"
+    statEffects:
+    - statType: 2
+      changeAmount: 10
+    narrativeEffects:
+    - effectType: 2
+      targetCard: {fileID: 0}
+      targetDeck: {fileID: 0}
+      narrativeFlag: {fileID: 11400000, guid: c6d484582aabbcd42a7ba08ff0dcb3c9, type: 2}
+      flagValue: 1
+  rightChoice:
+    choiceText: "L\u1EF1a ch\u1ECDn n\xE0y s\u1EBD khi\u1EBFn Anh Khoi bi\u1EBFn
+      m\u1EA5t"
+    statEffects:
+    - statType: 1
+      changeAmount: -10
+    narrativeEffects: []

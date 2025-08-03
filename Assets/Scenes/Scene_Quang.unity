@@ -1206,10 +1206,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9624c2ca834109345be85acf5dc609d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardCategory: 6
-  selectedCharacter: 1
+  cardCategory: 2
+  selectedCharacter: 7
   frequency: 1
-  behaviorType: 1
+  behaviorType: 0
 --- !u!1 &583382552
 GameObject:
   m_ObjectHideFlags: 0
@@ -3710,6 +3710,7 @@ MonoBehaviour:
   rulesToLoad:
   - description: TutorialRule
     sourceRules:
+    - {fileID: 11400000, guid: 23c8321c85be3f04d8824576aef31a6b, type: 2}
     - {fileID: 11400000, guid: f5873a208c9810a488a51b5bb21ff7a4, type: 2}
     targetRuleList: {fileID: 11400000, guid: 92f1a9beb3f3d394380e996a82375f4b, type: 2}
   onMasterDataLoaded: {fileID: 11400000, guid: 0b7d812263beaff44910ec1d80822e2f, type: 2}
