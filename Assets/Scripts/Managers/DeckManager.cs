@@ -18,10 +18,14 @@ public class DeckManager : MonoBehaviour
     [Header("Game State")]
     [SerializeField] private CardDataVariable currentActiveCard;
     [SerializeField] private GameObjectVariable currentDisplayedCardGameObject;
-
+    
     [Header("Card Prefab")]
     [SerializeField] private GameObject dynamicCardPrefab;
     [SerializeField] private Transform cardSpawnParent;
+    
+    [Header("Game State Inputs")]
+    [Tooltip("Tín hiệu để biết bộ bài hiện tại có phải là loại tuần tự hay không.")]
+    [SerializeField] private BoolVariable isSequentialDeckActive;
 
     private GameObject _currentActiveCardGO;
 
@@ -40,7 +44,6 @@ public class DeckManager : MonoBehaviour
     
     public void DrawNextCard()
     {
-        Debug.Log("DrawNextCard da dc goi");
         DestroyCurrentCardObject();
 
         // Guard Clause: Dừng lại ngay nếu hết bài để rút
@@ -109,6 +112,11 @@ public class DeckManager : MonoBehaviour
 
     private void RequestMoreCardsIfNeeded()
     {
+        if (isSequentialDeckActive != null && isSequentialDeckActive.Value)
+        {
+            return; // Nếu là bộ bài tuần tự, không làm gì cả.
+        }
+        
         if (currentCardPool.Count <= 1)
         {
             onNewPoolRequested.Raise();

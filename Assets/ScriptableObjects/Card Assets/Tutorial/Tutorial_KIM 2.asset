@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: Tutorial_KIM 2
+  m_EditorClassIdentifier: 
+  cardID: 
+  characterName: K.I.M
+  characterSprite: {fileID: 8288426215254106694, guid: 950169220e94eb048bb405056c0e5e70, type: 3}
+  dialogueText: "\"\u0110\u1EC3 \u0111\u01B0a ra quy\u1EBFt \u0111\u1ECBnh, anh ch\u1EC9
+    c\u1EA7n vu\u1ED1t th\u1EBB b\xE0i sang tr\xE1i ho\u1EB7c ph\u1EA3i. Thao t\xE1c
+    n\xE0y s\u1EBD x\xE1c nh\u1EADn l\u1EF1a ch\u1ECDn c\u1EE7a anh. H\xE3y vu\u1ED1t
+    th\u1EBB n\xE0y \u0111\u1EC3 ti\u1EBFp t\u1EE5c.\""
+  cardCategory: 4
+  behaviorType: 1
+  frequency: 1
+  leftChoice:
+    choiceText: "(Vu\u1ED1t th\u1EBB)"
+    statEffects: []
+    narrativeEffects: []
+  rightChoice:
+    choiceText: "Vu\u1ED1t m\u1EA1nh b\u1EA1o"
+    statEffects: []
+    narrativeEffects: []

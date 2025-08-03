@@ -11,7 +11,9 @@ public enum StatType
     Trust,
     Environment,
     Culture,
-    Tutorial
+    Tutorial,
+    Generic,
+    Ending
 }
 
 public enum CardBehaviorType
@@ -31,6 +33,7 @@ public enum NarrativeEffectType
     AddCardToDeck,
     RemoveCardFromDeck,
     SetNarrativeFlag,
+    TriggerEndingScreen,
 }
 
 [System.Serializable]

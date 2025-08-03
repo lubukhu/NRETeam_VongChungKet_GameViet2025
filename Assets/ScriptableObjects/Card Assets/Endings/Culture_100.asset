@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: Culture_100
+  m_EditorClassIdentifier: 
+  cardID: Culture_100
+  characterName: Culture_100
+  characterSprite: {fileID: -8019056738076762794, guid: 000b783fbad7c1d4a9e44d9706842b08, type: 3}
+  dialogueText: "\u0110\xE2y l\xE0 End B\u1EA3n S\u1EAFc = 100"
+  cardCategory: 6
+  behaviorType: 1
+  frequency: 1
+  leftChoice:
+    choiceText: OK...
+    statEffects: []
+    narrativeEffects:
+    - effectType: 3
+      targetCard: {fileID: 0}
+      targetDeck: {fileID: 0}
+      narrativeFlag: {fileID: 0}
+      flagValue: 0
+  rightChoice:
+    choiceText: "Ti\u1EBFp t\u1EE5c..."
+    statEffects: []
+    narrativeEffects:
+    - effectType: 3
+      targetCard: {fileID: 0}
+      targetDeck: {fileID: 0}
+      narrativeFlag: {fileID: 0}
+      flagValue: 0

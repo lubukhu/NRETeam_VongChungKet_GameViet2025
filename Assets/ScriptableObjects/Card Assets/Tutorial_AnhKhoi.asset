@@ -16,7 +16,7 @@ MonoBehaviour:
   characterName: "Anh Kh\xF4i"
   characterSprite: {fileID: 7033936762464518976, guid: a4caabd271cb3404dbaf788806113ebb, type: 3}
   dialogueText: 
-  cardCategory: 4
+  cardCategory: 5
   behaviorType: 1
   frequency: 0
   leftChoice:
