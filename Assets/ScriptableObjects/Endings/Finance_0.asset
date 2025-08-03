@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
-  m_Name: "Env\u1EC9iroment_0"
+  m_Name: Finance_0
   m_EditorClassIdentifier: 
-  cardID: "Env\u1EC9iroment_0"
-  characterName: "Env\u1EC9iroment_0"
-  characterSprite: {fileID: -1377970439005356656, guid: 3e51b0f3225bbd94e8ad68125bf2ae0f, type: 3}
-  dialogueText: "\u0110\xE2y l\xE0 End m\xF4i tr\u01B0\u1EDDng = 0"
+  cardID: Finance_0
+  characterName: Finance_0
+  characterSprite: {fileID: -8019056738076762794, guid: 000b783fbad7c1d4a9e44d9706842b08, type: 3}
+  dialogueText: "\u0110\xE2y l\xE0 End Kinh t\u1EBF = 0"
   cardCategory: 6
   behaviorType: 1
   frequency: 1

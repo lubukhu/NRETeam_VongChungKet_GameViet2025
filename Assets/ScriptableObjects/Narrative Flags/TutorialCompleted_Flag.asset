@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a11231538da9894d8dce88b47df6a36, type: 3}
-  m_Name: IsSequentialDeckActive_Flag
+  m_Name: TutorialCompleted_Flag
   m_EditorClassIdentifier: 
   CategoryIndex: 0
   Description: 
-  _guid: 2e20438fc9b5fa74bb0f5b41ae884d73
+  _guid: 36fec56a8f2e06548a575d17868d5426
   _saveGuid: 0
-  _value: 0
+  _value: 1
   _debugLogEnabled: 0
-  _saved: 0
+  _saved: 1
   _defaultValue: 0
-  _resetOn: 0
+  _resetOn: 1

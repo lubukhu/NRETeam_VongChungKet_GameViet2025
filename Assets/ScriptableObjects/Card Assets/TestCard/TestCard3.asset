@@ -22,12 +22,12 @@ MonoBehaviour:
   leftChoice:
     choiceText: Bye bye
     statEffects:
-    - statType: 0
-      changeAmount: -10
+    - statType: 1
+      changeAmount: -40
     narrativeEffects: []
   rightChoice:
     choiceText: "Ch\xE0o b\u1EA1n"
     statEffects:
-    - statType: 3
-      changeAmount: 5
+    - statType: 1
+      changeAmount: 40
     narrativeEffects: []

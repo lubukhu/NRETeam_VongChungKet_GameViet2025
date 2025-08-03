@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
-  m_Name: "Env\u1EC9iroment_100"
+  m_Name: Enviroment_100
   m_EditorClassIdentifier: 
-  cardID: "Env\u1EC9iroment_100"
-  characterName: "Env\u1EC9iroment_100"
+  cardID: Enviroment_100
+  characterName: Enviroment_100
   characterSprite: {fileID: 4775720718188029840, guid: d1520c6f31dbd7043b13f3d8521cb3f2, type: 3}
   dialogueText: "\u0110\xE2y l\xE0 End M\xF4i Tr\u01B0\u1EDDng = 100"
   cardCategory: 6
