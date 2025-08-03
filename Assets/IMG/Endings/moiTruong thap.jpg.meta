@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      moiTruong thap_0: -1377970439005356656
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
