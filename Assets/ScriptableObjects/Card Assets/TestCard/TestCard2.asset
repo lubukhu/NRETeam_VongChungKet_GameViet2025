@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TestCard2
   m_EditorClassIdentifier: 
   cardID: 456
-  characterName: "B\xE1c s\u0129 Dung"
+  characterName: "B\xE1c s\u0129 Dung - Gi\xE1m \u0111\u1ED1c b\u1EC7nh vi\u1EC7n"
   characterSprite: {fileID: -1540426309290004842, guid: 58cc3b639f60e9442a8562498d26d7af, type: 3}
   dialogueText: "\u0110\xE2y l\xE0 b\xE1c s\u0129 dung "
   cardCategory: 2

@@ -219,6 +219,82 @@ MonoBehaviour:
     cardCategory: 6
     characterName: 0
     endingId: Good Ending
+  - triggerType: 1
+    backgroundSprite: {fileID: -3542511697361574809, guid: 67301d7a2135ed84995b6df1404f91de, type: 3}
+    cardCategory: 5
+    characterName: 0
+    endingId: 
+  - triggerType: 1
+    backgroundSprite: {fileID: 8505859315053539008, guid: 14a2539fe9bf6804a9ce94318321e14c, type: 3}
+    cardCategory: 5
+    characterName: 2
+    endingId: 
+  - triggerType: 1
+    backgroundSprite: {fileID: -6817936360819013358, guid: 3e6495b3ab20a154ab6ecc4d2f7fca19, type: 3}
+    cardCategory: 5
+    characterName: 3
+    endingId: 
+  - triggerType: 1
+    backgroundSprite: {fileID: 572287830598693736, guid: fa501c962f829d5478d14abad76e7b62, type: 3}
+    cardCategory: 5
+    characterName: 1
+    endingId: 
+  - triggerType: 1
+    backgroundSprite: {fileID: 3081041537960830974, guid: 1c420b4a128ce0f43aae68a340242cd5, type: 3}
+    cardCategory: 5
+    characterName: 4
+    endingId: 
+  - triggerType: 1
+    backgroundSprite: {fileID: 3609233503851385639, guid: 386726caf2f9a5f4293e51c2f9931997, type: 3}
+    cardCategory: 5
+    characterName: 5
+    endingId: 
+  - triggerType: 1
+    backgroundSprite: {fileID: -7795059601770367265, guid: 590c0cc887a715f4c81565157f70f133, type: 3}
+    cardCategory: 5
+    characterName: 6
+    endingId: 
+  - triggerType: 1
+    backgroundSprite: {fileID: 8830701345823326279, guid: 8fb701d9687030249bdd85c6d0163786, type: 3}
+    cardCategory: 5
+    characterName: 7
+    endingId: 
+  - triggerType: 1
+    backgroundSprite: {fileID: -4057602043096541623, guid: bc7ec309849e0324ab15cac093e33b94, type: 3}
+    cardCategory: 5
+    characterName: 8
+    endingId: 
+  - triggerType: 1
+    backgroundSprite: {fileID: 1619605690880573135, guid: 54d94ab589935f74094f1b4a4babbb23, type: 3}
+    cardCategory: 5
+    characterName: 9
+    endingId: 
+  - triggerType: 1
+    backgroundSprite: {fileID: -134803957775175563, guid: 77e9aace79fb9c34db58124da693f514, type: 3}
+    cardCategory: 5
+    characterName: 10
+    endingId: 
+  - triggerType: 1
+    backgroundSprite: {fileID: 9014906237930524479, guid: 4e36c0752d0aabd4da5d8557042145ed, type: 3}
+    cardCategory: 5
+    characterName: 11
+    endingId: 
+  - triggerType: 1
+    backgroundSprite: {fileID: -3135957348730495470, guid: 306a8b012b0f57d40b1a829ba58e73fe, type: 3}
+    cardCategory: 5
+    characterName: 12
+    endingId: 
+  - triggerType: 1
+    backgroundSprite: {fileID: 5638416113803216587, guid: a5d83802943120342b74790290b5e729, type: 3}
+    cardCategory: 5
+    characterName: 13
+    endingId: 
+  - triggerType: 1
+    backgroundSprite: {fileID: -1344611224191241700, guid: 800b5cb76a8ca0140b3653b85c765699, type: 3}
+    cardCategory: 5
+    characterName: 14
+    endingId: 
+  characterNameMapper: {fileID: 11400000, guid: bac9d46aeed3900488ea4de52483184d, type: 2}
   currentActiveCard: {fileID: 11400000, guid: 56df9da57ed17114282a91775f765f0a, type: 2}
 --- !u!114 &64309604
 MonoBehaviour:

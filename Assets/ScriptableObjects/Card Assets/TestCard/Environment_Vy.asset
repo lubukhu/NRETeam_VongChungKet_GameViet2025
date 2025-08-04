@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Environment_Vy
   m_EditorClassIdentifier: 
   cardID: 
-  characterName: Vy
+  characterName: "Vy - Nh\xE0 ho\u1EA1t \u0111\u1ED9ng m\xF4i tr\u01B0\u1EDDng"
   characterSprite: {fileID: 4349915267927364619, guid: e8aa3b34da5008347b47be3d8e35ef41, type: 3}
   dialogueText: "\u0110\xE2y l\xE0 Card \u0111\u1EC3 test Game Rule"
   cardCategory: 2

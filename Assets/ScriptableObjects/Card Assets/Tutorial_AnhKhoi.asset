@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tutorial_AnhKhoi
   m_EditorClassIdentifier: 
   cardID: 01111
-  characterName: "Anh Kh\xF4i"
+  characterName: "Anh Kh\xF4i - Thanh ni\xEAn kh\u1EDFi nghi\u1EC7p"
   characterSprite: {fileID: 7033936762464518976, guid: a4caabd271cb3404dbaf788806113ebb, type: 3}
   dialogueText: Khoii le
   cardCategory: 5

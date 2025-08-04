@@ -31,7 +31,8 @@ public class CardDisplay_Static : MonoBehaviour
     [SerializeField] private Image gameBackground;
     [SerializeField] private Sprite defaultBackground;
     [SerializeField] private List<BackgroundMapping> categoryBackgrounds;
-
+    [SerializeField] private CharacterNameMapper characterNameMapper;
+    
     [Header("Game State Input")]
     [SerializeField] private CardDataVariable currentActiveCard;
     
@@ -136,11 +137,15 @@ public class CardDisplay_Static : MonoBehaviour
         // Ưu tiên 2: Nếu không phải Ending hoặc không tìm thấy, tìm theo Tên Nhân vật
         if (newBackground == null)
         {
-            var charMapping = categoryBackgrounds.FirstOrDefault(m => 
-                m.triggerType == BackgroundTriggerType.ByCharacterName && 
-                m.characterName.ToString() == cardData.characterName.Replace(" ", "")); // Cần chuẩn hóa tên
 
-            if (charMapping != null) newBackground = charMapping.backgroundSprite;
+            if (characterNameMapper != null && characterNameMapper.TryGetEnum(cardData.characterName, out CharacterName foundEnum))
+            {
+                var charMapping = categoryBackgrounds.FirstOrDefault(m =>
+                    m.triggerType == BackgroundTriggerType.ByCharacterName &&
+                    m.characterName == foundEnum);
+
+                if (charMapping != null) newBackground = charMapping.backgroundSprite;
+            }
         }
 
         // Ưu tiên 3: Nếu vẫn không tìm thấy, tìm theo Loại thẻ (Category)

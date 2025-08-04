@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Culture_CuOngAn
   m_EditorClassIdentifier: 
   cardID: 9
-  characterName: "C\u1EE5 \xD4ng An"
+  characterName: "C\u1EE5 \xF4ng An - Tr\u01B0\u1EDFng l\xE0ng"
   characterSprite: {fileID: -6470460504253458178, guid: 8ae689f42fd7d6d4ba4e28d679da4638, type: 3}
   dialogueText: "\u0110\xE2y l\xE0 C\u1EE5 \xD4ng An"
   cardCategory: 3

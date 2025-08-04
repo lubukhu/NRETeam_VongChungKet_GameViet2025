@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TestCard3
   m_EditorClassIdentifier: 
   cardID: 6354
-  characterName: "C\xF4ng An Tu\u1EA5n"
+  characterName: "Ch\xFA Tu\u1EA5n - Thi\u1EBFu t\xE1 C\xF4ng An"
   characterSprite: {fileID: 6660783624410144326, guid: bcc682c6dcbaccf4fae5244c88a4e9e4, type: 3}
   dialogueText: "\u0110\xE2y l\xE0 c\xF4ng an tu\u1EA5n"
   cardCategory: 1

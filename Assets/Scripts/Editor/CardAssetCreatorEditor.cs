@@ -19,7 +19,7 @@ public class CardAssetCreatorEditor : Editor
         { CharacterName.Vy, "Vy - Nhà hoạt động môi trường" },
         { CharacterName.LaoThong, "Lão Thông - Thầy thuốc Nam Y" },
         { CharacterName.TienSiLan, "Tiến sĩ Lan - Nhà khảo cổ" },
-        { CharacterName.CuOngAn, "Cụ Ông An - Trưởng làng" },
+        { CharacterName.CuOngAn, "Cụ ông An - Trưởng làng" },
         { CharacterName.NgheNhanHai, "Anh Hải - Nghệ nhân làng nghề" },
         { CharacterName.VictorNguyen, "Victor Nguyễn - Việt Kiều về nước" },
         { CharacterName.BacNam, "Bác Năm - Đại diện nông dân" },

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TestCard1
   m_EditorClassIdentifier: 
   cardID: 2
-  characterName: "\xD4ng Ph\xE1t"
+  characterName: "\xD4ng Ph\xE1t - Ch\u1EE7 doanh nghi\u1EC7p"
   characterSprite: {fileID: -5099292496197868168, guid: 99d907d5a6c26ea44b26f07348860e22, type: 3}
   dialogueText: "Xin ch\xE0o Hikaru! \u0111\u1ED3ng \xFD l\xE0m \u0103n v\u1EDBi
     t\xF4i kh\xF4ng?"
