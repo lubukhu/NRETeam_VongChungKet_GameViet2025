@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Culture_0
   m_EditorClassIdentifier: 
   cardID: Culture_0
-  characterName: Culture_0
+  characterName: "\u0110\xC1NH M\u1EA4T B\u1EA2N S\u1EAEC"
   characterSprite: {fileID: 6675369280222125110, guid: a6ed72723058579419cce2879a89d9d7, type: 3}
   dialogueText: "\u0110\xE2y l\xE0 End B\u1EA3n S\u1EAFc = 0"
   cardCategory: 6

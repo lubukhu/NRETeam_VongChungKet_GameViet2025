@@ -11,10 +11,11 @@ public class GameStateManager : MonoBehaviour
     [SerializeField] private List<EndingCondition> endingConditions;
     [Tooltip("Tham chiếu đến biến tổng số ngày công tác.")]
     [SerializeField] private IntVariable totalDaysWorked; // Chỉ cần tham chiếu này
-
     
     [Header("Output Events")]
     [SerializeField] private ScriptableEventString onGameEnded;
+    [SerializeField] private ScriptableEventNoParam onGoodEndingTriggered;
+    [SerializeField] private ScriptableEventNoParam onBadEndingTriggered;
     
     [Header("State Outputs")]
     [SerializeField] private StringVariable triggeredEndingID;
@@ -79,7 +80,7 @@ public class GameStateManager : MonoBehaviour
 
             if (conditionMet)
             {
-                TriggerEnding(condition.endingId);
+                TriggerEnding(condition.endingId, condition.endingType);
                 return; // Tìm thấy một ending, thoát khỏi hàm
             }
         }
@@ -106,9 +107,18 @@ public class GameStateManager : MonoBehaviour
     }
     
     
-    private void TriggerEnding(string endingId)
+    private void TriggerEnding(string endingId, EndingType type)
     {
         _isGameOver = true;
+        
+        if (type == EndingType.Good && onGoodEndingTriggered != null)
+        {
+            onGoodEndingTriggered.Raise();
+        }
+        else if (type == EndingType.Bad && onBadEndingTriggered != null)
+        {
+            onBadEndingTriggered.Raise();
+        }
         
         // 1. Đặt ID của ending vào "hộp thư" cho NarrativeDirector
         if (triggeredEndingID != null)

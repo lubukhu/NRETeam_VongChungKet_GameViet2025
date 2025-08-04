@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Trust_100
   m_EditorClassIdentifier: 
   cardID: Trust_100
-  characterName: Trust_100
+  characterName: "TH\u1EBE L\u1EF0C TH\xD9 \u0110\u1ECACH"
   characterSprite: {fileID: 20032003550115081, guid: d0cc613f109dae34e99c469e379eed89, type: 3}
   dialogueText: "\u0110\xE2y l\xE0 End T\xEDn Nhi\u1EC7m = 100"
   cardCategory: 6

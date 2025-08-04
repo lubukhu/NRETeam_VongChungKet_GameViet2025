@@ -113,21 +113,47 @@ public class CardDisplay_Static : MonoBehaviour
     {
         if (gameBackground == null) return;
 
+        // Nếu không có thẻ, dùng hình mặc định
         if (cardData == null)
         {
             gameBackground.sprite = defaultBackground;
             return;
         }
-        
-        var mapping = categoryBackgrounds.FirstOrDefault(m => m.cardCategory == cardData.cardCategory);
 
-        if (mapping != null && mapping.backgroundSprite != null)
+        Sprite newBackground = null;
+
+        // --- LOGIC ƯU TIÊN MỚI ---
+        // Ưu tiên 1: Tìm hình nền dựa trên Ending ID
+        if (cardData.cardCategory == StatType.Ending)
         {
-            gameBackground.sprite = mapping.backgroundSprite;
+            var endingMapping = categoryBackgrounds.FirstOrDefault(m => 
+                m.triggerType == BackgroundTriggerType.ByEndingID && 
+                m.endingId == cardData.cardID);
+
+            if (endingMapping != null) newBackground = endingMapping.backgroundSprite;
         }
-        else
+
+        // Ưu tiên 2: Nếu không phải Ending hoặc không tìm thấy, tìm theo Tên Nhân vật
+        if (newBackground == null)
         {
-            gameBackground.sprite = defaultBackground;
+            var charMapping = categoryBackgrounds.FirstOrDefault(m => 
+                m.triggerType == BackgroundTriggerType.ByCharacterName && 
+                m.characterName.ToString() == cardData.characterName.Replace(" ", "")); // Cần chuẩn hóa tên
+
+            if (charMapping != null) newBackground = charMapping.backgroundSprite;
         }
+
+        // Ưu tiên 3: Nếu vẫn không tìm thấy, tìm theo Loại thẻ (Category)
+        if (newBackground == null)
+        {
+            var categoryMapping = categoryBackgrounds.FirstOrDefault(m => 
+                m.triggerType == BackgroundTriggerType.ByCategory && 
+                m.cardCategory == cardData.cardCategory);
+
+            if (categoryMapping != null) newBackground = categoryMapping.backgroundSprite;
+        }
+
+        // Áp dụng hình nền tìm được, hoặc dùng hình mặc định nếu không có luật nào khớp
+        gameBackground.sprite = (newBackground != null) ? newBackground : defaultBackground;
     }
 }

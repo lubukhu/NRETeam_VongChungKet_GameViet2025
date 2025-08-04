@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Enviroment_100
   m_EditorClassIdentifier: 
   cardID: Enviroment_100
-  characterName: Enviroment_100
+  characterName: "K\u1EBA CU\u1ED2NG C\xC2Y XANH"
   characterSprite: {fileID: 4775720718188029840, guid: d1520c6f31dbd7043b13f3d8521cb3f2, type: 3}
   dialogueText: "\u0110\xE2y l\xE0 End M\xF4i Tr\u01B0\u1EDDng = 100"
   cardCategory: 6

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Finance_0
   m_EditorClassIdentifier: 
   cardID: Finance_0
-  characterName: Finance_0
+  characterName: "H\u1EA0 T\u1EA6NG DANG D\u1EDE"
   characterSprite: {fileID: -8019056738076762794, guid: 000b783fbad7c1d4a9e44d9706842b08, type: 3}
   dialogueText: "\u0110\xE2y l\xE0 End Kinh t\u1EBF = 0"
   cardCategory: 6

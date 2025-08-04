@@ -9,22 +9,22 @@ public class CardAssetCreatorEditor : Editor
     // Nâng cấp 2: Tạo một Dictionary để map từ enum sang tên có dấu
     private static readonly Dictionary<CharacterName, string> characterNameMapping = new Dictionary<CharacterName, string>
     {
-        { CharacterName.QuynhHoa, "Thư ký Quỳnh Hoa" },
-        { CharacterName.BacSiDung, "Bác sĩ Dung" },
-        { CharacterName.OngPhat, "Ông Phát" },
-        { CharacterName.AnhKhoi, "Anh Khôi" },
-        { CharacterName.ChuTuan, "Chú Tuấn" },
-        { CharacterName.DaiCaNhanSeo, "Đại ca Nhân Sẹo" },
-        { CharacterName.CoNga, "Cô Nga" },
-        { CharacterName.Vy, "Vy" },
-        { CharacterName.LaoThong, "Lão Thông" },
-        { CharacterName.TienSiLan, "Tiến sĩ Lan" },
-        { CharacterName.CuOngAn, "Cụ Ông An" },
-        { CharacterName.NgheNhanHai, "Nghệ nhân Hải" },
-        { CharacterName.VictorNguyen, "Victor Nguyễn" },
-        { CharacterName.BacNam, "Bác Năm" },
-        { CharacterName.ChuBay, "Chú Bảy" },
-        { CharacterName.KIM, "K.I.M" }
+        { CharacterName.QuynhHoa, "Cán bộ Quỳnh Hoa" },
+        { CharacterName.BacSiDung, "Bác sĩ Dung - Giám đốc bệnh viện" },
+        { CharacterName.OngPhat, "Ông Phát - Chủ doanh nghiệp" },
+        { CharacterName.AnhKhoi, "Anh Khôi - Thanh niên khởi nghiệp" },
+        { CharacterName.ChuTuan, "Chú Tuấn - Thiếu tá Công An" },
+        { CharacterName.DaiCaNhanSeo, "Nhân Sẹo - Giang hồ địa phương" },
+        { CharacterName.CoNga, "Cô Nga - Hiệu trưởng trường học" },
+        { CharacterName.Vy, "Vy - Nhà hoạt động môi trường" },
+        { CharacterName.LaoThong, "Lão Thông - Thầy thuốc Nam Y" },
+        { CharacterName.TienSiLan, "Tiến sĩ Lan - Nhà khảo cổ" },
+        { CharacterName.CuOngAn, "Cụ Ông An - Trưởng làng" },
+        { CharacterName.NgheNhanHai, "Anh Hải - Nghệ nhân làng nghề" },
+        { CharacterName.VictorNguyen, "Victor Nguyễn - Việt Kiều về nước" },
+        { CharacterName.BacNam, "Bác Năm - Đại diện nông dân" },
+        { CharacterName.ChuBay, "Chú Bảy - Trưởng ban xây dựng" },
+        { CharacterName.KIM, "K.I.M - AI trợ lý" }
     };
 
     public override void OnInspectorGUI()

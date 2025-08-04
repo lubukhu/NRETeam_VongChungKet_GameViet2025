@@ -15,6 +15,8 @@ public enum ComparisonType
     GreaterThanOrEqual
 }
 
+public enum EndingType { Bad, Good }
+
 [CreateAssetMenu(fileName = "EndingCondition", menuName = "NguoiKienTao/Ending Condition")]
 public class EndingCondition : ScriptableObject
 {
@@ -23,7 +25,7 @@ public class EndingCondition : ScriptableObject
 
     [Tooltip("Loại điều kiện cần kiểm tra.")]
     public ConditionCheckType checkType;
-
+    public EndingType endingType;
     [Header("Settings for 'Stat Threshold'")]
     [Tooltip("Chỉ số cần theo dõi.")]
     public FloatVariable statToWatch;

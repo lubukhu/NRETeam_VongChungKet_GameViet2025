@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endingId: Good Ending
   checkType: 1
+  endingType: 1
   statToWatch: {fileID: 0}
   comparison: 0
   threshold: 0

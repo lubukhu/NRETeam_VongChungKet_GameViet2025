@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Good Ending
   m_EditorClassIdentifier: 
   cardID: Good Ending
-  characterName: Good Ending
+  characterName: "C\xC2N B\u1EB0NG & TH\u1ECANH V\u01AF\u1EE2NG"
   characterSprite: {fileID: 8836892372229855637, guid: a925a1284e5fc80498af2408ad5772be, type: 3}
   dialogueText: "\u0110\xE2y l\xE0 Good End! Ch\xFAc m\u1EEBng b\u1EA1n"
   cardCategory: 6
