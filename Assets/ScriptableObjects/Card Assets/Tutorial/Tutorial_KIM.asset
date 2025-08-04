@@ -29,4 +29,9 @@ MonoBehaviour:
   rightChoice:
     choiceText: "C\xE1i g\xEC c\u01A1?"
     statEffects: []
-    narrativeEffects: []
+    narrativeEffects:
+    - effectType: 0
+      targetCard: {fileID: 0}
+      targetDeck: {fileID: 0}
+      narrativeFlag: {fileID: 0}
+      flagValue: 0
