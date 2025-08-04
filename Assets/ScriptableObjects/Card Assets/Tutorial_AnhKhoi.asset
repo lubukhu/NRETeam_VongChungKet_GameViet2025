@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
   m_Name: Tutorial_AnhKhoi
   m_EditorClassIdentifier: 
-  cardID: 
+  cardID: 01111
   characterName: "Anh Kh\xF4i"
   characterSprite: {fileID: 7033936762464518976, guid: a4caabd271cb3404dbaf788806113ebb, type: 3}
-  dialogueText: 
+  dialogueText: Khoii le
   cardCategory: 5
   behaviorType: 1
   frequency: 0
   leftChoice:
-    choiceText: 
+    choiceText: a
     statEffects: []
     narrativeEffects: []
   rightChoice:
-    choiceText: 
+    choiceText: bb
     statEffects: []
     narrativeEffects: []

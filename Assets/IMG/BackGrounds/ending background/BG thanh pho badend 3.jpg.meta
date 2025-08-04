@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BG thanh pho badend 3_0: -1715569906781827675
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

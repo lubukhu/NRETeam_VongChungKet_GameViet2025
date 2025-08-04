@@ -65,7 +65,7 @@ public class CardDisplay_Static : MonoBehaviour
     {
         if (currentDateText != null)
         {
-            currentDateText.text = $"NGÀY HIỆN TẠI:\n{ConvertDaysToDateString(totalDays)}";
+            currentDateText.text = $"NGÀY HIỆN TẠI: {ConvertDaysToDateString(totalDays)}";
         }
         if (totalDaysWorkedText != null)
         {
