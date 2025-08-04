@@ -1,6 +1,8 @@
 // [tooltips] Xử lý logic khi người chơi vuốt thẻ, áp dụng các hiệu ứng lên chỉ số và hệ thống tường thuật.
 using UnityEngine;
 using Obvious.Soap;
+using System.Collections.Generic;
+using System.Linq;
 
 public class CardLogicManager : MonoBehaviour
 {
@@ -11,8 +13,19 @@ public class CardLogicManager : MonoBehaviour
     [SerializeField] private FloatVariable cultureStat;
     [SerializeField] private CardDataVariable currentCard;
 
+    [Header("Ending Logic Inputs")]
+    [Tooltip("Hộp thư chứa ID của ending vừa được GameStateManager kích hoạt.")]
+    [SerializeField] private StringVariable triggeredEndingID;
+    [Tooltip("Bộ bài chứa tất cả các thẻ ending.")]
+    [SerializeField] private ScriptableListCardData masterDeck_Endings;
+    
     [Header("Dependencies")]
     [SerializeField] private DeckManager deckManager;
+    
+    [Header("Ending Events")]
+    [SerializeField] private ScriptableEventNoParam onLoadEndingScene;
+    [SerializeField] private ScriptableListCardData currentCardPool;
+    [SerializeField] private ScriptableEventNoParam onNewPoolRequested;
 
     public void OnCardSwiped(bool isRightSwipe)
     {
@@ -32,17 +45,35 @@ public class CardLogicManager : MonoBehaviour
         {
             ApplyNarrativeEffect(effect);
         }
-        if (deckManager != null && deckManager.gameObject.activeInHierarchy)
+
+        // 2. Kiểm tra xem lượt vuốt vừa rồi có kích hoạt một ending nào không
+        //    (GameStateManager đã kiểm tra và đặt ID vào "hộp thư")
+        if (triggeredEndingID != null && !string.IsNullOrEmpty(triggeredEndingID.Value))
         {
-            Debug.Log($"[KIỂM TRA] CardLogicManager đang gọi đến DeckManager tên là '{deckManager.gameObject.name}'. Click vào đây để xem nó.", deckManager.gameObject);
+            // Nếu CÓ, tìm thẻ ending và ra lệnh cho DeckManager hiển thị nó ngay lập tức.
+            CardData endingCard = masterDeck_Endings.FirstOrDefault(c => c.cardID == triggeredEndingID.Value);
+            if (endingCard != null)
+            {
+                deckManager.ForceSpawnSpecificCard(endingCard);
+                triggeredEndingID.Value = ""; // Xóa thư sau khi đọc
+            }
+            else
+            {
+                Debug.LogError($"Ending triggered, but could not find card with ID: {triggeredEndingID.Value}");
+            }
         }
         else
         {
-            Debug.LogError("[LỖI] Tham chiếu deckManager bị null hoặc không hoạt động!");
-            return; // Dừng lại nếu có lỗi
+            // 3. Nếu KHÔNG, tiếp tục luồng chơi game bình thường
+            if (currentCardPool.Count > 0)
+            {
+                deckManager.DrawNextCard();
+            }
+            else
+            {
+                onNewPoolRequested.Raise();
+            }
         }
-        deckManager.DrawNextCard();
-        Debug.Log("Card mới đc rút!");
     }
 
     private void ApplyStatEffect(CardEffect effect)
@@ -79,6 +110,12 @@ public class CardLogicManager : MonoBehaviour
             case NarrativeEffectType.SetNarrativeFlag:
                 if (effect.narrativeFlag != null)
                     effect.narrativeFlag.Value = effect.flagValue;
+                break;
+            case NarrativeEffectType.TriggerEndingScreen:
+                if (onLoadEndingScene != null)
+                {
+                    onLoadEndingScene.Raise();
+                }
                 break;
         }
     }

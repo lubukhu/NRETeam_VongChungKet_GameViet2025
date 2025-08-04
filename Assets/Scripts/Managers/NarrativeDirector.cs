@@ -5,17 +5,11 @@ using Obvious.Soap;
 using System.Collections.Generic;
 using System.Linq;
 
-// Lớp cấu trúc dữ liệu mới để Game Designer định nghĩa luật trọng số trong Inspector
 [System.Serializable]
 public class CategoryWeighting
 {
-    [Tooltip("Loại thẻ bài mà quy tắc này áp dụng.")]
     public StatType category;
-
-    [Tooltip("Chỉ số liên quan (nếu có). Để trống nếu đây là loại thẻ không gắn với chỉ số.")]
     public FloatVariable associatedStat;
-
-    [Tooltip("Trọng số cơ bản, không đổi.")]
     [Range(0f, 10f)]
     public float baseWeight = 1f;
 }
@@ -23,7 +17,6 @@ public class CategoryWeighting
 public class NarrativeDirector : MonoBehaviour
 {
     [Header("Game State Inputs")]
-    [Tooltip("Danh sách các quy tắc tính trọng số cho từng loại thẻ.")]
     [SerializeField] private List<CategoryWeighting> categoryWeightings;
     [SerializeField] private IntVariable playthroughCount;
 
@@ -31,21 +24,20 @@ public class NarrativeDirector : MonoBehaviour
     [Tooltip("Bộ bài tổng hợp đã được xử lý. NarrativeDirector sẽ đọc từ đây.")]
     [SerializeField] private ScriptableListCardData masterDeck;
     
+    // XÓA BỎ: Các tham chiếu đến triggeredEndingID và masterDeck_Endings đã được loại bỏ.
+
     [Header("Runtime Data")]
     [SerializeField] private ScriptableListCardData playedCardsThisRun;
     [SerializeField] private ScriptableListCardData currentCardPool;
     
-    [Header("Deck State Output")]
-    [Tooltip("Tín hiệu để báo cho các hệ thống khác biết loại bộ bài đang được chơi.")]
-    [SerializeField] private BoolVariable isSequentialDeckActive;
+    [Header("Output Events")]
     [SerializeField] private ScriptableEventNoParam onNewPoolReady;
 
-    [Header("Config")] [SerializeField] private int poolSize = 10;
+    [Header("Config")]
+    [SerializeField] private int poolSize = 15;
 
     [Header("Tutorial Settings")]
-    [Tooltip("Bộ bài sẽ được nạp trong lần chơi đầu tiên.")]
     [SerializeField] private ScriptableListCardData tutorialDeck;
-    [Tooltip("Cờ để đánh dấu tutorial đã hoàn thành.")]
     [SerializeField] private BoolVariable tutorialCompletedFlag;
 
     // Hàm này được gọi bởi EventListener lắng nghe onNewPoolRequested
@@ -53,33 +45,28 @@ public class NarrativeDirector : MonoBehaviour
     {
         currentCardPool.Clear();
 
-        // CỔNG KIỂM TRA ƯU TIÊN: Luôn kiểm tra điều kiện tutorial trước tiên.
+        // XÓA BỎ: Khối code kiểm tra ending đã được chuyển sang CardLogicManager.
+
+        // Ưu tiên 1 (trước đây là 2): Kiểm tra Tutorial
         if (playthroughCount.Value == 0 && !tutorialCompletedFlag.Value)
         {
             LoadSequentialDeck(tutorialDeck, tutorialCompletedFlag);
-            return; // Dừng lại sau khi nạp xong tutorial deck
+            return;
         }
 
-        // Nếu không phải tutorial, chạy logic tạo pool ngẫu nhiên theo trọng số
+        // Mặc định: Tạo Pool ngẫu nhiên
         GenerateRandomWeightedPool();
     }
 
+    // XÓA BỎ: Hàm private void LoadEndingCard() không còn cần thiết.
+    
     private void LoadSequentialDeck(ScriptableListCardData deck, BoolVariable completionFlag)
     {
-        if (deck == null) {
-            return;
-        }
         currentCardPool.AddRange(deck);
         if (completionFlag != null)
         {
             completionFlag.Value = true;
         }
-        
-        if (isSequentialDeckActive != null)
-        {
-            isSequentialDeckActive.Value = true;
-        }
-        
         if (onNewPoolReady != null) onNewPoolReady.Raise();
     }
 
@@ -88,19 +75,20 @@ public class NarrativeDirector : MonoBehaviour
         var categorizedDecks = new Dictionary<StatType, List<CardData>>();
         foreach (var card in masterDeck)
         {
-            if (card == null) continue;
-            if (!categorizedDecks.ContainsKey(card.cardCategory))
+            if (card != null)
             {
-                categorizedDecks[card.cardCategory] = new List<CardData>();
+                if (!categorizedDecks.ContainsKey(card.cardCategory))
+                {
+                    categorizedDecks[card.cardCategory] = new List<CardData>();
+                }
+                categorizedDecks[card.cardCategory].Add(card);
             }
-            categorizedDecks[card.cardCategory].Add(card);
         }
 
-        var weights = CalculateWeights();
         List<CardData> nextPool = new List<CardData>();
-
         while (nextPool.Count < poolSize)
         {
+            var weights = CalculateWeights();
             var availableCategories = new Dictionary<StatType, float>();
             foreach (var pair in weights)
             {
@@ -124,24 +112,15 @@ public class NarrativeDirector : MonoBehaviour
             }
         }
         
-        if (isSequentialDeckActive != null)
-        {
-            isSequentialDeckActive.Value = false;
-        }
-        
         currentCardPool.AddRange(nextPool);
-        
         if (onNewPoolReady != null) onNewPoolReady.Raise();
     }
 
-    private Dictionary<StatType, float> CalculateWeights()
-    {
+    private Dictionary<StatType, float> CalculateWeights() {
         var weights = new Dictionary<StatType, float>();
-        foreach (var rule in categoryWeightings)
-        {
+        foreach (var rule in categoryWeightings) {
             float currentWeight = rule.baseWeight;
-            if (rule.associatedStat != null)
-            {
+            if (rule.associatedStat != null) {
                 float distanceFromCenter = Mathf.Abs(50f - rule.associatedStat.Value);
                 currentWeight += (distanceFromCenter / 50f) * rule.baseWeight;
             }
@@ -150,14 +129,11 @@ public class NarrativeDirector : MonoBehaviour
         return weights;
     }
 
-    private StatType GetRandomCategoryByWeight(Dictionary<StatType, float> weights)
-    {
+    private StatType GetRandomCategoryByWeight(Dictionary<StatType, float> weights) {
         float totalWeight = weights.Values.Sum();
         if (totalWeight <= 0) return weights.Keys.FirstOrDefault();
-        
         float randomPoint = Random.Range(0, totalWeight);
-        foreach (var pair in weights)
-        {
+        foreach (var pair in weights) {
             if (randomPoint < pair.Value) return pair.Key;
             randomPoint -= pair.Value;
         }

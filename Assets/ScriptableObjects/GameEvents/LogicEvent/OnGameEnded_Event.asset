@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CategoryIndex: 0
   Description: 
-  _debugLogEnabled: 0
+  _debugLogEnabled: 1
   _debugValue: 

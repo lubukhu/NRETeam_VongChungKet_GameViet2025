@@ -23,12 +23,12 @@ MonoBehaviour:
   leftChoice:
     choiceText: "T\xF4i kh\xF4ng mu\u1ED1n"
     statEffects:
-    - statType: 2
-      changeAmount: 10
+    - statType: 0
+      changeAmount: -40
     narrativeEffects: []
   rightChoice:
     choiceText: "Oke ch\u1ED1t"
     statEffects:
-    - statType: 1
-      changeAmount: -15
+    - statType: 0
+      changeAmount: 40
     narrativeEffects: []

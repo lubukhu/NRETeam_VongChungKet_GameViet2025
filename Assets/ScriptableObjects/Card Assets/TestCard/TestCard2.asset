@@ -23,15 +23,11 @@ MonoBehaviour:
     choiceText: Bye
     statEffects:
     - statType: 2
-      changeAmount: -10
-    - statType: 0
-      changeAmount: 15
+      changeAmount: -40
     narrativeEffects: []
   rightChoice:
     choiceText: hello
     statEffects:
-    - statType: 1
-      changeAmount: 10
-    - statType: 3
-      changeAmount: -5
+    - statType: 2
+      changeAmount: 40
     narrativeEffects: []

@@ -14,7 +14,7 @@ public class UIAnimator : MonoBehaviour
 
     [Header("Game State Inputs")]
     [SerializeField] private GameObjectVariable currentDisplayedCardGameObject;
-
+    [SerializeField] private CardDataVariable currentActiveCard;
     [Header("Animation Config")]
     [SerializeField] private float cardRotationFactor = 20f; // Góc nghiêng tối đa
     [SerializeField] private float returnDuration = 0.3f;    // Thời gian quay về
@@ -26,14 +26,23 @@ public class UIAnimator : MonoBehaviour
     [SerializeField] private GameObject trustDot;
     [SerializeField] private GameObject environmentDot;
     [SerializeField] private GameObject cultureDot;
-    
-    [Header("Game State Inputs")]
-    [Tooltip("Tham chiếu đến ScriptableVariable chứa CardData của thẻ hiện tại")]
-    [SerializeField] private CardDataVariable currentActiveCard;
-    
+  
     [Header("Dot Animation Config")]
     [SerializeField] private float baseDotSize = 0.1f;
     [SerializeField] private float dotSizeMultiplier = 0.01f;
+    
+    [Header("Shuffle Animation")]
+    [Tooltip("Prefab của mặt sau thẻ bài.")]
+    [SerializeField] private GameObject cardBackPrefab;
+    [Tooltip("Vị trí mà các thẻ bài sẽ được xếp vào.")]
+    [SerializeField] private Transform cardSpawnParent;
+    [SerializeField] private Transform shuffleStartPosition;
+    [Tooltip("Số lượng thẻ bài xuất hiện trong hiệu ứng.")]
+    [SerializeField] private int shuffleCardCount = 10;
+    [Tooltip("Thời gian của toàn bộ hiệu ứng.")]
+    [SerializeField] private float shuffleDuration = 1f;
+    [Tooltip("Sự kiện sẽ được phát ra sau khi hiệu ứng kết thúc.")]
+    [SerializeField] private ScriptableEventNoParam onIntroAnimationFinished;
     
     // Dictionary để dễ dàng truy cập dot từ StatType
     private Dictionary<StatType, GameObject> _statDotMap;
@@ -138,4 +147,41 @@ public class UIAnimator : MonoBehaviour
         } 
     }
 
+    public void PlayIntroShuffleAnimation()
+    {
+        if (cardBackPrefab == null || cardSpawnParent == null || shuffleStartPosition == null)
+        {
+            if (onIntroAnimationFinished != null) onIntroAnimationFinished.Raise();
+            return;
+        }
+
+        List<Transform> tempCards = new List<Transform>();
+        for (int i = 0; i < shuffleCardCount; i++)
+        {
+            GameObject card = Instantiate(cardBackPrefab, cardSpawnParent);
+            card.transform.localScale = Vector3.one;
+            card.transform.position = shuffleStartPosition.position;
+            tempCards.Add(card.transform);
+        }
+        
+        Sequence shuffleSequence = DOTween.Sequence();
+        float delayBetweenCards = shuffleDuration / shuffleCardCount;
+
+        for (int i = 0; i < tempCards.Count; i++)
+        {
+            shuffleSequence.Insert(i * delayBetweenCards, tempCards[i].DOMove(cardSpawnParent.position, 0.5f).SetEase(Ease.OutQuad));
+        }
+        
+        shuffleSequence.OnComplete(() =>
+        {
+            foreach (var card in tempCards)
+            {
+                Destroy(card.gameObject);
+            }
+            if (onIntroAnimationFinished != null)
+            {
+                onIntroAnimationFinished.Raise();
+            }
+        });
+    }
 }

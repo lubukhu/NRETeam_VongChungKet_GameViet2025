@@ -1,8 +1,6 @@
-// [tooltips] Quản lý vòng đời của các bộ bài, xử lý việc rút thẻ, khởi tạo/hủy thẻ bài vật lý, và yêu cầu tạo pool mới khi cần.
+// [tooltips] Quản lý bộ bài hiện tại (currentCardPool) và các thao tác rút/hủy thẻ.
 using UnityEngine;
 using Obvious.Soap;
-using System.Linq;
-using System.Collections.Generic;
 
 public class DeckManager : MonoBehaviour
 {
@@ -18,17 +16,14 @@ public class DeckManager : MonoBehaviour
     [Header("Game State")]
     [SerializeField] private CardDataVariable currentActiveCard;
     [SerializeField] private GameObjectVariable currentDisplayedCardGameObject;
-    
+
     [Header("Card Prefab")]
     [SerializeField] private GameObject dynamicCardPrefab;
     [SerializeField] private Transform cardSpawnParent;
-    
-    [Header("Game State Inputs")]
-    [Tooltip("Tín hiệu để biết bộ bài hiện tại có phải là loại tuần tự hay không.")]
-    [SerializeField] private BoolVariable isSequentialDeckActive;
 
     private GameObject _currentActiveCardGO;
 
+    // Hàm này vẫn do EventListener gọi để bắt đầu game
     public void InitializeNewGame()
     {
         DestroyCurrentCardObject();
@@ -42,27 +37,29 @@ public class DeckManager : MonoBehaviour
         onNewPoolRequested.Raise();
     }
     
+    // Hàm rút thẻ giờ đây cực kỳ đơn giản
     public void DrawNextCard()
     {
         DestroyCurrentCardObject();
 
-        // Guard Clause: Dừng lại ngay nếu hết bài để rút
+        // Safety check: Dừng lại nếu vì lý do nào đó pool bị rỗng
         if (IsCardPoolEmpty())
         {
+            Debug.LogError("DrawNextCard được gọi nhưng currentCardPool đang rỗng!");
+            // Yêu cầu một pool mới như một biện pháp dự phòng
             onNewPoolRequested.Raise();
+
             return;
         }
 
-        // Lấy dữ liệu thẻ bài tiếp theo từ bộ bài
         CardData nextCardData = SelectAndProcessNextCard();
-
-        // Dựa vào dữ liệu, tạo thẻ bài vật lý trên màn hình
         SpawnNewCard(nextCardData);
-
-        // Kiểm tra và yêu cầu thêm bài nếu bộ bài sắp hết
-        RequestMoreCardsIfNeeded();
+        
+        // KHÔNG CÒN GỌI RequestMoreCardsIfNeeded() NỮA
     }
     
+    // HÀM RequestMoreCardsIfNeeded() ĐÃ BỊ XÓA BỎ HOÀN TOÀN
+
     private void DestroyCurrentCardObject()
     {
         if (_currentActiveCardGO != null)
@@ -76,55 +73,40 @@ public class DeckManager : MonoBehaviour
     {
         CardData nextCardData = currentCardPool[0];
         currentCardPool.RemoveAt(0);
-
-        // Xử lý các thẻ chỉ xuất hiện một lần
         if (nextCardData.frequency == CardFrequency.OncePerPlaythrough && !playedCardsThisRun.Contains(nextCardData))
         {
             playedCardsThisRun.Add(nextCardData);
         }
-
         return nextCardData;
     }
 
-
     private void SpawnNewCard(CardData cardData)
     {
-        // 1. Khởi tạo GameObject
         _currentActiveCardGO = Instantiate(dynamicCardPrefab, cardSpawnParent);
         _currentActiveCardGO.transform.localPosition = Vector3.zero;
         _currentActiveCardGO.transform.SetAsLastSibling();
-
-        // 2. Cập nhật các ScriptableObject trạng thái
+        
         if (currentDisplayedCardGameObject != null)
         {
             currentDisplayedCardGameObject.Value = _currentActiveCardGO;
         }
         currentActiveCard.Value = cardData;
 
-        // 3. Phát sự kiện báo hiệu
         if (onPrefabInstantiate != null)
         {
             onPrefabInstantiate.Raise();
         }
         onNewCardReady.Raise();
     }
-
-
-    private void RequestMoreCardsIfNeeded()
-    {
-        if (isSequentialDeckActive != null && isSequentialDeckActive.Value)
-        {
-            return; // Nếu là bộ bài tuần tự, không làm gì cả.
-        }
-        
-        if (currentCardPool.Count <= 1)
-        {
-            onNewPoolRequested.Raise();
-        }
-    }
     
     private bool IsCardPoolEmpty()
     {
         return currentCardPool.Count == 0;
+    }
+    
+    public void ForceSpawnSpecificCard(CardData cardToSpawn)
+    {
+        DestroyCurrentCardObject();
+        SpawnNewCard(cardToSpawn);
     }
 }

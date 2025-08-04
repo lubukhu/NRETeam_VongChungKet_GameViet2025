@@ -14,9 +14,9 @@ public class CardInteraction : MonoBehaviour, IDragHandler, IBeginDragHandler, I
     [SerializeField] private ScriptableEventFloat onCardDragProgress;
     [SerializeField] private ScriptableEventNoParam onCardReturn; 
     [SerializeField] private ScriptableEventNoParam onCardInteractionStart;
-    public RectTransform _rectTransform;
+    private RectTransform _rectTransform;
     private Vector2 _initialPosition;
-    public RectTransform _swipeAreaContainer; // Biến để lưu trữ vùng tương tác tìm được
+    private RectTransform _swipeAreaContainer; // Biến để lưu trữ vùng tương tác tìm được
 
     private void Awake()
     {
