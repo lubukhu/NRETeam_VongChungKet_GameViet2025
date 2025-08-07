@@ -16,8 +16,8 @@ MonoBehaviour:
   Description: 
   _guid: 56df9da57ed17114282a91775f765f0a
   _saveGuid: 0
-  _value: {fileID: 11400000, guid: 086346233810f9e45add377cf86cdc00, type: 2}
+  _value: {fileID: 11400000, guid: 7b65b73ec41d0f34b9767071a98a4a24, type: 2}
   _debugLogEnabled: 0
-  _saved: 0
+  _saved: 1
   _defaultValue: {fileID: 0}
-  _resetOn: 1
+  _resetOn: 0

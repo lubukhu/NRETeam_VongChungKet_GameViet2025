@@ -3,8 +3,7 @@ using UnityEngine;
 using TMPro;
 
 public class TextEffect : MonoBehaviour
-{
-    // Tham chiếu đến component TextMeshPro
+{ 
     public TextMeshProUGUI textMeshPro;
 
     // Thời gian của hiệu ứng (mờ/rõ, to/nhỏ)
@@ -27,15 +26,13 @@ public class TextEffect : MonoBehaviour
             textMeshPro = GetComponent<TextMeshProUGUI>();
             if (textMeshPro == null)
             {
-                Debug.LogError("Không tìm thấy TextMeshProUGUI component!");
                 return;
             }
         }
-
         // Bắt đầu Coroutine để chạy hiệu ứng
         StartCoroutine(AnimateText());
     }
-
+    
     private IEnumerator AnimateText()
     {
         while (true) // Lặp lại hiệu ứng vô hạn

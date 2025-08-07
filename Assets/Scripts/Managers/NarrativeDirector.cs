@@ -44,29 +44,20 @@ public class NarrativeDirector : MonoBehaviour
     public void GenerateNextPool()
     {
         currentCardPool.Clear();
-
-        // XÓA BỎ: Khối code kiểm tra ending đã được chuyển sang CardLogicManager.
-
+        
         // Ưu tiên 1 (trước đây là 2): Kiểm tra Tutorial
         if (playthroughCount.Value == 0 && !tutorialCompletedFlag.Value)
         {
-            LoadSequentialDeck(tutorialDeck, tutorialCompletedFlag);
+            LoadSequentialDeck(tutorialDeck);
             return;
         }
-
-        // Mặc định: Tạo Pool ngẫu nhiên
+        
         GenerateRandomWeightedPool();
     }
-
-    // XÓA BỎ: Hàm private void LoadEndingCard() không còn cần thiết.
     
-    private void LoadSequentialDeck(ScriptableListCardData deck, BoolVariable completionFlag)
+    private void LoadSequentialDeck(ScriptableListCardData deck)
     {
         currentCardPool.AddRange(deck);
-        if (completionFlag != null)
-        {
-            completionFlag.Value = true;
-        }
         if (onNewPoolReady != null) onNewPoolReady.Raise();
     }
 

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: Finance_OngPhat
+  m_EditorClassIdentifier: 
+  cardID: 
+  characterName: "\xD4ng Ph\xE1t - Ch\u1EE7 doanh nghi\u1EC7p"
+  characterSprite: {fileID: -5099292496197868168, guid: 99d907d5a6c26ea44b26f07348860e22, type: 3}
+  dialogueText: "Ch\xE0o c\u1EADu, t\xF4i l\xE0 ch\u1EE7 t\u1ECBch c\u1EE7a t\u1EADp
+    \u0111o\xE0n X, t\xF4i mu\u1ED1n \u0111\u01B0\u1EE3c c\u1EA5p ph\xE9p ph\xE1t
+    tri\u1EC3n nh\xE0 m\xE1y t\u1EA1i v\xF9ng \u0111\u1EA5t c\u1EADu qu\u1EA3n l\xFD"
+  cardCategory: 0
+  behaviorType: 1
+  frequency: 1
+  leftChoice:
+    choiceText: "\u0110\u01B0\u1EE3c ch\u1EE9! Nh\u01B0 v\u1EADy s\u1EBD t\u1EA1o
+      ra th\xEAm c\xF4ng \u0103n vi\u1EC7c l\xE0m cho ng\u01B0\u1EDDi d\xE2n"
+    statEffects:
+    - statType: 0
+      changeAmount: 20
+    narrativeEffects: []
+  rightChoice:
+    choiceText: "Kh\xF4ng, hi\u1EC7n t\u1EA1i ch\xFAng t\xF4i ch\u01B0a c\u1EA7n
+      nh\xE0 m\xE1y m\u1EDBi"
+    statEffects:
+    - statType: 2
+      changeAmount: 5
+    - statType: 0
+      changeAmount: -15
+    narrativeEffects: []

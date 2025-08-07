@@ -19,6 +19,10 @@ public class CardLogicManager : MonoBehaviour
     [Tooltip("Bộ bài chứa tất cả các thẻ ending.")]
     [SerializeField] private ScriptableListCardData masterDeck_Endings;
     
+    [Header("Narrative Control")]
+    [Tooltip("Hàng đợi chứa các thẻ bài được ép phải xuất hiện tiếp theo.")]
+    [SerializeField] private ScriptableListCardData forcedCardsQueue;
+    
     [Header("Dependencies")]
     [SerializeField] private DeckManager deckManager;
     
@@ -30,7 +34,6 @@ public class CardLogicManager : MonoBehaviour
     public void OnCardSwiped(bool isRightSwipe)
     {
         if (currentCard.Value == null) return;
-        Debug.Log("CurrentCard: " + currentCard.Value.name + "");
 
         ChoiceResult choice = isRightSwipe ? currentCard.Value.leftChoice : currentCard.Value.rightChoice;
 
@@ -45,9 +48,7 @@ public class CardLogicManager : MonoBehaviour
         {
             ApplyNarrativeEffect(effect);
         }
-
-        // 2. Kiểm tra xem lượt vuốt vừa rồi có kích hoạt một ending nào không
-        //    (GameStateManager đã kiểm tra và đặt ID vào "hộp thư")
+        
         if (triggeredEndingID != null && !string.IsNullOrEmpty(triggeredEndingID.Value))
         {
             // Nếu CÓ, tìm thẻ ending và ra lệnh cho DeckManager hiển thị nó ngay lập tức.
@@ -115,6 +116,12 @@ public class CardLogicManager : MonoBehaviour
                 if (onLoadEndingScene != null)
                 {
                     onLoadEndingScene.Raise();
+                }
+                break;
+            case NarrativeEffectType.ForceNextCard:
+                if (forcedCardsQueue != null && effect.targetCard != null)
+                {
+                    forcedCardsQueue.Insert(0, effect.targetCard);
                 }
                 break;
         }

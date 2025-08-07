@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7d10e8d8b6292419cfbbec49ddf6d5, type: 3}
+  m_Name: Session 17
+  m_EditorClassIdentifier: 
+  requiredPlaythroughs: 17
+  requiredFlags: []
+  cardsToAdd:
+  - {fileID: 11400000, guid: cd3aa40a02bbc5a4a8b2d904834d3a3e, type: 2}
+  - {fileID: 11400000, guid: 7c0015a5bdb7a3149ad23ccdb1b399ee, type: 2}
+  - {fileID: 11400000, guid: 62980eea26831594f920f989ab20d86e, type: 2}
+  - {fileID: 11400000, guid: 504193c2420504b44a53caeebc0f5f51, type: 2}
+  - {fileID: 11400000, guid: 89a1625bda63e0841b60a57640de0417, type: 2}
+  targetDeck: {fileID: 11400000, guid: 8b99b0eabe67ff84aa2d710a2630cbce, type: 2}

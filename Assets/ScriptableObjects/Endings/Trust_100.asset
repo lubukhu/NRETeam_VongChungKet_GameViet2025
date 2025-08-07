@@ -13,14 +13,19 @@ MonoBehaviour:
   m_Name: Trust_100
   m_EditorClassIdentifier: 
   cardID: Trust_100
-  characterName: "TH\u1EBE L\u1EF0C TH\xD9 \u0110\u1ECACH"
+  characterName: "BAD END: TH\u1EBE L\u1EF0C TH\xD9 \u0110\u1ECACH"
   characterSprite: {fileID: 20032003550115081, guid: d0cc613f109dae34e99c469e379eed89, type: 3}
-  dialogueText: "\u0110\xE2y l\xE0 End T\xEDn Nhi\u1EC7m = 100"
+  dialogueText: "Uy t\xEDn c\u1EE7a b\u1EA1n \u0111\xE3 v\u01B0\u1EE3t qua m\u1ECDi
+    gi\u1EDBi h\u1EA1n, tr\u1EDF th\xE0nh m\u1ED9t m\u1ED1i \u0111e d\u1ECDa v\u1EDBi
+    nh\u1EEFng phe ph\xE1i kh\xE1c. B\u1EA1n \u0111\xE3 x\xE2y d\u1EF1ng m\u1ED9t
+    n\u1EC1n t\u1EA3ng v\u1EEFng ch\u1EAFc trong l\xF2ng d\xE2n, nh\u01B0ng ch\xEDnh
+    \u0111i\u1EC1u \u0111\xF3 l\u1EA1i tr\u1EDF th\xE0nh l\xFD do cho s\u1EF1 s\u1EE5p
+    \u0111\u1ED5 c\u1EE7a b\u1EA1n"
   cardCategory: 6
   behaviorType: 1
   frequency: 1
   leftChoice:
-    choiceText: OK...
+    choiceText: "Kh\xF4ng th\u1EC3 n\xE0o..."
     statEffects: []
     narrativeEffects:
     - effectType: 3

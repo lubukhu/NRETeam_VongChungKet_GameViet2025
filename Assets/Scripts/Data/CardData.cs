@@ -34,6 +34,7 @@ public enum NarrativeEffectType
     RemoveCardFromDeck,
     SetNarrativeFlag,
     TriggerEndingScreen,
+    ForceNextCard 
 }
 
 [System.Serializable]
@@ -81,7 +82,6 @@ public class CardData : ScriptableObject
     [Header("Behavior & Lifecycle")]
     public CardBehaviorType behaviorType = CardBehaviorType.Decision;
     public CardFrequency frequency = CardFrequency.Standard;
-
     [Header("Choices")]
     [Tooltip("Cấu hình cho lựa chọn bên trái (hoặc lựa chọn duy nhất cho thẻ Narrative)")]
     public ChoiceResult leftChoice;

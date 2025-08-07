@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: Environment_BacNam 1
+  m_EditorClassIdentifier: 
+  cardID: 
+  characterName: "B\xE1c N\u0103m - \u0110\u1EA1i di\u1EC7n n\xF4ng d\xE2n"
+  characterSprite: {fileID: -4178046375966092550, guid: 4d1bdf05407078244872bb65349bfe8b, type: 3}
+  dialogueText: "B\xE1c c\xF3 n\xEAn \u0111\u1ED5i c\xE2y n\xF4ng nghi\u1EC7p m\u1EDBi
+    kh\xF4ng ?"
+  cardCategory: 1
+  behaviorType: 0
+  frequency: 0
+  leftChoice:
+    choiceText: "D\u1EA1 c\u0169ng \u0111\u01B0\u1EE3c b\xE1c"
+    statEffects:
+    - statType: 1
+      changeAmount: 10
+    narrativeEffects: []
+  rightChoice:
+    choiceText: "Kh\xF4ng \u0111\u01B0\u1EE3c \u0111\xE2u b\xE1c \u1EA1"
+    statEffects:
+    - statType: 1
+      changeAmount: -5
+    narrativeEffects: []

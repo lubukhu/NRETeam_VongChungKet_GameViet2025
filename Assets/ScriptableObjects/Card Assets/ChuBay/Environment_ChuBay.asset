@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: Environment_ChuBay
+  m_EditorClassIdentifier: 
+  cardID: 
+  characterName: "Ch\xFA B\u1EA3y - Tr\u01B0\u1EDFng ban x\xE2y d\u1EF1ng"
+  characterSprite: {fileID: 6937817954938267909, guid: ccaec2264419f7b45ac255572950f511, type: 3}
+  dialogueText: "\u0110\xF4i khi ch\xFA ngh\u0129 m\xECnh kh\xF4ng n\xEAn ch\u1EB7t
+    c\xE2y \u0111\u1EC3 x\xE2y nh\xE0"
+  cardCategory: 2
+  behaviorType: 0
+  frequency: 0
+  leftChoice:
+    choiceText: "Ch\xFAng ta c\xF3 th\u1EC3 x\xE2y b\u1EB1ng c\xE1ch kh\xE1c"
+    statEffects:
+    - statType: 0
+      changeAmount: -10
+    - statType: 2
+      changeAmount: 10
+    narrativeEffects: []
+  rightChoice:
+    choiceText: "Nh\u01B0ng n\xF3 l\xE0 \u0111i\u1EC1u c\u1EA7n thi\u1EBFt"
+    statEffects:
+    - statType: 0
+      changeAmount: 10
+    - statType: 2
+      changeAmount: -10
+    narrativeEffects: []

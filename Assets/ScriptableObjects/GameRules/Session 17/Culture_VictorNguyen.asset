@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: Culture_VictorNguyen
+  m_EditorClassIdentifier: 
+  cardID: 
+  characterName: "Victor Nguy\u1EC5n - Vi\u1EC7t Ki\u1EC1u v\u1EC1 n\u01B0\u1EDBc"
+  characterSprite: {fileID: 4130640169021434097, guid: 2725b89e46739d04b816bd2f9bc8d76e, type: 3}
+  dialogueText: "M\u1ECDi ng\u01B0\u1EDDi n\xEAn h\u1ED9i nh\u1EADp v\u0103n h\xF3a
+    v\u1EDBi c\xE1c n\u01B0\u1EDBc \u0111\xE3 ph\xE1t tri\u1EC3n s\u1EBD c\xF3 nhi\u1EC1u
+    \u0111i\u1EC1u hay l\u1EAFm"
+  cardCategory: 3
+  behaviorType: 0
+  frequency: 0
+  leftChoice:
+    choiceText: "\u0110\xFAng v\u1EADy ch\xFAng ta n\xEAn h\u1ED9i nh\u1EADp"
+    statEffects:
+    - statType: 1
+      changeAmount: 5
+    narrativeEffects: []
+  rightChoice:
+    choiceText: "Ch\xFAng ta n\xEAn t\xF4n tr\u1ECDng v\u0103n h\xF3a \u0111\u1ECBa
+      ph\u01B0\u01A1ng"
+    statEffects:
+    - statType: 3
+      changeAmount: 10
+    narrativeEffects: []

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: Finance_AnhKhoi
+  m_EditorClassIdentifier: 
+  cardID: 
+  characterName: "Anh Kh\xF4i - Thanh ni\xEAn kh\u1EDFi nghi\u1EC7p"
+  characterSprite: {fileID: 7033936762464518976, guid: a4caabd271cb3404dbaf788806113ebb, type: 3}
+  dialogueText: "T\xF4i c\xF3 m\u1ED9t d\u1EF1 \xE1n ti\u1EC1m n\u0103ng \u0111\u1EC3
+    \u1EE9ng d\u1EE5ng Robot v\xE0o trong n\xF4ng nghi\u1EC7p nh\u01B0ng c\xF2n thi\u1EBFu
+    v\u1ED1n \u0111\u1EA7u t\u01B0"
+  cardCategory: 0
+  behaviorType: 0
+  frequency: 0
+  leftChoice:
+    choiceText: "T\xF4i c\xF3 th\u1EC3 h\u1ED7 tr\u1EE3 anh"
+    statEffects:
+    - statType: 0
+      changeAmount: -15
+    - statType: 2
+      changeAmount: 10
+    - statType: 1
+      changeAmount: 10
+    narrativeEffects: []
+  rightChoice:
+    choiceText: "Xin l\u1ED7i, anh n\xEAn t\xECm ng\u01B0\u1EDDi kh\xE1c"
+    statEffects:
+    - statType: 1
+      changeAmount: -5
+    - statType: 0
+      changeAmount: 5
+    narrativeEffects: []

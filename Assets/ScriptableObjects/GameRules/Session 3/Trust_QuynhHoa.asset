@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: Trust_QuynhHoa
+  m_EditorClassIdentifier: 
+  cardID: 
+  characterName: "C\xE1n b\u1ED9 Qu\u1EF3nh Hoa"
+  characterSprite: {fileID: 4113829005332862926, guid: de17deb4d60844d4b8b4ce8c2576133d, type: 3}
+  dialogueText: "C\xF3 m\u1ED9t v\xE0i ng\u01B0\u1EDDi d\xE2n \u0111ang ph\u1EA3n
+    \xE1nh r\u1EB1ng c\xE1c c\xF4ng tr\xECnh x\xE2y d\u1EF1ng d\u1EA1o g\u1EA7n \u0111\xE2y
+    \u0111ang g\xE2y ra qu\xE1 nhi\u1EC1u ti\u1EBFng \u1ED3n, v\u1EA5n \u0111\u1EC1
+    n\xE0y c\u1EA7n \u0111\u01B0\u1EE3c gi\u1EA3i quy\u1EBFt!"
+  cardCategory: 1
+  behaviorType: 0
+  frequency: 0
+  leftChoice:
+    choiceText: "T\xF4i s\u1EBD l\xE0m vi\u1EBFt v\u1EDBi ban x\xE2y d\u1EF1ng"
+    statEffects:
+    - statType: 0
+      changeAmount: -10
+    - statType: 1
+      changeAmount: 10
+    narrativeEffects: []
+  rightChoice:
+    choiceText: "K\u1EC7 h\u1ECD \u0111i! C\u1EA7n ph\u1EA3i hi sinh v\xEC l\u1EE3i
+      \xEDch chung"
+    statEffects:
+    - statType: 1
+      changeAmount: 5
+    - statType: 0
+      changeAmount: 5
+    narrativeEffects: []

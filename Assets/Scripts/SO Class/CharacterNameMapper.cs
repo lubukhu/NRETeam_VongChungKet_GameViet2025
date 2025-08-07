@@ -8,7 +8,7 @@ public class CharacterNameMapper : ScriptableObject
     // "Nguồn chân lý" - Dictionary từ Enum sang tên hiển thị đầy đủ
     private static readonly Dictionary<CharacterName, string> _characterMap = new Dictionary<CharacterName, string>
     {
-        { CharacterName.QuynhHoa, "Thư ký Quỳnh Hoa" },
+        { CharacterName.QuynhHoa, "Cán bộ Quỳnh Hoa" },
         { CharacterName.BacSiDung, "Bác sĩ Dung - Giám đốc bệnh viện" },
         { CharacterName.OngPhat, "Ông Phát - Chủ doanh nghiệp" },
         { CharacterName.AnhKhoi, "Anh Khôi - Thanh niên khởi nghiệp" },

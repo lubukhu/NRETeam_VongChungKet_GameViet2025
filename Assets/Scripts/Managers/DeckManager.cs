@@ -8,6 +8,10 @@ public class DeckManager : MonoBehaviour
     [SerializeField] private ScriptableListCardData currentCardPool;
     [SerializeField] private ScriptableListCardData playedCardsThisRun;
 
+    [Header("Narrative Inputs")]
+    [Tooltip("Hàng đợi ưu tiên. Thẻ bài sẽ luôn được rút từ đây trước.")]
+    [SerializeField] private ScriptableListCardData forcedCardsQueue;
+    
     [Header("Output Events")]
     [SerializeField] private ScriptableEventNoParam onNewCardReady;
     [SerializeField] private ScriptableEventNoParam onNewPoolRequested;
@@ -42,20 +46,14 @@ public class DeckManager : MonoBehaviour
     {
         DestroyCurrentCardObject();
 
-        // Safety check: Dừng lại nếu vì lý do nào đó pool bị rỗng
-        if (IsCardPoolEmpty())
+        if (IsCardPoolEmpty() && (forcedCardsQueue == null || forcedCardsQueue.Count == 0))
         {
-            Debug.LogError("DrawNextCard được gọi nhưng currentCardPool đang rỗng!");
-            // Yêu cầu một pool mới như một biện pháp dự phòng
             onNewPoolRequested.Raise();
-
             return;
         }
 
         CardData nextCardData = SelectAndProcessNextCard();
         SpawnNewCard(nextCardData);
-        
-        // KHÔNG CÒN GỌI RequestMoreCardsIfNeeded() NỮA
     }
     
     // HÀM RequestMoreCardsIfNeeded() ĐÃ BỊ XÓA BỎ HOÀN TOÀN
@@ -71,8 +69,19 @@ public class DeckManager : MonoBehaviour
     
     private CardData SelectAndProcessNextCard()
     {
-        CardData nextCardData = currentCardPool[0];
-        currentCardPool.RemoveAt(0);
+        CardData nextCardData;
+        
+        if (forcedCardsQueue != null && forcedCardsQueue.Count > 0)
+        {
+            nextCardData = forcedCardsQueue[0];
+            forcedCardsQueue.RemoveAt(0);
+        }
+        else
+        {
+            nextCardData = currentCardPool[0];
+            currentCardPool.RemoveAt(0);
+        }
+
         if (nextCardData.frequency == CardFrequency.OncePerPlaythrough && !playedCardsThisRun.Contains(nextCardData))
         {
             playedCardsThisRun.Add(nextCardData);

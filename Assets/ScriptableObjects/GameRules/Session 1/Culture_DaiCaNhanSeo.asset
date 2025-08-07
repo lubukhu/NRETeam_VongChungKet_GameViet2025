@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: Culture_DaiCaNhanSeo
+  m_EditorClassIdentifier: 
+  cardID: 
+  characterName: "Nh\xE2n S\u1EB9o - Giang h\u1ED3 \u0111\u1ECBa ph\u01B0\u01A1ng"
+  characterSprite: {fileID: -2966200626249415253, guid: d372370bbaa01814ba00c6a97cb369ec, type: 3}
+  dialogueText: "T\xF4i nghe n\xF3i c\xF3 ng\u01B0\u1EDDi m\u1EDBi \u0111\xE0o \u0111\u01B0\u1EE3c
+    c\u1ED5 v\u1EADt, t\xECm c\xE1ch b\xE1n l\u1EA1i cho t\xF4i \u0111\u01B0\u1EE3c
+    kh\xF4ng?"
+  cardCategory: 3
+  behaviorType: 0
+  frequency: 0
+  leftChoice:
+    choiceText: "Anh ra gi\xE1 \u0111i"
+    statEffects:
+    - statType: 0
+      changeAmount: 15
+    - statType: 1
+      changeAmount: -5
+    - statType: 3
+      changeAmount: -15
+    narrativeEffects: []
+  rightChoice:
+    choiceText: "C\u1ED5 v\u1EADt kh\xF4ng ph\u1EA3i th\u1EE9 \u0111\u1EC3 bu\xF4n
+      b\xE1n"
+    statEffects:
+    - statType: 0
+      changeAmount: -10
+    - statType: 3
+      changeAmount: 10
+    narrativeEffects: []

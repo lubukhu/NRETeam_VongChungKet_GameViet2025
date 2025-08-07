@@ -13,20 +13,20 @@ MonoBehaviour:
   m_Name: Tutorial_KIM 2
   m_EditorClassIdentifier: 
   cardID: 
-  characterName: K.I.M
+  characterName: "K.I.M - AI tr\u1EE3 l\xFD"
   characterSprite: {fileID: 8288426215254106694, guid: 950169220e94eb048bb405056c0e5e70, type: 3}
-  dialogueText: "\"\u0110\u1EC3 \u0111\u01B0a ra quy\u1EBFt \u0111\u1ECBnh, anh ch\u1EC9
-    c\u1EA7n vu\u1ED1t th\u1EBB b\xE0i sang tr\xE1i ho\u1EB7c ph\u1EA3i. Thao t\xE1c
-    n\xE0y s\u1EBD x\xE1c nh\u1EADn l\u1EF1a ch\u1ECDn c\u1EE7a anh. H\xE3y vu\u1ED1t
-    th\u1EBB n\xE0y \u0111\u1EC3 ti\u1EBFp t\u1EE5c.\""
+  dialogueText: "Xin t\u1EF1 gi\u1EDBi thi\u1EC7u, t\xF4i l\xE0 Ki\u1EBFn T\u1EA1o
+    Inteligent Machine, g\u1ECDi t\u1EAFt l\xE0 K.I.M Tr\u1EE3 l\xFD AI c\u1EE7a
+    anh do ch\xEDnh ph\u1EE7 c\u1EA5p \u0111\u1EC3 h\u1ED7 tr\u1EE3 anh trong c\xF4ng
+    vi\u1EC7c! "
   cardCategory: 4
   behaviorType: 1
   frequency: 1
   leftChoice:
-    choiceText: "(Vu\u1ED1t th\u1EBB)"
+    choiceText: "Ch\xEDnh ph\u1EE7 \u01B0?"
     statEffects: []
     narrativeEffects: []
   rightChoice:
-    choiceText: "Vu\u1ED1t m\u1EA1nh b\u1EA1o"
+    choiceText: "C\xF4ng vi\u1EC7c g\xEC c\u01A1?"
     statEffects: []
     narrativeEffects: []

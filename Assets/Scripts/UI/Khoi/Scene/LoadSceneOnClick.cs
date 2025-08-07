@@ -2,14 +2,15 @@
 using UnityEngine.SceneManagement;
 
 public class LoadSceneOnClick : MonoBehaviour
+
 {
     public string sceneName;
-    
-    void Update()
+
+    public void ContinueToNextScene()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            SceneManager.LoadScene(sceneName);
-        }
+        // Quan trọng: Đảm bảo Time.timeScale được reset trước khi vào scene gameplay
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(sceneName); 
     }
+
 }

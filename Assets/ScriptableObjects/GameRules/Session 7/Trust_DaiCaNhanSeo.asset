@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: Trust_DaiCaNhanSeo
+  m_EditorClassIdentifier: 
+  cardID: 
+  characterName: "Nh\xE2n S\u1EB9o - Giang h\u1ED3 \u0111\u1ECBa ph\u01B0\u01A1ng"
+  characterSprite: {fileID: -2966200626249415253, guid: d372370bbaa01814ba00c6a97cb369ec, type: 3}
+  dialogueText: "T\xEAn Tu\u1EA5n c\xF4ng an l\xE0 c\xE1i gai trong m\u1EAFt t\xF4i.
+    \xD4ng ta ch\u1EC9 bi\u1EBFt n\xF3i chuy\u1EC7n lu\u1EADt ph\xE1p."
+  cardCategory: 1
+  behaviorType: 0
+  frequency: 0
+  leftChoice:
+    choiceText: "\u0110\xFAng! Ph\xE1p lu\u1EADt kh\xF4ng th\u1EC3 gi\u1EA3i quy\u1EBFt
+      h\u1EBFt m\u1ECDi v\u1EA5n \u0111\u1EC1 "
+    statEffects:
+    - statType: 1
+      changeAmount: -5
+    - statType: 0
+      changeAmount: 5
+    narrativeEffects: []
+  rightChoice:
+    choiceText: "Anh ta ch\u1EC9 l\xE0m \u0111\xFAng c\xF4ng vi\u1EC7c c\u1EE7a m\xECnh
+      th\xF4i"
+    statEffects:
+    - statType: 1
+      changeAmount: 10
+    narrativeEffects: []

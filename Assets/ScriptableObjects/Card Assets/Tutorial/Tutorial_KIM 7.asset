@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: Tutorial_KIM 7
+  m_EditorClassIdentifier: 
+  cardID: 
+  characterName: "K.I.M - AI tr\u1EE3 l\xFD"
+  characterSprite: {fileID: 8288426215254106694, guid: 950169220e94eb048bb405056c0e5e70, type: 3}
+  dialogueText: "H\u1EC7 th\u1ED1ng \u0111\xE3 s\u1EB5n s\xE0ng. Sau th\u1EBB n\xE0y,
+    th\u1EBB b\xE0i \u0111\u1EA7u ti\xEAn c\u1EE7a anh s\u1EBD xu\u1EA5t hi\u1EC7n.
+    H\xE3y \u0111\u1ECDc k\u1EF9 v\xE0 \u0111\u01B0a ra l\u1EF1a ch\u1ECDn \u0111\u1EA7u
+    ti\xEAn c\u1EE7a m\xECnh."
+  cardCategory: 4
+  behaviorType: 1
+  frequency: 1
+  leftChoice:
+    choiceText: Oke
+    statEffects: []
+    narrativeEffects:
+    - effectType: 2
+      targetCard: {fileID: 0}
+      targetDeck: {fileID: 0}
+      narrativeFlag: {fileID: 11400000, guid: 36fec56a8f2e06548a575d17868d5426, type: 2}
+      flagValue: 1
+  rightChoice:
+    choiceText: "Ti\u1EBFp t\u1EE5c"
+    statEffects: []
+    narrativeEffects:
+    - effectType: 2
+      targetCard: {fileID: 0}
+      targetDeck: {fileID: 0}
+      narrativeFlag: {fileID: 11400000, guid: 36fec56a8f2e06548a575d17868d5426, type: 2}
+      flagValue: 1

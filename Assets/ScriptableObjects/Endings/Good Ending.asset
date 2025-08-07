@@ -15,7 +15,13 @@ MonoBehaviour:
   cardID: Good Ending
   characterName: "C\xC2N B\u1EB0NG & TH\u1ECANH V\u01AF\u1EE2NG"
   characterSprite: {fileID: 8836892372229855637, guid: a925a1284e5fc80498af2408ad5772be, type: 3}
-  dialogueText: "\u0110\xE2y l\xE0 Good End! Ch\xFAc m\u1EEBng b\u1EA1n"
+  dialogueText: "B\u1EA1n \u0111\xE3 v\u01B0\u1EE3t qua m\u1ECDi th\u1EED th\xE1ch,
+    c\xE2n b\u1EB1ng \u0111\u01B0\u1EE3c T\xE0i ch\xEDnh, M\xF4i tr\u01B0\u1EDDng,
+    B\u1EA3n s\u1EAFc v\xE0 T\xEDn nhi\u1EC7m. V\xF9ng \u0111\u1EA5t \u0111\xE3 v\u01B0\u01A1n
+    m\xECnh ph\xE1t tri\u1EC3n m\xE0 kh\xF4ng \u0111\xE1nh m\u1EA5t \u0111i linh
+    h\u1ED3n.\nB\u1EA1n \u0111\xE3 x\xE2y d\u1EF1ng m\u1ED9t v\xF9ng \u0111\u1EA5t
+    th\u1ECBnh v\u01B0\u1EE3ng, n\u01A1i qu\xE1 kh\u1EE9 v\xE0 t\u01B0\u01A1ng lai
+    c\xF9ng nhau t\u1ED3n t\u1EA1i v\xE0 ph\xE1t tri\u1EC3n b\u1EC1n v\u1EEFng"
   cardCategory: 6
   behaviorType: 1
   frequency: 1
@@ -29,7 +35,7 @@ MonoBehaviour:
       narrativeFlag: {fileID: 0}
       flagValue: 0
   rightChoice:
-    choiceText: Hell yeah!
+    choiceText: "C\u1EA3m gi\xE1c th\u1EADt tuy\u1EC7t!"
     statEffects: []
     narrativeEffects:
     - effectType: 3

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: Tutorial_KIM 6
+  m_EditorClassIdentifier: 
+  cardID: 
+  characterName: "K.I.M - AI tr\u1EE3 l\xFD"
+  characterSprite: {fileID: 8288426215254106694, guid: 950169220e94eb048bb405056c0e5e70, type: 3}
+  dialogueText: "N\xEAn anh \u0111\u1EEBng m\xE3i ch\u0103m ch\u0103m t\u1EADp trung
+    ph\xE1t tri\u1EC3n m\xE0 \u0111\u1EC3 \u0111\xE1nh m\u1EA5t c\xE1c gi\xE1 tr\u1ECB
+    b\u1EA3n s\u1EAFc c\u1EE7a v\xF9ng \u0111\u1EA5t nh\xE9! S\u1EF1 c\xE2n b\u1EB1ng
+    l\xE0 CH\xCCA KH\xD3A!"
+  cardCategory: 4
+  behaviorType: 1
+  frequency: 1
+  leftChoice:
+    choiceText: Oke
+    statEffects: []
+    narrativeEffects: []
+  rightChoice:
+    choiceText: "Ti\u1EBFp t\u1EE5c"
+    statEffects: []
+    narrativeEffects: []
