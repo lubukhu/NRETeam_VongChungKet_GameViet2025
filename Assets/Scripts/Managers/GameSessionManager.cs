@@ -7,11 +7,15 @@ public class GameSessionManager : MonoBehaviour
     [Tooltip("Biến lưu số lượt chơi đã hoàn thành.")]
     [SerializeField] private IntVariable playthroughCount;
     
-    public void OnGameEnded(string endingId)
+    public void OnGameEnded(string eventData)
     {
-        if (playthroughCount != null)
+        if (playthroughCount != null) playthroughCount.Value++;
+        
+        string originalId = eventData.Replace("Game Over: ", "").Trim();
+        
+        if (GalleryDataManager.Instance != null && !string.IsNullOrEmpty(originalId))
         {
-            playthroughCount.Value++;
+            GalleryDataManager.Instance.UnlockEnding(originalId);
         }
     }
 }

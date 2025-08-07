@@ -10,7 +10,7 @@ public class EndingSceneController : MonoBehaviour
     [Header("UI References")]
     [SerializeField] private TextMeshProUGUI dateText;
     [SerializeField] private Button continueButton;
-
+    [SerializeField] private GameObject GalleryPanel;
     [Header("Data Inputs")]
     [SerializeField] private IntVariable endDay;
     [SerializeField] private string gameplaySceneName = "GameplayScene"; 
@@ -73,8 +73,20 @@ public class EndingSceneController : MonoBehaviour
     public void ResetSaveData()
     {
         PlayerPrefs.DeleteAll();
-        Debug.Log("<color=orange>Tất cả dữ liệu PlayerPrefs đã được xóa!</color>");
-
+        if (GalleryDataManager.Instance != null)
+        {
+            GalleryDataManager.Instance.ResetGalleryData();
+        }
+        
+        Debug.Log("<color=orange>Tất cả dữ liệu game đã được reset!</color>");
         SceneManager.LoadScene(beginSceneName);
+    }
+
+    public void ToggleGalleryPanel()
+    {
+        if (GalleryPanel != null)
+        {
+            GalleryPanel.SetActive(!GalleryPanel.activeSelf);
+        }
     }
 }

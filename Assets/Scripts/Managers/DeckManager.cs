@@ -24,7 +24,8 @@ public class DeckManager : MonoBehaviour
     [Header("Card Prefab")]
     [SerializeField] private GameObject dynamicCardPrefab;
     [SerializeField] private Transform cardSpawnParent;
-
+    [SerializeField] private CharacterNameMapper characterNameMapper;
+    
     private GameObject _currentActiveCardGO;
 
     // Hàm này vẫn do EventListener gọi để bắt đầu game
@@ -105,6 +106,16 @@ public class DeckManager : MonoBehaviour
         {
             onPrefabInstantiate.Raise();
         }
+
+        
+        if (GalleryDataManager.Instance != null && characterNameMapper != null)
+        {
+            if (characterNameMapper.TryGetEnum(cardData.characterName, out CharacterName characterEnum))
+            {
+                GalleryDataManager.Instance.UnlockCharacter(characterEnum);
+            }
+        }
+        
         onNewCardReady.Raise();
     }
     

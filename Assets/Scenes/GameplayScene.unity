@@ -2324,7 +2324,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 555795462}
         m_TargetAssemblyTypeName: SettingsManager, Assembly-CSharp
-        m_MethodName: ExitGame
+        m_MethodName: SaveAndExitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4572,6 +4572,7 @@ MonoBehaviour:
   currentDisplayedCardGameObject: {fileID: 11400000, guid: 64a81f089a238844aa06ff775a3f2f0b, type: 2}
   dynamicCardPrefab: {fileID: 4533912779589926763, guid: 7c6725a02dc985245ae46cb64ea73106, type: 3}
   cardSpawnParent: {fileID: 2141783096}
+  characterNameMapper: {fileID: 11400000, guid: bac9d46aeed3900488ea4de52483184d, type: 2}
 --- !u!114 &1498173333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5865,6 +5866,8 @@ GameObject:
   - component: {fileID: 1952820256}
   - component: {fileID: 1952820258}
   - component: {fileID: 1952820257}
+  - component: {fileID: 1952820259}
+  - component: {fileID: 1952820260}
   m_Layer: 5
   m_Name: DialougeTxt
   m_TagString: Untagged
@@ -5942,7 +5945,7 @@ MonoBehaviour:
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 24
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -5990,6 +5993,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952820255}
   m_CullTransparentMesh: 1
+--- !u!114 &1952820259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952820255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 1952820256}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 1
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.1
+  m_ScrollSensitivity: 10
+  m_Viewport: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1952820260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952820255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 20, z: 0, w: 20}
+  m_Softness: {x: 0, y: 0}
 --- !u!1 &2030961173
 GameObject:
   m_ObjectHideFlags: 0

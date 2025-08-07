@@ -80,14 +80,22 @@ public class SettingsManager : MonoBehaviour
         }
     }
     
-    public void ExitGame()
+    public void SaveAndExitGame()
     {
-        Debug.Log("Thoát game!");
-        // Lệnh Application.Quit() chỉ hoạt động trong bản build, không có tác dụng trong Editor
+        Debug.Log("Saving data and quitting application...");
+        
+        // Nếu có hệ thống SaveManager, hãy gọi nó ở đây
+        if (GalleryDataManager.Instance != null)
+        {
+            GalleryDataManager.Instance.SaveData();
+        }
+
+        // Thoát game
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
             Application.Quit();
 #endif
     }
+    
 }

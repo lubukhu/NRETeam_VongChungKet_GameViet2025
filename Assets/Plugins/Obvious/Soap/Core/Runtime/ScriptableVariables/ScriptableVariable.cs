@@ -154,7 +154,7 @@ namespace Obvious.Soap
 #if UNITY_EDITOR
         private void SetDirtyAndRepaint()
         {
-            EditorUtility.SetDirty(this);
+            //EditorUtility.SetDirty(this);
             RepaintRequest?.Invoke();
         }
 

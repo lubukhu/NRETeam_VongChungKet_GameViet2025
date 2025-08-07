@@ -160,5 +160,11 @@ public class CardDisplay_Static : MonoBehaviour
 
         // Áp dụng hình nền tìm được, hoặc dùng hình mặc định nếu không có luật nào khớp
         gameBackground.sprite = (newBackground != null) ? newBackground : defaultBackground;
+        
+        Sprite finalSprite = gameBackground.sprite;
+        if (finalSprite != null && GalleryDataManager.Instance != null)
+        {
+            GalleryDataManager.Instance.UnlockBackground(finalSprite.name);
+        }
     }
 }
