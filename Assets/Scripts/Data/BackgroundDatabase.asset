@@ -15,43 +15,58 @@ MonoBehaviour:
   allBackgrounds:
   - backgroundName: AnhKhoi_BG_0
     backgroundSprite: {fileID: -6817936360819013358, guid: 3e6495b3ab20a154ab6ecc4d2f7fca19, type: 3}
+    displayName: "QU\xC1N C\xC0 PH\xCA - Anh Kh\xF4i"
   - backgroundName: BacSiDung_0
     backgroundSprite: {fileID: 572287830598693736, guid: fa501c962f829d5478d14abad76e7b62, type: 3}
+    displayName: "B\u1EC6NH VI\u1EC6N - B\xE1c S\u0129 Dung"
   - backgroundName: ChuBay_BG_0
     backgroundSprite: {fileID: -1344611224191241700, guid: 800b5cb76a8ca0140b3653b85c765699, type: 3}
+    displayName: "C\xD4NG TR\u01AF\u1EDCNG - Ch\xFA B\u1EA3y"
   - backgroundName: ChuNam_BG_0
     backgroundSprite: {fileID: 5638416113803216587, guid: a5d83802943120342b74790290b5e729, type: 3}
+    displayName: "RU\u1ED8NG \u0110\u1ED2NG - Ch\xFA Nam"
   - backgroundName: ChuTuan_BG_0
     backgroundSprite: {fileID: 3081041537960830974, guid: 1c420b4a128ce0f43aae68a340242cd5, type: 3}
+    displayName: "\u0110\u1ED2N C\xD4NG AN - Ch\xFA Tu\u1EA5n"
   - backgroundName: CoNga_BG_0
     backgroundSprite: {fileID: -7795059601770367265, guid: 590c0cc887a715f4c81565157f70f133, type: 3}
+    displayName: "TR\u01AF\u1EDCNG L\xC0NG - C\xF4 Nga"
   - backgroundName: CuOngAn_BG_0
     backgroundSprite: {fileID: -134803957775175563, guid: 77e9aace79fb9c34db58124da693f514, type: 3}
+    displayName: "L\xC0NG QU\xCA - C\u1EE5 \xD4ng An"
   - backgroundName: NgheNhanHai
     backgroundSprite: {fileID: 9014906237930524479, guid: 4e36c0752d0aabd4da5d8557042145ed, type: 3}
+    displayName: "L\xC0NG NGH\u1EC0 - Ngh\u1EC7 Nh\xE2n H\u1EA3i"
   - backgroundName: NhanSeo_BG_0
     backgroundSprite: {fileID: 3609233503851385639, guid: 386726caf2f9a5f4293e51c2f9931997, type: 3}
+    displayName: "CH\u1EE2 L\xC0NG - Nh\xE2n S\u1EB9o"
   - backgroundName: OngPhat_BG_0
     backgroundSprite: {fileID: 8505859315053539008, guid: 14a2539fe9bf6804a9ce94318321e14c, type: 3}
-  - backgroundName: OngPhat_BG_0
-    backgroundSprite: {fileID: 8505859315053539008, guid: 14a2539fe9bf6804a9ce94318321e14c, type: 3}
+    displayName: "NH\xC0 M\xC1Y - \xD4ng Ph\xE1t"
   - backgroundName: QuynhHoa_BG_0
     backgroundSprite: {fileID: -3542511697361574809, guid: 67301d7a2135ed84995b6df1404f91de, type: 3}
+    displayName: "V\u0102N PH\xD2NG - Qu\u1EF3nh Hoa"
   - backgroundName: TienSiLan_BG
     backgroundSprite: {fileID: 1619605690880573135, guid: 54d94ab589935f74094f1b4a4babbb23, type: 3}
-  - backgroundName: TienSiLan_BG
-    backgroundSprite: {fileID: 1619605690880573135, guid: 54d94ab589935f74094f1b4a4babbb23, type: 3}
+    displayName: "B\u1EA2O T\xC0NG - Ti\u1EBFn S\u0129 Lan"
   - backgroundName: VictorNguyen_0
     backgroundSprite: {fileID: -3135957348730495470, guid: 306a8b012b0f57d40b1a829ba58e73fe, type: 3}
+    displayName: "C\xD4NG TY - Victor Nguy\u1EC5n"
   - backgroundName: Vy_BG_0
     backgroundSprite: {fileID: 8830701345823326279, guid: 8fb701d9687030249bdd85c6d0163786, type: 3}
+    displayName: "R\u1EEANG - Vy"
   - backgroundName: BG lang que badend 2_0
     backgroundSprite: {fileID: -3799088409944496522, guid: 42e9e2da62f9b764997caff698c8ea50, type: 3}
+    displayName: "CH\u1EB2NG G\xCC THAY \u0110\u1ED4i"
   - backgroundName: BG lang que badend 3_0
     backgroundSprite: {fileID: 8283965550108017259, guid: 7002c43cfb92d6b4ea972104794cc4a2, type: 3}
+    displayName: "C\xD3 TH\u1EDC C\xD3 THI\xCAN"
   - backgroundName: BG thanh pho badend 2_0
     backgroundSprite: {fileID: 7175511744186815507, guid: b7682562b5e2e874fbb3513a993b20f3, type: 3}
+    displayName: "V\xD4 H\u1ED2N"
   - backgroundName: BG thanh pho badend 3_0
     backgroundSprite: {fileID: -1715569906781827675, guid: d655fb8717afa8e4aaa22711b177583b, type: 3}
+    displayName: "KH\xD4NG TH\u1EC2 C\xC2N B\u1EB0NG"
   - backgroundName: DefaultBG2_0
     backgroundSprite: {fileID: 8906184024784968395, guid: 7d39ce1b530af8a4d9873915dea66c33, type: 3}
+    displayName: "N\u01A0I B\u1EAET \u0110\u1EA6U"

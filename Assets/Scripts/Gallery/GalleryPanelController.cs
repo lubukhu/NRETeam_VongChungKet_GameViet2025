@@ -19,8 +19,10 @@ public class GalleryPanelController : MonoBehaviour
     [SerializeField] private EndingDatabase endingDB; 
 
     [Header("UI Setup")]
-    [SerializeField] private GameObject galleryItemPrefab;
-    [SerializeField] private Sprite lockedSprite;
+    [SerializeField] private GameObject galleryItemPrefabCard;
+    [SerializeField] private GameObject galleryItemPrefabBG;
+    [SerializeField] private Sprite lockedSpriteCard;
+    [SerializeField] private Sprite lockedSpriteBG;
     [SerializeField] private Transform charactersContentParent;
     [SerializeField] private Transform backgroundsContentParent;
     [SerializeField] private Transform endingsContentParent;
@@ -55,7 +57,7 @@ public class GalleryPanelController : MonoBehaviour
 
         foreach (var charInfo in characterDB.allCharacters)
         {
-            GameObject itemGO = Instantiate(galleryItemPrefab, charactersContentParent);
+            GameObject itemGO = Instantiate(galleryItemPrefabCard, charactersContentParent);
             GalleryItemUI itemUI = itemGO.GetComponent<GalleryItemUI>();
 
             if (unlockedCharacters.Contains(charInfo.characterEnum))
@@ -64,7 +66,7 @@ public class GalleryPanelController : MonoBehaviour
             }
             else
             {
-                itemUI.SetLockedState(lockedSprite, "Chưa gặp gỡ");
+                itemUI.SetLockedState(lockedSpriteCard, "Chưa gặp gỡ");
             }
         }
     }
@@ -76,16 +78,17 @@ public class GalleryPanelController : MonoBehaviour
 
         foreach (var bgInfo in backgroundDB.allBackgrounds)
         {
-            GameObject itemGO = Instantiate(galleryItemPrefab, backgroundsContentParent);
+            GameObject itemGO = Instantiate(galleryItemPrefabBG, backgroundsContentParent);
             GalleryItemUI itemUI = itemGO.GetComponent<GalleryItemUI>();
 
             if (unlockedBackgroundNames.Contains(bgInfo.backgroundName))
             {
-                itemUI.Setup(bgInfo.backgroundSprite, bgInfo.backgroundName);
+                string nameToShow = string.IsNullOrEmpty(bgInfo.displayName) ? bgInfo.backgroundName : bgInfo.displayName;
+                itemUI.Setup(bgInfo.backgroundSprite, nameToShow);
             }
             else
             {
-                itemUI.SetLockedState(lockedSprite);
+                itemUI.SetLockedState(lockedSpriteBG);
             }
         }
     }
@@ -99,7 +102,7 @@ public class GalleryPanelController : MonoBehaviour
         // Duyệt qua Ending Database để biết tất cả các ending có thể có
         foreach (var endingInfo in endingDB.allEndings)
         {
-            GameObject itemGO = Instantiate(galleryItemPrefab, endingsContentParent);
+            GameObject itemGO = Instantiate(galleryItemPrefabCard, endingsContentParent);
             GalleryItemUI itemUI = itemGO.GetComponent<GalleryItemUI>();
 
             // Kiểm tra xem ending này đã được mở khóa chưa
@@ -109,7 +112,7 @@ public class GalleryPanelController : MonoBehaviour
             }
             else
             {
-                itemUI.SetLockedState(lockedSprite, "Kết cục chưa biết");
+                itemUI.SetLockedState(lockedSpriteCard, "Kết cục chưa biết");
             }
         }
     }

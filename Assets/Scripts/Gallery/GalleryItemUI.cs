@@ -25,7 +25,7 @@ public class GalleryItemUI : MonoBehaviour
         if (itemImage != null)
         {
             itemImage.sprite = lockedSprite;
-            itemImage.color = new Color(0.2f, 0.2f, 0.2f, 0.8f);
+            //itemImage.color = new Color(0.2f, 0.2f, 0.2f, 0.8f);
         }
         if (itemNameText != null)
         {

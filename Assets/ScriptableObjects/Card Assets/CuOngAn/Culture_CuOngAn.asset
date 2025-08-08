@@ -24,15 +24,15 @@ MonoBehaviour:
     choiceText: "Ch\xE1u s\u1EBD gi\xFAp m\u1ED9t tay "
     statEffects:
     - statType: 0
-      changeAmount: -10
+      changeAmount: -15
     - statType: 1
-      changeAmount: 10
+      changeAmount: 8
     narrativeEffects: []
   rightChoice:
     choiceText: "Ta n\xEAn h\u1EA1n ch\u1EBF l\u1EC5 h\u1ED9i"
     statEffects:
     - statType: 0
-      changeAmount: 10
+      changeAmount: 8
     - statType: 3
-      changeAmount: -10
+      changeAmount: -15
     narrativeEffects: []

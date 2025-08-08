@@ -6,6 +6,7 @@ public class BackgroundInfo
 {
     public string backgroundName; 
     public Sprite backgroundSprite;
+    public string displayName;
 }
 
 [CreateAssetMenu(fileName = "BackgroundDatabase", menuName = "NguoiKienTao/Background Database")]

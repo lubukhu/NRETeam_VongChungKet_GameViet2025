@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ChuBay_BG_0: -1344611224191241700
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

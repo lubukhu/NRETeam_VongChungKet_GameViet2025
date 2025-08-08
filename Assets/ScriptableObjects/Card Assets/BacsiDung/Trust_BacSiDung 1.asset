@@ -26,9 +26,9 @@ MonoBehaviour:
       mu\u1ED7i"
     statEffects:
     - statType: 0
-      changeAmount: -10
+      changeAmount: -15
     - statType: 2
-      changeAmount: 10
+      changeAmount: 5
     narrativeEffects: []
   rightChoice:
     choiceText: "Ta ph\xF2ng ng\u1EEBa b\u1EB1n c\xE1ch nh\u1EAFc nh\u1EDF"

@@ -26,7 +26,7 @@ MonoBehaviour:
     - statType: 1
       changeAmount: 10
     - statType: 0
-      changeAmount: -5
+      changeAmount: -15
     narrativeEffects: []
   rightChoice:
     choiceText: "Con kh\xF4ng ch\u1EAFc v\u1EC1 \u0111i\u1EC1u \u0111\xF3 "
@@ -34,5 +34,5 @@ MonoBehaviour:
     - statType: 0
       changeAmount: 5
     - statType: 1
-      changeAmount: 10
+      changeAmount: 8
     narrativeEffects: []

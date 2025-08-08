@@ -25,7 +25,7 @@ MonoBehaviour:
     choiceText: "V\xE2ng con n\xEAn gi\u1EEF g\xECn b\u1EA3n s\u1EAFc"
     statEffects:
     - statType: 3
-      changeAmount: 10
+      changeAmount: 9
     narrativeEffects: []
   rightChoice:
     choiceText: "Nh\u01B0ng con mu\u1ED1n qu\u1EA3n b\xE1 v\u1EC1 l\xE0ng"

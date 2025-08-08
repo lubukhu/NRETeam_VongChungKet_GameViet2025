@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ChuTuan_BG_0: 3081041537960830974
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

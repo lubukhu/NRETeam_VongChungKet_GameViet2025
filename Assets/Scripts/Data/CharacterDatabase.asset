@@ -17,47 +17,47 @@ MonoBehaviour:
     displayName: "C\xE1n b\u1ED9 Qu\u1EF3nh Hoa"
     characterSprite: {fileID: 4113829005332862926, guid: de17deb4d60844d4b8b4ce8c2576133d, type: 3}
   - characterEnum: 1
-    displayName: "B\xE1c s\u0129 Dung - Gi\xE1m \u0111\u1ED1c b\u1EC7nh vi\u1EC7n"
+    displayName: "B\xE1c s\u0129 Dung \\nGi\xE1m \u0111\u1ED1c b\u1EC7nh vi\u1EC7n"
     characterSprite: {fileID: -1540426309290004842, guid: 58cc3b639f60e9442a8562498d26d7af, type: 3}
   - characterEnum: 2
-    displayName: "\xD4ng Ph\xE1t - Ch\u1EE7 doanh nghi\u1EC7p"
+    displayName: "\xD4ng Ph\xE1t \\nCh\u1EE7 doanh nghi\u1EC7p"
     characterSprite: {fileID: -5099292496197868168, guid: 99d907d5a6c26ea44b26f07348860e22, type: 3}
   - characterEnum: 3
-    displayName: "Anh Kh\xF4i - Thanh ni\xEAn kh\u1EDFi nghi\u1EC7p"
+    displayName: "Anh Kh\xF4i \\nThanh ni\xEAn kh\u1EDFi nghi\u1EC7p"
     characterSprite: {fileID: 7033936762464518976, guid: a4caabd271cb3404dbaf788806113ebb, type: 3}
   - characterEnum: 4
-    displayName: "Ch\xFA Tu\u1EA5n - Thi\u1EBFu t\xE1 C\xF4ng An"
+    displayName: "Ch\xFA Tu\u1EA5n \\nThi\u1EBFu t\xE1 C\xF4ng An"
     characterSprite: {fileID: 6660783624410144326, guid: bcc682c6dcbaccf4fae5244c88a4e9e4, type: 3}
   - characterEnum: 5
-    displayName: "Nh\xE2n S\u1EB9o - Giang h\u1ED3 \u0111\u1ECBa ph\u01B0\u01A1ng"
+    displayName: "Nh\xE2n S\u1EB9o \\nGiang h\u1ED3 \u0111\u1ECBa ph\u01B0\u01A1ng"
     characterSprite: {fileID: -2966200626249415253, guid: d372370bbaa01814ba00c6a97cb369ec, type: 3}
   - characterEnum: 6
-    displayName: "C\xF4 Nga - Hi\u1EC7u tr\u01B0\u1EDFng tr\u01B0\u1EDDng h\u1ECDc"
+    displayName: "C\xF4 Nga \\nHi\u1EC7u tr\u01B0\u1EDFng tr\u01B0\u1EDDng h\u1ECDc"
     characterSprite: {fileID: -6270953770400647376, guid: c5d78cfaebe2eef458f9fe39ceacb932, type: 3}
   - characterEnum: 7
-    displayName: "Vy - Nh\xE0 ho\u1EA1t \u0111\u1ED9ng m\xF4i tr\u01B0\u1EDDng"
+    displayName: "Vy \\nNh\xE0 ho\u1EA1t \u0111\u1ED9ng m\xF4i tr\u01B0\u1EDDng"
     characterSprite: {fileID: 4349915267927364619, guid: e8aa3b34da5008347b47be3d8e35ef41, type: 3}
   - characterEnum: 8
-    displayName: "L\xE3o Th\xF4ng - Th\u1EA7y thu\u1ED1c Nam Y"
+    displayName: "L\xE3o Th\xF4ng \\nTh\u1EA7y thu\u1ED1c Nam Y"
     characterSprite: {fileID: 7028616704906629411, guid: b98d918b276236140aef4593a8f30669, type: 3}
   - characterEnum: 9
-    displayName: "Ti\u1EBFn s\u0129 Lan - Nh\xE0 kh\u1EA3o c\u1ED5"
+    displayName: "Ti\u1EBFn s\u0129 Lan \\nNh\xE0 kh\u1EA3o c\u1ED5"
     characterSprite: {fileID: 3465286685962602723, guid: be04431ac9a7e0544a60e76e88c3ea36, type: 3}
   - characterEnum: 10
-    displayName: "C\u1EE5 \xF4ng An - Tr\u01B0\u1EDFng l\xE0ng"
+    displayName: "C\u1EE5 \xF4ng An \\nTr\u01B0\u1EDFng l\xE0ng"
     characterSprite: {fileID: -6470460504253458178, guid: 8ae689f42fd7d6d4ba4e28d679da4638, type: 3}
   - characterEnum: 11
-    displayName: "Anh H\u1EA3i - Ngh\u1EC7 nh\xE2n l\xE0ng ngh\u1EC1"
+    displayName: "Anh H\u1EA3i \\nNgh\u1EC7 nh\xE2n l\xE0ng ngh\u1EC1"
     characterSprite: {fileID: 7680820834086852892, guid: a5aa3edc2405b524ba4ba43154b258d0, type: 3}
   - characterEnum: 12
-    displayName: "Victor Nguy\u1EC5n - Vi\u1EC7t Ki\u1EC1u v\u1EC1 n\u01B0\u1EDBc"
+    displayName: "Victor Nguy\u1EC5n \\nVi\u1EC7t Ki\u1EC1u v\u1EC1 n\u01B0\u1EDBc"
     characterSprite: {fileID: 4130640169021434097, guid: 2725b89e46739d04b816bd2f9bc8d76e, type: 3}
   - characterEnum: 13
-    displayName: "B\xE1c N\u0103m - \u0110\u1EA1i di\u1EC7n n\xF4ng d\xE2n"
+    displayName: "B\xE1c N\u0103m \\n\u0110\u1EA1i di\u1EC7n n\xF4ng d\xE2n"
     characterSprite: {fileID: -4178046375966092550, guid: 4d1bdf05407078244872bb65349bfe8b, type: 3}
   - characterEnum: 14
-    displayName: "Ch\xFA B\u1EA3y - Tr\u01B0\u1EDFng ban x\xE2y d\u1EF1ng"
+    displayName: "Ch\xFA B\u1EA3y \\nTr\u01B0\u1EDFng ban x\xE2y d\u1EF1ng"
     characterSprite: {fileID: 6937817954938267909, guid: ccaec2264419f7b45ac255572950f511, type: 3}
   - characterEnum: 15
-    displayName: "K.I.M - AI tr\u1EE3 l\xFD"
+    displayName: "K.I.M \\nAI tr\u1EE3 l\xFD"
     characterSprite: {fileID: 8288426215254106694, guid: 950169220e94eb048bb405056c0e5e70, type: 3}

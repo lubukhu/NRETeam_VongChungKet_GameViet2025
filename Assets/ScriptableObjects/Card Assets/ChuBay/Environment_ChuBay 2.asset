@@ -24,7 +24,7 @@ MonoBehaviour:
     choiceText: "C\xF4ng vi\xEAn l\xE0 kh\xF4ng th\u1EC3 thi\u1EBFu"
     statEffects:
     - statType: 0
-      changeAmount: -10
+      changeAmount: -15
     - statType: 1
       changeAmount: 10
     narrativeEffects: []
@@ -34,5 +34,5 @@ MonoBehaviour:
     - statType: 0
       changeAmount: 10
     - statType: 1
-      changeAmount: -10
+      changeAmount: -15
     narrativeEffects: []

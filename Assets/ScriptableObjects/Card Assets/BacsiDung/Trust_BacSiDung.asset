@@ -24,15 +24,15 @@ MonoBehaviour:
     choiceText: "B\xE1c c\xF3 m\u1ED9t \xFD t\u01B0\u1EDFng r\u1EA5t hay"
     statEffects:
     - statType: 0
-      changeAmount: -10
+      changeAmount: -14
     - statType: 1
-      changeAmount: 10
+      changeAmount: 8
     narrativeEffects: []
   rightChoice:
     choiceText: "N\xF3 qu\xE1 t\u1ED1n k\xE9m v\u1EDBi ch\xFAng ta"
     statEffects:
     - statType: 0
-      changeAmount: 10
+      changeAmount: 8
     - statType: 1
-      changeAmount: -5
+      changeAmount: -10
     narrativeEffects: []

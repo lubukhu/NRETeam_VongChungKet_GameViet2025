@@ -27,13 +27,13 @@ MonoBehaviour:
     - statType: 0
       changeAmount: 5
     - statType: 2
-      changeAmount: -10
+      changeAmount: -15
     narrativeEffects: []
   rightChoice:
     choiceText: "Con s\xF4ng s\u1EBD b\u1ECB \xF4 nhi\u1EC5m m\u1EA5t"
     statEffects:
     - statType: 0
-      changeAmount: -10
+      changeAmount: -15
     - statType: 2
       changeAmount: 10
     narrativeEffects: []

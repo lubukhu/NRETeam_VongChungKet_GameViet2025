@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      NhanSeo_BG_0: 3609233503851385639
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

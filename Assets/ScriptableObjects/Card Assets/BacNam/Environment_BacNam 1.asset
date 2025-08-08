@@ -24,11 +24,11 @@ MonoBehaviour:
     choiceText: "D\u1EA1 c\u0169ng \u0111\u01B0\u1EE3c b\xE1c"
     statEffects:
     - statType: 1
-      changeAmount: 10
+      changeAmount: 5
     narrativeEffects: []
   rightChoice:
     choiceText: "Kh\xF4ng \u0111\u01B0\u1EE3c \u0111\xE2u b\xE1c \u1EA1"
     statEffects:
     - statType: 1
-      changeAmount: -5
+      changeAmount: -10
     narrativeEffects: []

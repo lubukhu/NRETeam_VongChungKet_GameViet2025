@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LaoThong_0: -4057602043096541623
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

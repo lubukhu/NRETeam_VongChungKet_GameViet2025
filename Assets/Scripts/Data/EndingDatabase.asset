@@ -15,28 +15,28 @@ MonoBehaviour:
   allEndings:
   - endingId: Enviroment_0
     endingSprite: {fileID: -1377970439005356656, guid: 3e51b0f3225bbd94e8ad68125bf2ae0f, type: 3}
-    endingDescription: "BAD END: \u0110\xC1NH \u0110\u1ED4I THI\xCAN NHI\xCAN"
+    endingDescription: "BAD END \\n\u0110\xC1NH \u0110\u1ED4I THI\xCAN NHI\xCAN"
   - endingId: Enviroment_100
     endingSprite: {fileID: 4775720718188029840, guid: d1520c6f31dbd7043b13f3d8521cb3f2, type: 3}
-    endingDescription: "BAD END: K\u1EBA CU\u1ED2NG C\xC2Y XANH"
+    endingDescription: "BAD END \\nK\u1EBA CU\u1ED2NG C\xC2Y XANH"
   - endingId: Culture_0
     endingSprite: {fileID: 6675369280222125110, guid: a6ed72723058579419cce2879a89d9d7, type: 3}
-    endingDescription: "BAD END: \u0110\xC1NH M\u1EA4T B\u1EA2N S\u1EAEC"
+    endingDescription: "BAD END \\n\u0110\xC1NH M\u1EA4T B\u1EA2N S\u1EAEC"
   - endingId: Culture_100
     endingSprite: {fileID: -3310080641003096973, guid: 9926c925be1703d4886927343b2aa9ca, type: 3}
-    endingDescription: "BAD END: M\xCA T\xCDN D\u1ECA \u0110OAN"
+    endingDescription: "BAD END \\nM\xCA T\xCDN D\u1ECA \u0110OAN"
   - endingId: Finance_0
     endingSprite: {fileID: -8019056738076762794, guid: 000b783fbad7c1d4a9e44d9706842b08, type: 3}
-    endingDescription: "BAD END: H\u1EA0 T\u1EA6NG DANG D\u1EDE"
+    endingDescription: "BAD END \\nH\u1EA0 T\u1EA6NG DANG D\u1EDE"
   - endingId: Finance_100
     endingSprite: {fileID: -5654078147906913805, guid: f855e4597e22bd34b91143efc3ea810c, type: 3}
-    endingDescription: "BAD END: TI\u1EC0N NHI\u1EC0U \u0110\u1EC2 L\xC0M G\xCC?"
+    endingDescription: "BAD END \\nTI\u1EC0N NHI\u1EC0U \u0110\u1EC2 L\xC0M G\xCC?"
   - endingId: Trust_100
     endingSprite: {fileID: 20032003550115081, guid: d0cc613f109dae34e99c469e379eed89, type: 3}
-    endingDescription: "BAD END: TH\u1EBE L\u1EF0C TH\xD9 \u0110\u1ECACH"
+    endingDescription: "BAD END \\nTH\u1EBE L\u1EF0C TH\xD9 \u0110\u1ECACH"
   - endingId: Trust_0
     endingSprite: {fileID: 2580069534808806700, guid: 8fd6a151c40d2104fa8596625742a324, type: 3}
-    endingDescription: "BAD END: \u0110\xC1NH M\u1EA4T UY T\xCDN"
+    endingDescription: "BAD END \\n\u0110\xC1NH M\u1EA4T UY T\xCDN"
   - endingId: Good Ending
     endingSprite: {fileID: 8836892372229855637, guid: a925a1284e5fc80498af2408ad5772be, type: 3}
-    endingDescription: "GOOD END: C\xC2N B\u1EB0NG & TH\u1ECANH V\u01AF\u1EE2NG"
+    endingDescription: "GOOD END \\nC\xC2N B\u1EB0NG & TH\u1ECANH V\u01AF\u1EE2NG"

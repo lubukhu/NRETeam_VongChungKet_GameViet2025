@@ -26,13 +26,13 @@ MonoBehaviour:
     - statType: 0
       changeAmount: 5
     - statType: 2
-      changeAmount: -5
+      changeAmount: -10
     narrativeEffects: []
   rightChoice:
     choiceText: "Kh\xF4ng \u0111\u01B0\u1EE3c \u0111\xE2u b\xE1c \u1EA1"
     statEffects:
     - statType: 0
-      changeAmount: -5
+      changeAmount: -10
     - statType: 2
       changeAmount: 5
     narrativeEffects: []
