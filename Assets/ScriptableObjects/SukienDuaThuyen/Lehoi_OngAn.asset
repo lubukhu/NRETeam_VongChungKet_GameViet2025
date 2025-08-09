@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: Lehoi_OngAn
+  m_EditorClassIdentifier: 
+  cardID: 
+  characterName: "C\u1EE5 \xF4ng An - Tr\u01B0\u1EDFng l\xE0ng"
+  characterSprite: {fileID: -6470460504253458178, guid: 8ae689f42fd7d6d4ba4e28d679da4638, type: 3}
+  dialogueText: "S\u1EAFp t\u1EDBi l\xE0ng ta s\u1EBD t\u1ED5 ch\u1EE9c l\u1EC5 h\u1ED9i
+    \u0111ua thuy\u1EC1n truy\u1EC1n th\u1ED1ng \u0111\xF3! Ch\xFAng ta s\u1EBD thi
+    \u0111\u1EA5u v\u1EDBi c\xE1c l\xE0ng l\xE2n c\u1EADn! Ch\xE1u c\xF3 mu\u1ED1n
+    tham gia kh\xF4ng? "
+  cardCategory: 5
+  behaviorType: 1
+  frequency: 1
+  leftChoice:
+    choiceText: "D\u1EA1 c\xF3 ch\u1EE9! Ch\xE1u r\u1EA5t th\xEDch l\u1EC5 h\u1ED9i!"
+    statEffects:
+    - statType: 3
+      changeAmount: 10
+    narrativeEffects:
+    - effectType: 4
+      targetCard: {fileID: 11400000, guid: c339cf0c377017e44a8188c95b3fd6e6, type: 2}
+      targetDeck: {fileID: 0}
+      narrativeFlag: {fileID: 0}
+      flagValue: 0
+    - effectType: 2
+      targetCard: {fileID: 11400000, guid: c339cf0c377017e44a8188c95b3fd6e6, type: 2}
+      targetDeck: {fileID: 0}
+      narrativeFlag: {fileID: 11400000, guid: ee6c4aaaa4ed4474f9bbf17f24eb314e, type: 2}
+      flagValue: 1
+  rightChoice:
+    choiceText: "D\u1EA1 th\xF4i \u1EA1, ch\xFAng ta c\xF2n nhi\u1EC1u v\u1EA5n \u0111\u1EC1
+      kh\xE1c ph\u1EA3i lo"
+    statEffects:
+    - statType: 3
+      changeAmount: -10
+    narrativeEffects:
+    - effectType: 2
+      targetCard: {fileID: 0}
+      targetDeck: {fileID: 0}
+      narrativeFlag: {fileID: 11400000, guid: ee6c4aaaa4ed4474f9bbf17f24eb314e, type: 2}
+      flagValue: 1

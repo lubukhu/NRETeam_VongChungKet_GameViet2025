@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: Finance_AnhKhoi
+  m_EditorClassIdentifier: 
+  cardID: 
+  characterName: "Anh Kh\xF4i - Thanh ni\xEAn kh\u1EDFi nghi\u1EC7p"
+  characterSprite: {fileID: 7033936762464518976, guid: a4caabd271cb3404dbaf788806113ebb, type: 3}
+  dialogueText: "T\xF4i ngh\u0129 ch\xFAng ta n\xEAn t\u1EADp trung h\u01A1n cho
+    c\xE1c qu\u1EA7y h\xE0ng l\u01B0u ni\u1EC7m! \u0110\xE2y l\xE0 c\u01A1 h\u1ED9i
+    kinh doanh l\u1EDBn \u0111\u1EA5y!"
+  cardCategory: 0
+  behaviorType: 0
+  frequency: 0
+  leftChoice:
+    choiceText: "Ch\xFAng ta n\xEAn t\u1EADp trung v\xE0o tr\u1EA3i nghi\u1EC7m c\u1EE7a
+      ng\u01B0\u1EDDi d\xE2n th\xEC h\u01A1n"
+    statEffects:
+    - statType: 0
+      changeAmount: -15
+    - statType: 3
+      changeAmount: 10
+    narrativeEffects: []
+  rightChoice:
+    choiceText: "\u0110\xFAng v\u1EADy! n\xEAn k\xEDch c\u1EA7u kinh doanh!"
+    statEffects:
+    - statType: 0
+      changeAmount: 10
+    - statType: 3
+      changeAmount: -10
+    narrativeEffects: []

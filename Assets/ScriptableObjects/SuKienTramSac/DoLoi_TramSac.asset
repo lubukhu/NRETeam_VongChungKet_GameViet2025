@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: DoLoi_TramSac
+  m_EditorClassIdentifier: 
+  cardID: SuKienTramSac_XinLoi
+  characterName: "S\u1EF0 KI\u1EC6N: S\u1EF0 TH\u1EACT HAY D\u1ED0I TR\xC1"
+  characterSprite: {fileID: -3730360276351286066, guid: accd6610a2e5dd240a5679631c3616ad, type: 3}
+  dialogueText: "Ng\u01B0\u1EDDi d\xE2n \u0111ang nghi ng\u1EDD kh\xF4ng bi\u1EBFt
+    v\u1EE5 vi\u1EC7c n\xE0y b\u1EA1n c\xF3 v\xF4 can hay kh\xF4ng, ni\u1EC1m tin
+    c\u1EE7a ng\u01B0\u1EDDi d\xE2n kh\xF4ng c\xF2n nh\u01B0 tr\u01B0\u1EDBc"
+  cardCategory: 4
+  behaviorType: 1
+  frequency: 1
+  leftChoice:
+    choiceText: "S\u1EBD kh\xF4ng c\xF3 ai c\xF3 th\u1EC3 bi\u1EBFt \u0111\u01B0\u1EE3c
+      chuy\u1EC7n n\xE0y"
+    statEffects:
+    - statType: 1
+      changeAmount: -30
+    - statType: 0
+      changeAmount: -15
+    narrativeEffects: []
+  rightChoice:
+    choiceText: "Chuy\u1EC7n n\xE0y m\xE0 l\u1ED9 ra l\xE0 m\u1EA5t t\u1EA5t c\u1EA3 "
+    statEffects:
+    - statType: 0
+      changeAmount: -15
+    - statType: 1
+      changeAmount: -30
+    narrativeEffects: []

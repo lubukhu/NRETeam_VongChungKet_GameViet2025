@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: Thang_SuKienDuaThuyen
+  m_EditorClassIdentifier: 
+  cardID: SuKienDuaThuyen_Thang
+  characterName: "S\u1EF0 KI\u1EC6N: TH\u1EAENG L\u1EE2I V\u1EBA VANG"
+  characterSprite: {fileID: -8232695423003256242, guid: 19166b8d85f85e746a1580bb568b82b2, type: 3}
+  dialogueText: "L\xE0ng ta \u0111\xE3 th\u1EAFng, l\u1EDBp tr\u1EBB ch\xFAng ta
+    \u0111\xE3 th\u1EC3 hi\u1EC7n \u0111\u01B0\u1EE3c \u0111\xFAng s\u1EE9c tr\u1EBB
+    c\u1EE7a h\u1ECD, s\u1EF1 ph\xE1t tri\u1EC3n v\xE0 thay \u0111\u1ED5i c\u1EE7a
+    c\xE1c th\u1EBF h\u1EC7 \u0111\xF4i khi l\xE0 c\u1EA7n thi\u1EBFt!"
+  cardCategory: 5
+  behaviorType: 1
+  frequency: 1
+  leftChoice:
+    choiceText: "Tuy\u1EC7t v\u1EDDi, l\xE0ng ta \u0111\xE3 th\u1EAFng!"
+    statEffects:
+    - statType: 0
+      changeAmount: 15
+    - statType: 1
+      changeAmount: 15
+    - statType: 2
+      changeAmount: 15
+    - statType: 3
+      changeAmount: 15
+    narrativeEffects: []
+  rightChoice:
+    choiceText: "Chi\u1EBFn th\u1EAFng n\xE0y l\xE0 c\u1EE7a t\u1EA5t c\u1EA3 m\u1ECDi
+      ng\u01B0\u1EDDi!"
+    statEffects:
+    - statType: 0
+      changeAmount: 15
+    - statType: 1
+      changeAmount: 15
+    - statType: 2
+      changeAmount: 15
+    - statType: 3
+      changeAmount: 15
+    narrativeEffects: []

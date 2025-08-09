@@ -38,8 +38,11 @@ public class NarrativeDirector : MonoBehaviour
 
     [Header("Tutorial Settings")]
     [SerializeField] private ScriptableListCardData tutorialDeck;
+    [SerializeField] private ScriptableListCardData BoatRacingDeck;
+    [SerializeField] private ScriptableListCardData ElectricPlantDeck;
     [SerializeField] private BoolVariable tutorialCompletedFlag;
-
+    [SerializeField] private BoolVariable isBoatRacingEventActivated;
+    [SerializeField] private BoolVariable isElectricPlantEventActivated;
     // Hàm này được gọi bởi EventListener lắng nghe onNewPoolRequested
     public void GenerateNextPool()
     {
@@ -49,6 +52,18 @@ public class NarrativeDirector : MonoBehaviour
         if (playthroughCount.Value == 0 && !tutorialCompletedFlag.Value)
         {
             LoadSequentialDeck(tutorialDeck);
+            return;
+        }
+
+        if (playthroughCount.Value == 1 && !isBoatRacingEventActivated.Value)
+        {
+            LoadSequentialDeck(BoatRacingDeck);
+            return;
+        }
+
+        if (playthroughCount.Value == 2 && !isElectricPlantEventActivated.Value)
+        {
+            LoadSequentialDeck(ElectricPlantDeck);
             return;
         }
         

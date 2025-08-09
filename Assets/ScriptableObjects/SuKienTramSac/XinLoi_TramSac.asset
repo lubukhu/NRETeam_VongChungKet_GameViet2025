@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: XinLoi_TramSac
+  m_EditorClassIdentifier: 
+  cardID: SuKienTramSac_XinLoi
+  characterName: "S\u1EF0 KI\u1EC6N: KH\xD4NG MU\u1ED8N M\xC0NG \u0110\u1EC2 XIN
+    L\u1ED6I"
+  characterSprite: {fileID: -8198546858916041973, guid: add79e06a1ae8b74bb27951b01b177d6, type: 3}
+  dialogueText: "Ng\u01B0\u1EDDi d\xE2n tuy r\u1EA5t t\u1EE9c gi\u1EADn v\xE0 hoang
+    m\xE0ng sau v\u1EE5 vi\u1EC7c ph\xE1t n\u1ED5, nh\u01B0ng nh\u1EDD l\u1EDDi xin
+    l\u1ED7i ch\xE2n th\xE0nh c\u1EE7a b\u1EA1n \u0111\xE3 gi\xFAp ng\u01B0\u1EDDi
+    d\xE2n m\u1ED9t l\u1EA7n n\u1EEFa ti\u1EBFp t\u1EE5c \u0111\u1EB7c l\xF2ng tin
+    v\xE0o b\u1EA1n"
+  cardCategory: 4
+  behaviorType: 1
+  frequency: 1
+  leftChoice:
+    choiceText: "Ch\xFAng ta c\u1EA7n c\u1EA9n th\u1EADn h\u01A1n trong nh\u1EEFng
+      d\u1EF1 \xE1n sau"
+    statEffects:
+    - statType: 1
+      changeAmount: 5
+    - statType: 0
+      changeAmount: -25
+    narrativeEffects: []
+  rightChoice:
+    choiceText: "\u0110\u1EEBng \u0111\u1EC3 v\u1EE5 vi\u1EC7c n\xE0y t\xE1i di\u1EC5n"
+    statEffects:
+    - statType: 0
+      changeAmount: -25
+    - statType: 1
+      changeAmount: 5
+    narrativeEffects: []

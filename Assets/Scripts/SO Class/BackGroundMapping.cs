@@ -6,7 +6,8 @@ public enum BackgroundTriggerType
 {
     ByCategory,       
     ByCharacterName,  
-    ByEndingID        
+    ByEndingID,
+    ByID
 }
 
 [System.Serializable]
@@ -25,4 +26,6 @@ public class BackgroundMapping
 
     [Tooltip("Nhập ID của Ending nếu Trigger Type là 'ByEndingID'.")]
     public string endingId;
+    
+    public string id;
 }

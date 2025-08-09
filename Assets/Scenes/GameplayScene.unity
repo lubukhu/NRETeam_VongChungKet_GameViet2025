@@ -215,121 +215,163 @@ MonoBehaviour:
     cardCategory: 6
     characterName: 0
     endingId: Culture_0
+    id: 
   - triggerType: 2
     backgroundSprite: {fileID: 8283965550108017259, guid: 7002c43cfb92d6b4ea972104794cc4a2, type: 3}
     cardCategory: 6
     characterName: 0
     endingId: Culture_100
+    id: 
   - triggerType: 2
     backgroundSprite: {fileID: -1715569906781827675, guid: d655fb8717afa8e4aaa22711b177583b, type: 3}
     cardCategory: 6
     characterName: 0
     endingId: Trust_100
+    id: 
   - triggerType: 2
     backgroundSprite: {fileID: 7175511744186815507, guid: b7682562b5e2e874fbb3513a993b20f3, type: 3}
     cardCategory: 6
     characterName: 0
     endingId: Trust_0
+    id: 
   - triggerType: 2
     backgroundSprite: {fileID: 7175511744186815507, guid: b7682562b5e2e874fbb3513a993b20f3, type: 3}
     cardCategory: 6
     characterName: 0
     endingId: Finance_0
+    id: 
   - triggerType: 2
     backgroundSprite: {fileID: 7175511744186815507, guid: b7682562b5e2e874fbb3513a993b20f3, type: 3}
     cardCategory: 6
     characterName: 0
     endingId: Finance_100
+    id: 
   - triggerType: 2
     backgroundSprite: {fileID: -1715569906781827675, guid: d655fb8717afa8e4aaa22711b177583b, type: 3}
     cardCategory: 6
     characterName: 0
     endingId: Enviroment_0
+    id: 
   - triggerType: 2
     backgroundSprite: {fileID: -3799088409944496522, guid: 42e9e2da62f9b764997caff698c8ea50, type: 3}
     cardCategory: 6
     characterName: 0
     endingId: Enviroment_100
+    id: 
   - triggerType: 2
     backgroundSprite: {fileID: 3602235653069564327, guid: 7d268844acb3e6647a29bc96cf575e49, type: 3}
     cardCategory: 6
     characterName: 0
     endingId: Good Ending
+    id: 
   - triggerType: 1
     backgroundSprite: {fileID: -3542511697361574809, guid: 67301d7a2135ed84995b6df1404f91de, type: 3}
     cardCategory: 5
     characterName: 0
     endingId: 
+    id: 
   - triggerType: 1
     backgroundSprite: {fileID: 8505859315053539008, guid: 14a2539fe9bf6804a9ce94318321e14c, type: 3}
     cardCategory: 5
     characterName: 2
     endingId: 
+    id: 
   - triggerType: 1
     backgroundSprite: {fileID: -6817936360819013358, guid: 3e6495b3ab20a154ab6ecc4d2f7fca19, type: 3}
     cardCategory: 5
     characterName: 3
     endingId: 
+    id: 
   - triggerType: 1
     backgroundSprite: {fileID: 572287830598693736, guid: fa501c962f829d5478d14abad76e7b62, type: 3}
     cardCategory: 5
     characterName: 1
     endingId: 
+    id: 
   - triggerType: 1
     backgroundSprite: {fileID: 3081041537960830974, guid: 1c420b4a128ce0f43aae68a340242cd5, type: 3}
     cardCategory: 5
     characterName: 4
     endingId: 
+    id: 
   - triggerType: 1
     backgroundSprite: {fileID: 3609233503851385639, guid: 386726caf2f9a5f4293e51c2f9931997, type: 3}
     cardCategory: 5
     characterName: 5
     endingId: 
+    id: 
   - triggerType: 1
     backgroundSprite: {fileID: -7795059601770367265, guid: 590c0cc887a715f4c81565157f70f133, type: 3}
     cardCategory: 5
     characterName: 6
     endingId: 
+    id: 
   - triggerType: 1
     backgroundSprite: {fileID: 8830701345823326279, guid: 8fb701d9687030249bdd85c6d0163786, type: 3}
     cardCategory: 5
     characterName: 7
     endingId: 
+    id: 
   - triggerType: 1
     backgroundSprite: {fileID: -4057602043096541623, guid: bc7ec309849e0324ab15cac093e33b94, type: 3}
     cardCategory: 5
     characterName: 8
     endingId: 
+    id: 
   - triggerType: 1
     backgroundSprite: {fileID: 1619605690880573135, guid: 54d94ab589935f74094f1b4a4babbb23, type: 3}
     cardCategory: 5
     characterName: 9
     endingId: 
+    id: 
   - triggerType: 1
     backgroundSprite: {fileID: -134803957775175563, guid: 77e9aace79fb9c34db58124da693f514, type: 3}
     cardCategory: 5
     characterName: 10
     endingId: 
+    id: 
   - triggerType: 1
     backgroundSprite: {fileID: 9014906237930524479, guid: 4e36c0752d0aabd4da5d8557042145ed, type: 3}
     cardCategory: 5
     characterName: 11
     endingId: 
+    id: 
   - triggerType: 1
     backgroundSprite: {fileID: -3135957348730495470, guid: 306a8b012b0f57d40b1a829ba58e73fe, type: 3}
     cardCategory: 5
     characterName: 12
     endingId: 
+    id: 
   - triggerType: 1
     backgroundSprite: {fileID: 5638416113803216587, guid: a5d83802943120342b74790290b5e729, type: 3}
     cardCategory: 5
     characterName: 13
     endingId: 
+    id: 
   - triggerType: 1
     backgroundSprite: {fileID: -1344611224191241700, guid: 800b5cb76a8ca0140b3653b85c765699, type: 3}
     cardCategory: 5
     characterName: 14
     endingId: 
+    id: 
+  - triggerType: 0
+    backgroundSprite: {fileID: 8276696580191827557, guid: 61e0ec061be991e49a8ed39f6df791d9, type: 3}
+    cardCategory: 5
+    characterName: 0
+    endingId: SuKienDuaThuyen
+    id: 
+  - triggerType: 0
+    backgroundSprite: {fileID: 8276696580191827557, guid: 61e0ec061be991e49a8ed39f6df791d9, type: 3}
+    cardCategory: 5
+    characterName: 0
+    endingId: SuKienDuaThuyen_Thua
+    id: 
+  - triggerType: 0
+    backgroundSprite: {fileID: 8276696580191827557, guid: 61e0ec061be991e49a8ed39f6df791d9, type: 3}
+    cardCategory: 5
+    characterName: 0
+    endingId: 
+    id: 
   characterNameMapper: {fileID: 11400000, guid: bac9d46aeed3900488ea4de52483184d, type: 2}
   currentActiveCard: {fileID: 11400000, guid: 56df9da57ed17114282a91775f765f0a, type: 2}
 --- !u!114 &64309604
@@ -1724,10 +1766,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9624c2ca834109345be85acf5dc609d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardCategory: 0
-  selectedCharacter: 14
-  frequency: 0
-  behaviorType: 0
+  cardCategory: 5
+  selectedCharacter: 0
+  frequency: 1
+  behaviorType: 1
 --- !u!1 &555795460
 GameObject:
   m_ObjectHideFlags: 0
@@ -3205,7 +3247,11 @@ MonoBehaviour:
   onNewPoolReady: {fileID: 11400000, guid: 499c0ec2ceabee44ca9c44b6ed63f33f, type: 2}
   poolSize: 10
   tutorialDeck: {fileID: 11400000, guid: 62bbd23d7de4cf14ea57a41a1839a7c8, type: 2}
+  BoatRacingDeck: {fileID: 11400000, guid: cb6a742197663364c85b9be29c23a5e1, type: 2}
+  ElectricPlantDeck: {fileID: 11400000, guid: 45b1a3ddf6463554390946cafac22e16, type: 2}
   tutorialCompletedFlag: {fileID: 11400000, guid: 36fec56a8f2e06548a575d17868d5426, type: 2}
+  isBoatRacingEventActivated: {fileID: 11400000, guid: ee6c4aaaa4ed4474f9bbf17f24eb314e, type: 2}
+  isElectricPlantEventActivated: {fileID: 11400000, guid: 70aa34f3e19f9b6459cf1117fc2c6775, type: 2}
 --- !u!114 &1023349003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5511,12 +5557,24 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 68201f7d7dcc71945a976a0dc5ab36fc, type: 2}
     - {fileID: 11400000, guid: 545267564a9a9cf409552962858812dd, type: 2}
     targetDeck: {fileID: 11400000, guid: 4c121ce463d13b04bb5874d3aca7eecb, type: 2}
+  - description: BoatRacing Deck
+    sourceCards:
+    - {fileID: 11400000, guid: 024bcd4550f660c4d82b4ed26a6611f0, type: 2}
+    targetDeck: {fileID: 11400000, guid: cb6a742197663364c85b9be29c23a5e1, type: 2}
+  - description: Electric Plant Deck
+    sourceCards:
+    - {fileID: 11400000, guid: 5d0205987c20a3749a1f611df96aa546, type: 2}
+    targetDeck: {fileID: 11400000, guid: 45b1a3ddf6463554390946cafac22e16, type: 2}
   rulesToLoad:
   - description: TutorialRule
     sourceRules:
     - {fileID: 11400000, guid: 570953c1bf935574f840d12d55dec52e, type: 2}
     - {fileID: 11400000, guid: cbfe91044b9f0784a8944f12fa3e60eb, type: 2}
     - {fileID: 11400000, guid: fb52ff44a2302104186cd227b3383747, type: 2}
+    - {fileID: 11400000, guid: 99b4c093778b0b1418c2fa6adb65a6d6, type: 2}
+    - {fileID: 11400000, guid: a593406428d4c4e46918bbd20ef5739f, type: 2}
+    - {fileID: 11400000, guid: 68558910db69a494c877e179fa136622, type: 2}
+    - {fileID: 11400000, guid: 2316f7868edab6f4f81f32eaf94a49cb, type: 2}
     targetRuleList: {fileID: 11400000, guid: 92f1a9beb3f3d394380e996a82375f4b, type: 2}
   onMasterDataLoaded: {fileID: 11400000, guid: 0b7d812263beaff44910ec1d80822e2f, type: 2}
 --- !u!1 &1813070918

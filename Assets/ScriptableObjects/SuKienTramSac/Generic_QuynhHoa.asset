@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: Generic_QuynhHoa
+  m_EditorClassIdentifier: 
+  cardID: 
+  characterName: "C\xE1n b\u1ED9 Qu\u1EF3nh Hoa"
+  characterSprite: {fileID: 4113829005332862926, guid: de17deb4d60844d4b8b4ce8c2576133d, type: 3}
+  dialogueText: "C\xE1n b\u1ED9, b\xE0 con trong l\xE0ng \u0111ang r\u1EA5t hoang
+    mang, h\u1ECD kh\xF4ng c\xF2n tin t\u01B0\u1EDFng v\xE0o d\u1EF1 \xE1n tr\u1EA1m
+    s\u1EA1c n\xE0y n\u1EEFa. Gi\u1EDD ch\xFAng ta ph\u1EA3i l\xE0m g\xEC \u0111\u1EC3
+    l\u1EA5y l\u1EA1i l\xF2ng tin \u0111\xE2y?"
+  cardCategory: 5
+  behaviorType: 1
+  frequency: 1
+  leftChoice:
+    choiceText: "Ch\xFAng ta n\xEAn h\u1ECDp ng\u01B0\u1EDDi d\xE2n \u0111\u1EC3 
+      th\xE0nh th\u1EADt xin l\u1ED7i v\xEC s\u1EF1 c\u1ED1 n\xE0y!"
+    statEffects: []
+    narrativeEffects:
+    - effectType: 4
+      targetCard: {fileID: 11400000, guid: eab529963134c9443a0e7edca8c4aa60, type: 2}
+      targetDeck: {fileID: 0}
+      narrativeFlag: {fileID: 0}
+      flagValue: 0
+  rightChoice:
+    choiceText: "H\xE3y \u0111\u1ED5 tr\xE1ch nhi\u1EC7m s\u1EF1 c\u1ED1 n\xE0y cho
+      \xF4ng Ph\xE1t"
+    statEffects: []
+    narrativeEffects:
+    - effectType: 4
+      targetCard: {fileID: 11400000, guid: 08bdb884ef9bd954b8b8ea6b010296ef, type: 2}
+      targetDeck: {fileID: 0}
+      narrativeFlag: {fileID: 0}
+      flagValue: 0

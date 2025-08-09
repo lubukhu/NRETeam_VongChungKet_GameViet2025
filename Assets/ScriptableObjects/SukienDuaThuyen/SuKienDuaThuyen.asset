@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98049100b8114184588b223e2a7594e7, type: 3}
+  m_Name: SuKienDuaThuyen
+  m_EditorClassIdentifier: 
+  cardID: SuKienDuaThuyen
+  characterName: "S\u1EF0 KI\u1EC6N: L\u1EC4 H\u1ED8I \u0110UA THUY\u1EC0N"
+  characterSprite: {fileID: 4501031755931279474, guid: c2a666a42d6c36849b9a326e687f8de4, type: 3}
+  dialogueText: "\u0110\xE3 m\u1EDF kh\xF3a s\u1EF1 ki\u1EC7n L\u1EC5 h\u1ED9i \u0110ua
+    thuy\u1EC1n!"
+  cardCategory: 5
+  behaviorType: 1
+  frequency: 1
+  leftChoice:
+    choiceText: "Tuy\u1EC7t v\u1EDDi!"
+    statEffects: []
+    narrativeEffects: []
+  rightChoice:
+    choiceText: "Ti\u1EBFp t\u1EE5c"
+    statEffects: []
+    narrativeEffects: []
