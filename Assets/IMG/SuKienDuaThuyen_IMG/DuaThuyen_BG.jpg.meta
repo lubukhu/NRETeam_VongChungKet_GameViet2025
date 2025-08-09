@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DuaThuyen_BG_0: 8276696580191827557
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
