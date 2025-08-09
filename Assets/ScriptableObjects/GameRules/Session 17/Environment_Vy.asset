@@ -27,15 +27,15 @@ MonoBehaviour:
       m\xF4i tr\u01B0\u1EDDng"
     statEffects:
     - statType: 2
-      changeAmount: 10
-    - statType: 1
+      changeAmount: 15
+    - statType: 0
       changeAmount: -10
     narrativeEffects: []
   rightChoice:
     choiceText: "Kh\xF4ng ph\u1EA3i vi\u1EC7c t\xF4i"
     statEffects:
+    - statType: 1
+      changeAmount: -10
     - statType: 2
       changeAmount: -10
-    - statType: 1
-      changeAmount: 5
     narrativeEffects: []

@@ -22,14 +22,18 @@ MonoBehaviour:
   behaviorType: 0
   frequency: 0
   leftChoice:
-    choiceText: "V\xE2ng con n\xEAn gi\u1EEF g\xECn b\u1EA3n s\u1EAFc"
+    choiceText: "V\xE2ng ch\xFAng ta n\xEAn gi\u1EEF g\xECn b\u1EA3n s\u1EAFc c\u1EE7a
+      n\u01A1i n\xE0y"
     statEffects:
     - statType: 3
-      changeAmount: 9
+      changeAmount: 15
     narrativeEffects: []
   rightChoice:
-    choiceText: "Nh\u01B0ng con mu\u1ED1n qu\u1EA3n b\xE1 v\u1EC1 l\xE0ng"
+    choiceText: "Nh\u01B0ng s\u1EF1 ph\xE1t tri\u1EC3n hi\u1EC7n \u0111\u1EA1i h\xF3a
+      l\xE0 \u0111i\u1EC1u c\u1EA7n thi\u1EBFt"
     statEffects:
     - statType: 0
-      changeAmount: 10
+      changeAmount: 15
+    - statType: 3
+      changeAmount: -20
     narrativeEffects: []

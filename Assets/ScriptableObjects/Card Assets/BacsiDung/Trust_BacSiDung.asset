@@ -16,7 +16,7 @@ MonoBehaviour:
   characterName: "B\xE1c s\u0129 Dung - Gi\xE1m \u0111\u1ED1c b\u1EC7nh vi\u1EC7n"
   characterSprite: {fileID: -1540426309290004842, guid: 58cc3b639f60e9442a8562498d26d7af, type: 3}
   dialogueText: "C\u1EADu ngh\u0129 sao khi ch\xFAng ta l\xE0m m\u1ED9t bu\u1ED5i
-    tuy\xEAn truy\u1EC1n v\u1EC1 y t\u1EBF"
+    tuy\xEAn truy\u1EC1n s\u1EE9c kh\u1ECFe c\u1ED9ng \u0111\u1ED3ng?"
   cardCategory: 1
   behaviorType: 0
   frequency: 0
@@ -24,15 +24,15 @@ MonoBehaviour:
     choiceText: "B\xE1c c\xF3 m\u1ED9t \xFD t\u01B0\u1EDFng r\u1EA5t hay"
     statEffects:
     - statType: 0
-      changeAmount: -14
+      changeAmount: -15
     - statType: 1
-      changeAmount: 8
+      changeAmount: 5
     narrativeEffects: []
   rightChoice:
     choiceText: "N\xF3 qu\xE1 t\u1ED1n k\xE9m v\u1EDBi ch\xFAng ta"
     statEffects:
     - statType: 0
-      changeAmount: 8
+      changeAmount: 5
     - statType: 1
-      changeAmount: -10
+      changeAmount: -15
     narrativeEffects: []

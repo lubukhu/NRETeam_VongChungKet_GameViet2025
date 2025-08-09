@@ -34,7 +34,7 @@ MonoBehaviour:
       y\xEAn c\u1EE7a n\u01A1i n\xE0y"
     statEffects:
     - statType: 3
-      changeAmount: 5
-    - statType: 1
-      changeAmount: -5
+      changeAmount: 10
+    - statType: 0
+      changeAmount: -15
     narrativeEffects: []

@@ -27,7 +27,7 @@ MonoBehaviour:
     - statType: 0
       changeAmount: 10
     - statType: 1
-      changeAmount: -10
+      changeAmount: -15
     narrativeEffects:
     - effectType: 1
       targetCard: {fileID: 11400000, guid: b937ef67954bdb443b5525fe9a6aacd8, type: 2}
@@ -38,7 +38,7 @@ MonoBehaviour:
     choiceText: "\u0110\u1EEBng xem th\u01B0\u1EDDng ph\xE1p lu\u1EADt"
     statEffects:
     - statType: 0
-      changeAmount: -10
+      changeAmount: -15
     - statType: 1
       changeAmount: 10
     narrativeEffects:

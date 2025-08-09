@@ -15,9 +15,9 @@ MonoBehaviour:
   cardID: 
   characterName: "Anh H\u1EA3i - Ngh\u1EC7 nh\xE2n l\xE0ng ngh\u1EC1"
   characterSprite: {fileID: 7680820834086852892, guid: a5aa3edc2405b524ba4ba43154b258d0, type: 3}
-  dialogueText: "t\xF4i c\xF3 n\xEAn c\u1EA3i ti\u1EBFng n\xE2ng c\u1EA5p c\xE1ch
-    l\xE0m g\u1ED1m hay v\u1EABn n\xEAn \u0111\u1EC3 nguy\xEAn c\xE1ch l\xE0m truy\u1EC1n
-    th\u1ED1ng?"
+  dialogueText: "t\xF4i c\xF3 n\xEAn c\u1EA3i ti\u1EBFng n\xE2ng c\u1EA5p ph\u01B0\u01A1ng
+    ph\xE1p l\xE0m g\u1ED1m hay v\u1EABn n\xEAn \u0111\u1EC3 nguy\xEAn c\xE1ch l\xE0m
+    truy\u1EC1n th\u1ED1ng?"
   cardCategory: 3
   behaviorType: 0
   frequency: 0
@@ -25,14 +25,16 @@ MonoBehaviour:
     choiceText: "T\xF4i ngh\u0129 n\xEAn gi\u1EEF nguy\xEAn truy\u1EC1n th\u1ED1ng"
     statEffects:
     - statType: 3
-      changeAmount: 10
-    - statType: 1
-      changeAmount: 5
+      changeAmount: 15
+    - statType: 0
+      changeAmount: -10
     narrativeEffects: []
   rightChoice:
     choiceText: "\u0110\u1ED5i m\u1EDBi s\u1EBD l\xE0 b\u01B0\u1EDBc \u0111\u1ED9t
       ph\xE1"
     statEffects:
     - statType: 3
-      changeAmount: 5
+      changeAmount: -15
+    - statType: 0
+      changeAmount: 10
     narrativeEffects: []

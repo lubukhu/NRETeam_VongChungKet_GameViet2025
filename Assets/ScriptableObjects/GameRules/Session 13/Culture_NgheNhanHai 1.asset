@@ -26,13 +26,11 @@ MonoBehaviour:
       ngh\u1EC1 truy\u1EC1n th\u1ED1ng"
     statEffects:
     - statType: 3
-      changeAmount: 10
-    - statType: 1
-      changeAmount: 5
+      changeAmount: 15
     narrativeEffects: []
   rightChoice:
     choiceText: "Ngh\u1EC1 n\xE0y c\u0169ng \u0111\xE3 l\u1EA1c h\u1EADu r\u1ED3i"
     statEffects:
     - statType: 3
-      changeAmount: -10
+      changeAmount: -15
     narrativeEffects: []

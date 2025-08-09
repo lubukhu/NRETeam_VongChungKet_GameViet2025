@@ -26,14 +26,14 @@ MonoBehaviour:
     - statType: 3
       changeAmount: 10
     - statType: 2
-      changeAmount: -10
+      changeAmount: -15
     narrativeEffects: []
   rightChoice:
     choiceText: "Ch\xFAng ta n\xEAn t\xECm ph\u01B0\u01A1ng ph\xE1p th\xE2n thi\u1EC7n
       v\u1EDBi m\xF4i tr\u01B0\u1EDDng h\u01A1n"
     statEffects:
     - statType: 3
-      changeAmount: -5
+      changeAmount: -10
     - statType: 2
-      changeAmount: 10
+      changeAmount: 15
     narrativeEffects: []

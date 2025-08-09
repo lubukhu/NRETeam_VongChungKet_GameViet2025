@@ -23,13 +23,15 @@ MonoBehaviour:
   leftChoice:
     choiceText: "Thay \u0111\u1ED5i theo ti\u1EBFn b\u1ED9 khoa h\u1ECDc l\xE0 t\u1ED1t"
     statEffects:
-    - statType: 3
-      changeAmount: -10
+    - statType: 1
+      changeAmount: -15
     narrativeEffects: []
   rightChoice:
     choiceText: "\u0110\xFAng v\u1EADy! ch\xFAng ta n\xEAn h\u1EA1n ch\u1EBF thu\u1ED1c
-      T\xE2y y"
+      T\xE2y Y"
     statEffects:
     - statType: 3
+      changeAmount: -15
+    - statType: 1
       changeAmount: 5
     narrativeEffects: []

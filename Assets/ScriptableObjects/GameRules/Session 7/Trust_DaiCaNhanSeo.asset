@@ -25,14 +25,14 @@ MonoBehaviour:
       h\u1EBFt m\u1ECDi v\u1EA5n \u0111\u1EC1 "
     statEffects:
     - statType: 1
-      changeAmount: -5
+      changeAmount: -10
     - statType: 0
-      changeAmount: 5
+      changeAmount: 15
     narrativeEffects: []
   rightChoice:
     choiceText: "Anh ta ch\u1EC9 l\xE0m \u0111\xFAng c\xF4ng vi\u1EC7c c\u1EE7a m\xECnh
       th\xF4i"
     statEffects:
     - statType: 1
-      changeAmount: 10
+      changeAmount: -15
     narrativeEffects: []

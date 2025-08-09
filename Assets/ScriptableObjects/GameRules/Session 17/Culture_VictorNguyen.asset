@@ -25,7 +25,9 @@ MonoBehaviour:
     choiceText: "\u0110\xFAng v\u1EADy ch\xFAng ta n\xEAn h\u1ED9i nh\u1EADp"
     statEffects:
     - statType: 1
-      changeAmount: 5
+      changeAmount: 10
+    - statType: 0
+      changeAmount: 10
     narrativeEffects: []
   rightChoice:
     choiceText: "Ch\xFAng ta n\xEAn t\xF4n tr\u1ECDng v\u0103n h\xF3a \u0111\u1ECBa

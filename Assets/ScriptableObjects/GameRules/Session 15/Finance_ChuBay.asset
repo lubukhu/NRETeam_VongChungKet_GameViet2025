@@ -26,7 +26,7 @@ MonoBehaviour:
       n\u1EA1n nh\xE2n"
     statEffects:
     - statType: 0
-      changeAmount: -10
+      changeAmount: -15
     - statType: 1
       changeAmount: 10
     narrativeEffects: []

@@ -23,10 +23,10 @@ MonoBehaviour:
   behaviorType: 0
   frequency: 0
   leftChoice:
-    choiceText: "T\xF4i s\u1EBD l\xE0m vi\u1EBFt v\u1EDBi ban x\xE2y d\u1EF1ng"
+    choiceText: "T\xF4i s\u1EBD l\xE0m vi\u1EC7c v\u1EDBi ban x\xE2y d\u1EF1ng"
     statEffects:
     - statType: 0
-      changeAmount: -10
+      changeAmount: -15
     - statType: 1
       changeAmount: 10
     narrativeEffects: []
@@ -35,7 +35,7 @@ MonoBehaviour:
       \xEDch chung"
     statEffects:
     - statType: 1
-      changeAmount: 5
+      changeAmount: -15
     - statType: 0
       changeAmount: 5
     narrativeEffects: []

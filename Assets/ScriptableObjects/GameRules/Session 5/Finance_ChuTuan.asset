@@ -18,7 +18,7 @@ MonoBehaviour:
   dialogueText: "Ch\xE0o c\xE1n b\u1ED9, h\xF4m nay t\xF4i \u0111\u1EBFn \u0111\u1EC3
     y\xEAu c\u1EA7u m\u1ED9t bu\u1ED5i tuy\xEAn truy\u1EC1n ph\xF2ng ch\u1ED1ng ma
     t\xFAy cho ng\u01B0\u1EDDi d\xE2n nh\u01B0ng s\u1EBD c\u1EA7n m\u1ED9t ch\xFAt
-    kinh ph\xED"
+    kinh ph\xED!"
   cardCategory: 0
   behaviorType: 0
   frequency: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
     choiceText: "Em s\u1EBD s\u1EAFp x\u1EBFp cho anh"
     statEffects:
     - statType: 0
-      changeAmount: -10
+      changeAmount: -15
     - statType: 1
       changeAmount: 10
     narrativeEffects: []
@@ -34,5 +34,5 @@ MonoBehaviour:
     choiceText: "C\xF3 l\u1EBD n\xEAn \u0111\u1EC3 khi kh\xE1c"
     statEffects:
     - statType: 1
-      changeAmount: -5
+      changeAmount: -15
     narrativeEffects: []

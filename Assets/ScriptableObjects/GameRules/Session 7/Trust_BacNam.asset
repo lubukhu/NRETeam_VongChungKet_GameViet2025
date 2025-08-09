@@ -16,7 +16,7 @@ MonoBehaviour:
   characterName: "B\xE1c N\u0103m - \u0110\u1EA1i di\u1EC7n n\xF4ng d\xE2n"
   characterSprite: {fileID: -4178046375966092550, guid: 4d1bdf05407078244872bb65349bfe8b, type: 3}
   dialogueText: "B\xE1c th\u1EA5y \xF4ng gi\xE0 Th\xF4ng \u0111ang b\xE1n m\u1ED9t
-    lo\u1EA1i thu\u1ED1c cho ng\u01B0\u1EDDi d\xE2n, ch\xE1u n\xEAn \u0111i\u1EC1u
+    lo\u1EA1i thu\u1ED1c l\u1EA1 cho ng\u01B0\u1EDDi d\xE2n, ch\xE1u n\xEAn \u0111i\u1EC1u
     tra v\u1EC1 \xF4ng ta"
   cardCategory: 1
   behaviorType: 0
@@ -26,15 +26,13 @@ MonoBehaviour:
     statEffects:
     - statType: 1
       changeAmount: 5
-    - statType: 3
-      changeAmount: -5
     narrativeEffects: []
   rightChoice:
     choiceText: "\xD4ng \u1EA5y l\xE0 th\u1EA7y thu\u1ED1c \u0111\u1ECBa ph\u01B0\u01A1ng,
       kh\xF4ng sao \u0111\xE2u"
     statEffects:
     - statType: 1
-      changeAmount: -5
+      changeAmount: -10
     - statType: 3
-      changeAmount: 10
+      changeAmount: 5
     narrativeEffects: []

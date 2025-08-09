@@ -5467,6 +5467,24 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 54fac100c2f6a974183a72ffd5b32a2c, type: 2}
     - {fileID: 11400000, guid: 97199c2235a09f7408645475876b94ca, type: 2}
     - {fileID: 11400000, guid: cd9b394e172235446990cac815757750, type: 2}
+    - {fileID: 11400000, guid: 62980eea26831594f920f989ab20d86e, type: 2}
+    - {fileID: 11400000, guid: 504193c2420504b44a53caeebc0f5f51, type: 2}
+    - {fileID: 11400000, guid: cd3aa40a02bbc5a4a8b2d904834d3a3e, type: 2}
+    - {fileID: 11400000, guid: 50254d5dd28c8b24f95c4b29666b5c89, type: 2}
+    - {fileID: 11400000, guid: 7a01f7bfe84d1764892c25ff9a86109f, type: 2}
+    - {fileID: 11400000, guid: 9270ab3c842bd9745ac68127e140c15c, type: 2}
+    - {fileID: 11400000, guid: 30e589f0e01b2a64c84aa6cf16111ec1, type: 2}
+    - {fileID: 11400000, guid: 8474beb377f245a4c8dbac5c2a23d942, type: 2}
+    - {fileID: 11400000, guid: 04b2de231b425fa4b893d628c5752c4f, type: 2}
+    - {fileID: 11400000, guid: 02aa0e4311010bd4bbecf9df83dcbf55, type: 2}
+    - {fileID: 11400000, guid: 2c7b6db0ac05aa6409f98529c3357115, type: 2}
+    - {fileID: 11400000, guid: e5192c450474e6b4fa83a2dfd6dc06a6, type: 2}
+    - {fileID: 11400000, guid: 837d157893321994b96eb31f40605a1c, type: 2}
+    - {fileID: 11400000, guid: 0b2d273f2f1e96d44b7e9628d34c721c, type: 2}
+    - {fileID: 11400000, guid: 85ad58b872720f945a5359e54f357d8a, type: 2}
+    - {fileID: 11400000, guid: 5b87e6e0296882d42b104c0d853efd51, type: 2}
+    - {fileID: 11400000, guid: 607e86be8bf38234a901b9975161e440, type: 2}
+    - {fileID: 11400000, guid: aa0cc28cdffd9674298e3547ed88ec31, type: 2}
     targetDeck: {fileID: 11400000, guid: 8b99b0eabe67ff84aa2d710a2630cbce, type: 2}
   - description: Tutorial Decks
     sourceCards:
@@ -5496,15 +5514,9 @@ MonoBehaviour:
   rulesToLoad:
   - description: TutorialRule
     sourceRules:
-    - {fileID: 11400000, guid: fb52ff44a2302104186cd227b3383747, type: 2}
     - {fileID: 11400000, guid: 570953c1bf935574f840d12d55dec52e, type: 2}
     - {fileID: 11400000, guid: cbfe91044b9f0784a8944f12fa3e60eb, type: 2}
-    - {fileID: 11400000, guid: a9817050f1a30ed4282f13262031528a, type: 2}
-    - {fileID: 11400000, guid: d28aca5cf80a94e428c8faa93740b7c3, type: 2}
-    - {fileID: 11400000, guid: f6376027e4404b8459370f57749a8f8e, type: 2}
-    - {fileID: 11400000, guid: 57159a13ebe0e664e8ecce2c9c74bfa3, type: 2}
-    - {fileID: 11400000, guid: 93fd3dee9454a1249a02e7cef1c48df0, type: 2}
-    - {fileID: 11400000, guid: 625ffcb0a8df3604f91bdfa210eeeced, type: 2}
+    - {fileID: 11400000, guid: fb52ff44a2302104186cd227b3383747, type: 2}
     targetRuleList: {fileID: 11400000, guid: 92f1a9beb3f3d394380e996a82375f4b, type: 2}
   onMasterDataLoaded: {fileID: 11400000, guid: 0b7d812263beaff44910ec1d80822e2f, type: 2}
 --- !u!1 &1813070918

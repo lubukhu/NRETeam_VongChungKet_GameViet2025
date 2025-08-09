@@ -31,12 +31,12 @@ MonoBehaviour:
     - statType: 1
       changeAmount: 5
     - statType: 3
-      changeAmount: 10
+      changeAmount: 15
     narrativeEffects: []
   rightChoice:
     choiceText: "Hi\u1EC7n t\u1EA1i ng\xE2n s\xE1ch c\u1EE7a ch\xFAng ta ch\u01B0a
       cho ph\xE9p"
     statEffects:
     - statType: 3
-      changeAmount: -10
+      changeAmount: -15
     narrativeEffects: []

@@ -33,5 +33,5 @@ MonoBehaviour:
       chung"
     statEffects:
     - statType: 1
-      changeAmount: -10
+      changeAmount: -15
     narrativeEffects: []

@@ -29,7 +29,7 @@ MonoBehaviour:
     - statType: 3
       changeAmount: 10
     - statType: 2
-      changeAmount: -10
+      changeAmount: -15
     narrativeEffects: []
   rightChoice:
     choiceText: "Ch\xFAng ta n\xEAn gi\u1EA3m b\u1EDBt c\xE1c ho\u1EA1t \u0111\u1ED9ng
@@ -38,5 +38,5 @@ MonoBehaviour:
     - statType: 2
       changeAmount: 10
     - statType: 3
-      changeAmount: -10
+      changeAmount: -15
     narrativeEffects: []

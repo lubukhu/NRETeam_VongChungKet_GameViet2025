@@ -17,13 +17,13 @@ MonoBehaviour:
   characterSprite: {fileID: 3465286685962602723, guid: be04431ac9a7e0544a60e76e88c3ea36, type: 3}
   dialogueText: "T\xF4i mu\u1ED1n \u0111\u1EBFn tr\u01B0\u1EDDng \u0111\u1EC3 l\xE0m
     m\u1ED9t bu\u1ED5i gi\u1EA3ng d\u1EA1y v\u1EC1 l\u1ECBch s\u1EED v\xE0 gi\u1EEF
-    g\xECn v\u0103n h\xF3a, c\xE1n b\u1ED9 th\u1EA5y sao"
+    g\xECn v\u0103n h\xF3a, c\xE1n b\u1ED9 th\u1EA5y sao?"
   cardCategory: 3
   behaviorType: 0
   frequency: 0
   leftChoice:
-    choiceText: "C\xF4 c\xF3 th\u1EC3 \u0111\u1EBFn, t\xF4i s\u1EBD b\xE1o cho c\xF4
-      Nga"
+    choiceText: "C\xF4 c\xF3 th\u1EC3 \u0111\u1EBFn, t\xF4i s\u1EBD b\xE1o v\u1EDBi
+      tr\u01B0\u1EDDng h\u1ECDc"
     statEffects:
     - statType: 1
       changeAmount: 5
@@ -34,7 +34,7 @@ MonoBehaviour:
     choiceText: "C\xF4 v\u1EABn n\xEAn t\u1EADp trung v\xE0o vi\u1EC7c c\u1EE7a m\xECnh"
     statEffects:
     - statType: 1
-      changeAmount: -5
+      changeAmount: -10
     - statType: 3
-      changeAmount: 10
+      changeAmount: -10
     narrativeEffects: []

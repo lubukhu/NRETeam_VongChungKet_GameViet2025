@@ -16,8 +16,8 @@ MonoBehaviour:
   characterName: "C\xF4 Nga - Hi\u1EC7u tr\u01B0\u1EDFng tr\u01B0\u1EDDng h\u1ECDc"
   characterSprite: {fileID: -6270953770400647376, guid: c5d78cfaebe2eef458f9fe39ceacb932, type: 3}
   dialogueText: "C\xE1n b\u1ED9 c\xF3 th\u1EC3 t\xE0i tr\u1EE3 cho tr\u01B0\u1EDDng
-    \u0111\u1EC3 h\u1ED7 tr\u1EE3 th\u01B0 vi\u1EC7n tr\u01B0\u1EDDng kh\xF4ng ?"
-  cardCategory: 1
+    \u0111\u1EC3 x\xE2y th\u01B0 vi\u1EC7n m\u1EDBi cho tr\u01B0\u1EDDng kh\xF4ng?"
+  cardCategory: 0
   behaviorType: 0
   frequency: 0
   leftChoice:
@@ -26,7 +26,7 @@ MonoBehaviour:
     - statType: 1
       changeAmount: 10
     - statType: 0
-      changeAmount: -15
+      changeAmount: -20
     narrativeEffects: []
   rightChoice:
     choiceText: "Con kh\xF4ng ch\u1EAFc v\u1EC1 \u0111i\u1EC1u \u0111\xF3 "
@@ -34,5 +34,5 @@ MonoBehaviour:
     - statType: 0
       changeAmount: 5
     - statType: 1
-      changeAmount: 8
+      changeAmount: -15
     narrativeEffects: []

@@ -15,8 +15,8 @@ MonoBehaviour:
   cardID: 
   characterName: "C\u1EE5 \xF4ng An - Tr\u01B0\u1EDFng l\xE0ng"
   characterSprite: {fileID: -6470460504253458178, guid: 8ae689f42fd7d6d4ba4e28d679da4638, type: 3}
-  dialogueText: "Truy\u1EC1n th\u1ED1ng m\u1ECDi n\u0103m, tu\u1EA7n t\u1EDBi ch\xFAng
-    ta s\u1EBD t\u1ED5 ch\u1EE9c l\u1EC5 h\u1ED9i \u0111\u1EA5y"
+  dialogueText: "Theo truy\u1EC1n th\u1ED1ng m\u1ECDi n\u0103m, tu\u1EA7n t\u1EDBi
+    ch\xFAng ta s\u1EBD t\u1ED5 ch\u1EE9c l\u1EC5 h\u1ED9i \u0111\u1EA5y!"
   cardCategory: 3
   behaviorType: 0
   frequency: 0
@@ -24,15 +24,16 @@ MonoBehaviour:
     choiceText: "Ch\xE1u s\u1EBD gi\xFAp m\u1ED9t tay "
     statEffects:
     - statType: 0
-      changeAmount: -15
-    - statType: 1
-      changeAmount: 8
+      changeAmount: -20
+    - statType: 3
+      changeAmount: 10
     narrativeEffects: []
   rightChoice:
-    choiceText: "Ta n\xEAn h\u1EA1n ch\u1EBF l\u1EC5 h\u1ED9i"
+    choiceText: "V\u1EDBi ng\xE2n s\xE1ch hi\u1EC7n t\u1EA1i, ta n\xEAn h\u1EA1n
+      ch\u1EBF l\u1EC5 h\u1ED9i"
     statEffects:
     - statType: 0
-      changeAmount: 8
+      changeAmount: 5
     - statType: 3
       changeAmount: -15
     narrativeEffects: []

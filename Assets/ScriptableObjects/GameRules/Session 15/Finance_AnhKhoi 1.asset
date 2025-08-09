@@ -27,20 +27,16 @@ MonoBehaviour:
       gi\xFAp ph\xE1t tri\u1EC3n b\u1EC1n v\u1EEFng"
     statEffects:
     - statType: 0
-      changeAmount: -20
-    - statType: 1
-      changeAmount: 10
+      changeAmount: -15
     - statType: 2
       changeAmount: 10
-    - statType: 3
-      changeAmount: 5
     narrativeEffects: []
   rightChoice:
     choiceText: "Ch\xFAng ta kh\xF4ng th\u1EC3 l\xE0m \u0111i\u1EC1u \u0111\xF3 v\xE0o
       l\xFAc n\xE0y"
     statEffects:
     - statType: 0
-      changeAmount: 5
+      changeAmount: 10
     - statType: 2
-      changeAmount: -15
+      changeAmount: -10
     narrativeEffects: []

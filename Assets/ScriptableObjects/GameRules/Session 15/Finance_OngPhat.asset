@@ -25,7 +25,7 @@ MonoBehaviour:
       m\u1ED9t s\u1ED1 d\u1EF1 \xE1n"
     statEffects:
     - statType: 0
-      changeAmount: 10
+      changeAmount: 15
     - statType: 1
       changeAmount: -5
     - statType: 2
@@ -37,8 +37,12 @@ MonoBehaviour:
     choiceText: "T\xF4i kh\xF4ng th\u1EC3 \u0111\u1EC3 vi\u1EC7c n\xE0y \u1EA3nh
       h\u01B0\u1EDFng \u0111\u1EBFn m\xF4i tr\u01B0\u1EDDng"
     statEffects:
-    - statType: 2
-      changeAmount: 10
     - statType: 0
-      changeAmount: -5
+      changeAmount: -15
+    - statType: 1
+      changeAmount: 5
+    - statType: 3
+      changeAmount: 5
+    - statType: 2
+      changeAmount: 2
     narrativeEffects: []

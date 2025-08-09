@@ -26,12 +26,12 @@ MonoBehaviour:
     statEffects:
     - statType: 3
       changeAmount: 10
+    - statType: 1
+      changeAmount: 5
     narrativeEffects: []
   rightChoice:
     choiceText: "Ng\u01B0\u1EDDi d\xE2n c\u1EA7n ni\u1EC1m tin t\xE2m linh m\xE0"
     statEffects:
-    - statType: 1
-      changeAmount: 5
     - statType: 3
-      changeAmount: -5
+      changeAmount: -15
     narrativeEffects: []

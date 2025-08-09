@@ -15,8 +15,8 @@ MonoBehaviour:
   cardID: 
   characterName: "L\xE3o Th\xF4ng - Th\u1EA7y thu\u1ED1c Nam Y"
   characterSprite: {fileID: 7028616704906629411, guid: b98d918b276236140aef4593a8f30669, type: 3}
-  dialogueText: "c\xE1c c\xE2y th\u1EA3o d\u01B0\u1EE3c t\u1EF1 nhi\xEAn \u0111ang
-    d\u1EA7n ch\u1EBFt, ng\xE0y c\xE0ng kh\xF3 ki\u1EBFm h\u01A1n"
+  dialogueText: "C\xE1c c\xE2y th\u1EA3o d\u01B0\u1EE3c t\u1EF1 nhi\xEAn \u0111ang
+    d\u1EA7n ch\u1EBFt, ng\xE0y c\xE0ng kh\xF3 ki\u1EBFm h\u01A1n!"
   cardCategory: 2
   behaviorType: 0
   frequency: 0
@@ -26,13 +26,13 @@ MonoBehaviour:
     - statType: 2
       changeAmount: 15
     - statType: 0
-      changeAmount: -15
+      changeAmount: -20
     narrativeEffects: []
   rightChoice:
-    choiceText: "Ch\u1EAFc do tr\xE1i m\xF9a th\xF4i"
+    choiceText: "Ch\xFAng ta c\xF2n c\xF3 thu\u1ED1c T\xE2y m\xE0"
     statEffects:
     - statType: 1
       changeAmount: -5
     - statType: 2
-      changeAmount: -15
+      changeAmount: -10
     narrativeEffects: []

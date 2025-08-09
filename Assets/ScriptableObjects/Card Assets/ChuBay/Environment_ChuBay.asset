@@ -21,7 +21,8 @@ MonoBehaviour:
   behaviorType: 0
   frequency: 0
   leftChoice:
-    choiceText: "Ch\xFAng ta c\xF3 th\u1EC3 x\xE2y b\u1EB1ng c\xE1ch kh\xE1c"
+    choiceText: "Ch\xFAng ta c\xF3 th\u1EC3 t\xECm ki\u1EBFm ngu\u1ED3n nguy\xEAn
+      li\u1EC7u kh\xE1c"
     statEffects:
     - statType: 0
       changeAmount: -15
@@ -29,7 +30,8 @@ MonoBehaviour:
       changeAmount: 10
     narrativeEffects: []
   rightChoice:
-    choiceText: "Nh\u01B0ng n\xF3 l\xE0 \u0111i\u1EC1u c\u1EA7n thi\u1EBFt"
+    choiceText: "Nh\u01B0ng n\xF3 l\xE0 \u0111i\u1EC1u c\u1EA7n thi\u1EBFt cho c\xF4ng
+      tr\xECnh!"
     statEffects:
     - statType: 0
       changeAmount: 10

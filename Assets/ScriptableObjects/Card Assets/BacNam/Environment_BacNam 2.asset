@@ -26,16 +26,18 @@ MonoBehaviour:
       tr\u1ED3ng"
     statEffects:
     - statType: 0
-      changeAmount: -14
-    - statType: 1
-      changeAmount: 5
+      changeAmount: 10
+    - statType: 2
+      changeAmount: -20
     narrativeEffects: []
   rightChoice:
-    choiceText: "Kh\xF4ng \u0111\u01B0\u1EE3c b\xE1c, nh\u01B0 th\u1EBF s\u1EBD g\xE2y
-      h\u1EA1i \u0111\u1EBFn m\xF4i tr\u01B0\u1EDDng"
+    choiceText: "C\xF3 l\u1EBD ch\xFAng ta n\xEAn t\xECm ph\u01B0\u01A1ng ph\xE1p
+      kh\xE1c"
     statEffects:
+    - statType: 0
+      changeAmount: -10
     - statType: 2
-      changeAmount: 5
+      changeAmount: 10
     - statType: 1
-      changeAmount: -15
+      changeAmount: 5
     narrativeEffects: []

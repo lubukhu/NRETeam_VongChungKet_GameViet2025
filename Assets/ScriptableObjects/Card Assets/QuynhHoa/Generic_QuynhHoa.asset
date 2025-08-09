@@ -25,11 +25,11 @@ MonoBehaviour:
     choiceText: "R\u1EA5t vui \u0111\u01B0\u1EE3c g\u1EB7p em!"
     statEffects:
     - statType: 1
-      changeAmount: 15
+      changeAmount: 10
     narrativeEffects: []
   rightChoice:
     choiceText: "H\u1EE3p t\xE1c vui v\u1EBB nh\xE9"
     statEffects:
-    - statType: 1
-      changeAmount: 15
+    - statType: 0
+      changeAmount: 10
     narrativeEffects: []

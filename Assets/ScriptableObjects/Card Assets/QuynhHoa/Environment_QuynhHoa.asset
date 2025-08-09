@@ -27,19 +27,14 @@ MonoBehaviour:
       changeAmount: -10
     - statType: 2
       changeAmount: -10
-    narrativeEffects:
-    - effectType: 0
-      targetCard: {fileID: 0}
-      targetDeck: {fileID: 0}
-      narrativeFlag: {fileID: 0}
-      flagValue: 0
+    narrativeEffects: []
   rightChoice:
     choiceText: "Ch\xFAng ta s\u1EBD ti\u1EBFn h\xE0nh \u0111i\u1EC1u tra!"
     statEffects:
     - statType: 0
       changeAmount: -5
     - statType: 1
-      changeAmount: 10
+      changeAmount: 5
     narrativeEffects:
     - effectType: 4
       targetCard: {fileID: 11400000, guid: ce7733ae8272c40429081147326aab70, type: 2}

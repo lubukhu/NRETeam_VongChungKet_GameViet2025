@@ -25,7 +25,7 @@ MonoBehaviour:
     choiceText: "Anh ra gi\xE1 \u0111i"
     statEffects:
     - statType: 0
-      changeAmount: 15
+      changeAmount: 10
     - statType: 1
       changeAmount: -5
     - statType: 3

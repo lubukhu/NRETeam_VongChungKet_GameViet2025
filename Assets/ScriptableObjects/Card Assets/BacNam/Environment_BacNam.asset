@@ -15,24 +15,24 @@ MonoBehaviour:
   cardID: 
   characterName: "B\xE1c N\u0103m - \u0110\u1EA1i di\u1EC7n n\xF4ng d\xE2n"
   characterSprite: {fileID: -4178046375966092550, guid: 4d1bdf05407078244872bb65349bfe8b, type: 3}
-  dialogueText: "Cho b\xE1c khai hoang \u0111\u1EA5t r\u1EEBng \u0111\u01B0\u1EE3c
-    kh\xF4ng?"
+  dialogueText: "Ch\xE1u c\u1EA5p ph\xE9p b\xE1c khai hoang th\xEAm \u0111\u1EA5t
+    r\u1EEBng \u0111\u01B0\u1EE3c kh\xF4ng?"
   cardCategory: 2
   behaviorType: 0
   frequency: 0
   leftChoice:
     choiceText: "D\u1EA1 \u0111\u01B0\u1EE3c b\xE1c \u1EA1"
     statEffects:
-    - statType: 0
+    - statType: 1
       changeAmount: 5
     - statType: 2
-      changeAmount: -10
+      changeAmount: -15
     narrativeEffects: []
   rightChoice:
     choiceText: "Kh\xF4ng \u0111\u01B0\u1EE3c \u0111\xE2u b\xE1c \u1EA1"
     statEffects:
-    - statType: 0
-      changeAmount: -10
+    - statType: 1
+      changeAmount: -15
     - statType: 2
       changeAmount: 5
     narrativeEffects: []

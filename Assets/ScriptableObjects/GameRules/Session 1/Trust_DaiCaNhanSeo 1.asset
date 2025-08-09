@@ -28,13 +28,13 @@ MonoBehaviour:
     - statType: 0
       changeAmount: 15
     - statType: 1
-      changeAmount: -15
+      changeAmount: -25
     narrativeEffects: []
   rightChoice:
     choiceText: "Li\xEAn quan g\xEC t\u1EDBi t\xF4i"
     statEffects:
     - statType: 0
-      changeAmount: -10
+      changeAmount: -15
     - statType: 1
       changeAmount: 10
     narrativeEffects: []
